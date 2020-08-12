@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef>
+    <defName>Dam_USAmmoniaFert</defName>
+    <label>Ammonia Fertiliser</label>
+    <workerClass>USToxins.DamageWorker_USAmmoniaFert</workerClass>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>0</defaultDamage>
+    <explosionCellMote>Mote_BlastExtinguisher</explosionCellMote>
+    <explosionColorEdge>(1, 1, 1, 0.05)</explosionColorEdge>
+    <soundExplosion>DispensePaste</soundExplosion>
+    <harmsHealth>false</harmsHealth>
+    <combatLogRules>Damage_Extinguish</combatLogRules>
+  </DamageDef>
+  <ThingDef ParentName="USBaseFilth">
+    <defName>Filth_USAmmoniaFertFoam</defName>
+    <label>Ammonia Fertiliser Foam</label>
+    <thingClass>USToxins.USAmmoniaFert</thingClass>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Beauty>-8</Beauty>
+      <Cleanliness>+2</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>135, 125, 105, 85)</color>
+    </graphicData>
+    <pathCost>1</pathCost>
+    <filth>
+      <rainWashes>false</rainWashes>
+      <cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <allowsFire>true</allowsFire>
+    </filth>
+  </ThingDef>
+</Defs>

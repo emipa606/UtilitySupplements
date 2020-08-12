@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <USBlightFoamPopper.label>枯萎病泡沫仓</USBlightFoamPopper.label>
+  <USBlightFoamPopper.description>当装置内的探测器检测到枯萎病时，会在一定半径内释放出杀死枯萎病的泡沫，也可以手动触发.</USBlightFoamPopper.description>
+  <USBlightFoamPopper.comps.1.useLabel>触发泡沫仓</USBlightFoamPopper.comps.1.useLabel>
+  <USBlightFoamPopper_Blueprint.label>枯萎病泡沫仓 (蓝图)</USBlightFoamPopper_Blueprint.label>
+  <USBlightFoamPopper_Blueprint_Install.label>枯萎病泡沫仓 (蓝图)</USBlightFoamPopper_Blueprint_Install.label>
+  <USBlightFoamPopper_Frame.label>枯萎病泡沫仓 (建造中)</USBlightFoamPopper_Frame.label>
+  <USBlightFoamPopper_Frame.description>当装置内的探测器检测到枯萎病时，会在一定半径内释放出杀死枯萎病的泡沫，也可以手动触发.</USBlightFoamPopper_Frame.description>
+</LanguageData>

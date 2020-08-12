@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USAntifreeze.label>融雪剂附着</Filth_USAntifreeze.label>
+  <!-- Liquid -->
+  <USAntifreeze.label>融雪剂</USAntifreeze.label>
+  <USAntifreeze.description>这种液体能够很快地融化冰雪.</USAntifreeze.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_Antifreeze.label>融雪剂喷雾器</Gun_USSprayer_Antifreeze.label>
+  <Gun_USSprayer_Antifreeze.description>施用融雪剂的喷雾器. 喷出的药液能够很快地融化冰雪.</Gun_USSprayer_Antifreeze.description>
+  <Gun_USSprayer_Antifreeze.tools.0.label>stock</Gun_USSprayer_Antifreeze.tools.0.label>
+  <Gun_USSprayer_Antifreeze.tools.1.label>barrel</Gun_USSprayer_Antifreeze.tools.1.label>
+  <Bullet_USAntifreeze.label>融雪剂</Bullet_USAntifreeze.label>
+</LanguageData>

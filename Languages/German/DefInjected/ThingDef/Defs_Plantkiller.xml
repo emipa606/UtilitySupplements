@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USPlantKillFoam.label>Pflanzenentferner</Filth_USPlantKillFoam.label>
+  <!-- Liquid -->
+  <USPlantKillLiquid.label>Pflanzenentferner</USPlantKillLiquid.label>
+  <USPlantKillLiquid.description>Eine giftige Chemikalie. Diese besondere Flüssigkeit hat Eigenschaften, die sie für alle lebenden Pflanzen giftig machen.</USPlantKillLiquid.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_PlantKill.label>Pflanzenentferner-Sprüher</Gun_USSprayer_PlantKill.label>
+  <Gun_USSprayer_PlantKill.description>Ein Sprühgerät, das giftige Chemikalien aufträgt. Das mit diesem Sprühgerät verbundene Toxin tötet alle lebenden Pflanzen ab.</Gun_USSprayer_PlantKill.description>
+  <Gun_USSprayer_PlantKill.tools.0.label>Griff</Gun_USSprayer_PlantKill.tools.0.label>
+  <Gun_USSprayer_PlantKill.tools.1.label>Lauf</Gun_USSprayer_PlantKill.tools.1.label>
+  <Bullet_USPlantKill_Foam.label>Pflanzenentferner</Bullet_USPlantKill_Foam.label>
+</LanguageData>

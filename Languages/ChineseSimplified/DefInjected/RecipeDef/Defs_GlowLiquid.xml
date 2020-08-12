@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Liquid Recipe -->
+  <MakeUSGlowLiquid.label>制作荧光药液</MakeUSGlowLiquid.label>
+  <MakeUSGlowLiquid.description>制作一份荧光药液</MakeUSGlowLiquid.description>
+  <MakeUSGlowLiquid.jobString>正在制造荧光药液.</MakeUSGlowLiquid.jobString>
+  <MakeBulkUSGlowLiquid.label>批量制作荧光药液</MakeBulkUSGlowLiquid.label>
+  <MakeBulkUSGlowLiquid.description>制作五份荧光药液</MakeBulkUSGlowLiquid.description>
+  <MakeBulkUSGlowLiquid.jobString>正在制造荧光药液.</MakeBulkUSGlowLiquid.jobString>
+</LanguageData>

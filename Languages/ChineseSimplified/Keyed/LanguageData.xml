@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <USTox.Name>实用扩展 (by Pelador)</USTox.Name>
+  <USTox.DoStinkrootGas>允许恶臭根产生气体:</USTox.DoStinkrootGas>
+  <USTox.SRGasRadius>成熟恶臭根产生气体的半径:</USTox.SRGasRadius>
+  <USTox.SRGasRadiusTip>默认值是 [2]. (仅在允许产生气体时生效.)</USTox.SRGasRadiusTip>
+  <USTox.StinkyTip>(对于恶臭根气体选项的更改会在重启游戏后生效.)</USTox.StinkyTip>
+  <USTox.DoTanglerootGas>允许混乱根产生气体:</USTox.DoTanglerootGas>
+  <USTox.DoTanglerootCreep>允许混乱根蔓延:</USTox.DoTanglerootCreep>
+  <USTox.USToxLevels>毒性 (%):</USTox.USToxLevels>
+  <USTox.USToxLevelsTip>默认值是 [100]. (呈百分比影响毒性.)</USTox.USToxLevelsTip>
+</LanguageData>

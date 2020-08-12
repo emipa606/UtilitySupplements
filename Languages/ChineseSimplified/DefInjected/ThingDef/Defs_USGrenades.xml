@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Insect Killer -->
+  <Weapon_USGrenade_InsectKill.label>杀虫手雷</Weapon_USGrenade_InsectKill.label>
+  <Weapon_USGrenade_InsectKill.description>这种手雷爆炸后会释放出腐蚀性的神经毒剂， 这种化学物质会分解并灼烧暴露其中的虫类组织.</Weapon_USGrenade_InsectKill.description>
+  <Weapon_USGrenade_InsectKill.verbs.0.label>扔出手雷</Weapon_USGrenade_InsectKill.verbs.0.label>
+  <Grenade_USInsectKill.label>杀虫手雷</Grenade_USInsectKill.label>
+  <!-- Mind Killer -->
+  <Weapon_USGrenade_MindKill.label>心灵杀手手雷</Weapon_USGrenade_MindKill.label>
+  <Weapon_USGrenade_MindKill.description>这种手雷会释放出一种神经毒剂， 这种化学物质会严重损伤神经系统.</Weapon_USGrenade_MindKill.description>
+  <Weapon_USGrenade_MindKill.verbs.0.label>扔出手雷</Weapon_USGrenade_MindKill.verbs.0.label>
+  <Grenade_USMindKill.label>心灵杀手手雷</Grenade_USMindKill.label>
+  <!-- Tangle Killer -->
+  <Weapon_USGrenade_TangleKill.label>混乱杀手手雷</Weapon_USGrenade_TangleKill.label>
+  <Weapon_USGrenade_TangleKill.description>这种手雷会释放出能够结束混乱的气体（有毒）.</Weapon_USGrenade_TangleKill.description>
+  <Weapon_USGrenade_TangleKill.verbs.0.label>扔出手雷</Weapon_USGrenade_TangleKill.verbs.0.label>
+  <Grenade_USTangleKill.label>混乱杀手手雷</Grenade_USTangleKill.label>
+  <!-- Glow Sticks -->
+  <Weapon_USGrenade_GlowStick.label>荧光棒</Weapon_USGrenade_GlowStick.label>
+  <Weapon_USGrenade_GlowStick.description>荧光棒, 透明的容纳单元里装着荧光液体.</Weapon_USGrenade_GlowStick.description>
+  <Weapon_USGrenade_GlowStick.verbs.0.label>扔出荧光棒</Weapon_USGrenade_GlowStick.verbs.0.label>
+  <Grenade_USGlowStick.label>荧光棒</Grenade_USGlowStick.label>
+</LanguageData>

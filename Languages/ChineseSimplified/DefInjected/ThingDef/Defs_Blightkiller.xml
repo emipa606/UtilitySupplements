@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USBlightKillFoam.label>灭枯灵泡沫</Filth_USBlightKillFoam.label>
+  <!-- Liquid -->
+  <USBlightKillLiquid.label>灭枯灵药液</USBlightKillLiquid.label>
+  <USBlightKillLiquid.description>一种有毒的化学物质，能够杀死引起枯萎病的菌类.</USBlightKillLiquid.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_BlightKill.label>灭枯灵喷雾剂</Gun_USSprayer_BlightKill.label>
+  <Gun_USSprayer_BlightKill.description>施用化学物质的喷雾器，喷出的药液能够杀死引起枯萎病的菌类.</Gun_USSprayer_BlightKill.description>
+  <Gun_USSprayer_BlightKill.tools.0.label>剩余</Gun_USSprayer_BlightKill.tools.0.label>
+  <Gun_USSprayer_BlightKill.tools.1.label>装入桶中</Gun_USSprayer_BlightKill.tools.1.label>
+  <Bullet_USBlightKill_Foam.label>灭枯灵泡沫</Bullet_USBlightKill_Foam.label>
+</LanguageData>

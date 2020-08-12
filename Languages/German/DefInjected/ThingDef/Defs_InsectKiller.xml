@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USInsectKillFoam.label>Insektenvernichter</Filth_USInsectKillFoam.label>
+  <!-- Liquid -->
+  <USInsectKillLiquid.label>Insektenvernichter</USInsectKillLiquid.label>
+  <USInsectKillLiquid.description>Ein starkes ätzendes Neurotoxin, das als Schaum aufgetragen wird. Diese besondere Flüssigkeit ist besonders ätzend gegenüber Insektenfleisch.</USInsectKillLiquid.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_InsectKill.label>Insektenvernichter-Sprüher</Gun_USSprayer_InsectKill.label>
+  <Gun_USSprayer_InsectKill.description>Ein Sprühgerät, das ein ätzendes Neurotoxin als Schaum aufträgt. Die mit diesem Sprühgerät verbundenen Chemikalien zersetzen sich und verbrennen freiliegendem Insektenfleisch und Flüssigkeiten.</Gun_USSprayer_InsectKill.description>
+  <Gun_USSprayer_InsectKill.tools.0.label>Griff</Gun_USSprayer_InsectKill.tools.0.label>
+  <Gun_USSprayer_InsectKill.tools.1.label>Lauf</Gun_USSprayer_InsectKill.tools.1.label>
+  <Bullet_USInsectKill_Foam.label>Insektenvernichter</Bullet_USInsectKill_Foam.label>
+</LanguageData>

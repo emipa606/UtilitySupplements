@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USTangleKill.label>混乱杀手</Dam_USTangleKill.label>
+  <Dam_USTangleKill.deathMessage>{0}已经被杀死.</Dam_USTangleKill.deathMessage>
+</LanguageData>

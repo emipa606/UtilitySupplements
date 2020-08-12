@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USFilthKill.label>除垢剂</Dam_USFilthKill.label>
+  <Dam_USFilthKill.deathMessage>{0} 已经被杀死.</Dam_USFilthKill.deathMessage>
+</LanguageData>

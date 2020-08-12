@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USAntifreeze.label>Frostschutzmittel</Dam_USAntifreeze.label>
+  <Dam_USAntifreeze.deathMessage>{0} würde getötet.</Dam_USAntifreeze.deathMessage>
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Liquid Recipe -->
+
+  <MakeBulkUSWeedKillLiquid.label>Make weed killer liquid</MakeBulkUSWeedKillLiquid.label>
+  <MakeBulkUSWeedKillLiquid.description>Make 5 weed killer liquid</MakeBulkUSWeedKillLiquid.description>
+  <MakeBulkUSWeedKillLiquid.jobString>Making toxins.</MakeBulkUSWeedKillLiquid.jobString>
+
+
+</LanguageData>

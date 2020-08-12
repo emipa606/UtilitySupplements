@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <USTox.Name>Utility Supplements (by Pelador)</USTox.Name>
+  <USTox.DoStinkrootGas>Allow Stinkroot plants to spawn gas:</USTox.DoStinkrootGas>
+  <USTox.SRGasRadius>Stinkroot gas spawn radius of fully mature plant:</USTox.SRGasRadius>
+  <USTox.SRGasRadiusTip>Default value is [2]. (Only relevant if Stinkroot gas is allowed.)</USTox.SRGasRadiusTip>
+  <USTox.StinkyTip>(Option changes to Stinkroot gas will only take effect after reloading RimWorld.)</USTox.StinkyTip>
+  <USTox.DoTanglerootGas>Allow Tangleroot plants to spawn gas:</USTox.DoTanglerootGas>
+  <USTox.DoTanglerootCreep>Allow Tangleroot plants to creep:</USTox.DoTanglerootCreep>
+  <USTox.DoAnimalFlee>Animals flee from dangerous plants:</USTox.DoAnimalFlee>
+  <USTox.DoAcidWalls>Allow acid gas to attack adjacent edifices:</USTox.DoAcidWalls>
+  <USTox.USToxLevels>Toxicity (%):</USTox.USToxLevels>
+  <USTox.USToxLevelsTip>Default value is [100]. (Effective level of toxins as a percentage.)</USTox.USToxLevelsTip>
+  <USTox.ResPct>Relative cost for research %:</USTox.ResPct>
+  <USTox.ResTip>Note these changes will only take effect when RimWorld is restarted.</USTox.ResTip>
+  <USTox.ResWarn>(Warning: increasing the % will mean research will become incomplete using the previous value.)</USTox.ResWarn>
+
+</LanguageData>

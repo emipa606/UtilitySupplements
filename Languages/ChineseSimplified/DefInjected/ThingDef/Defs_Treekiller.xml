@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USTreeKillFoam.label>百树枯泡沫</Filth_USTreeKillFoam.label>
+  <!-- Liquid -->
+  <USTreeKillLiquid.label>百树枯药液</USTreeKillLiquid.label>
+  <USTreeKillLiquid.description>一种化学毒剂，能够杀死所有的树木. </USTreeKillLiquid.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_TreeKill.label>百树枯喷雾器</Gun_USSprayer_TreeKill.label>
+  <Gun_USSprayer_TreeKill.description>施用毒剂的喷雾器. 里面所含的毒剂能够杀死所有树木.</Gun_USSprayer_TreeKill.description>
+  <Gun_USSprayer_TreeKill.tools.0.label>储存</Gun_USSprayer_TreeKill.tools.0.label>
+  <Gun_USSprayer_TreeKill.tools.1.label>装入桶中</Gun_USSprayer_TreeKill.tools.1.label>
+  <Bullet_USTreeKill_Foam.label>百树枯泡沫</Bullet_USTreeKill_Foam.label>
+</LanguageData>

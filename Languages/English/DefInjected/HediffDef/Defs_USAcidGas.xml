@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Acid Gas Damage -->
+
+  <USAcidBurn.label>acid burn</USAcidBurn.label>
+  <USAcidBurn.description>An acid burn.</USAcidBurn.description>
+  <USAcidBurn.comps.0.labelTendedWell>bandaged</USAcidBurn.comps.0.labelTendedWell>
+  <USAcidBurn.comps.0.labelTendedWellInner>tended</USAcidBurn.comps.0.labelTendedWellInner>
+  <USAcidBurn.comps.0.labelSolidTendedWell>tended</USAcidBurn.comps.0.labelSolidTendedWell>
+  <USAcidBurn.injuryProps.destroyedLabel>Burned off (acid)</USAcidBurn.injuryProps.destroyedLabel>
+  <USAcidBurn.injuryProps.destroyedOutLabel>Burned out (acid)</USAcidBurn.injuryProps.destroyedOutLabel>
+  <USAcidBurn.labelNoun>an acid burn</USAcidBurn.labelNoun>
+
+
+  <!-- Hediff -->
+
+  <HED_USAcidGas.label>Acid Gas effect</HED_USAcidGas.label>
+  <HED_USAcidGas.description>Acid Gas effect</HED_USAcidGas.description>
+  <HED_USAcidGas.stages.0.label>minor</HED_USAcidGas.stages.0.label>
+  <HED_USAcidGas.stages.1.label>major</HED_USAcidGas.stages.1.label>
+  <HED_USAcidGas.stages.2.label>severe</HED_USAcidGas.stages.2.label>
+  <HED_USAcidGas.stages.3.label>severe</HED_USAcidGas.stages.3.label>
+
+
+</LanguageData>

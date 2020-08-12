@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ====== Compatability Patch ==================== -->
+  <!-- Sprayers made of RimPlas instead -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RimPlas</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_BlightKill"]/costList</xpath>
+          <value>
+            <costList>
+              <Chemfuel>2</Chemfuel>
+              <RimPlas>14</RimPlas>
+              <ComponentIndustrial>1</ComponentIndustrial>
+              <USBlightKillLiquid>2</USBlightKillLiquid>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_BlightKill"]/statBases/MarketValue</xpath>
+          <value>
+            <MarketValue>150.6</MarketValue>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_FilthKill"]/costList</xpath>
+          <value>
+            <costList>
+              <Chemfuel>2</Chemfuel>
+              <RimPlas>14</RimPlas>
+              <ComponentIndustrial>1</ComponentIndustrial>
+              <USFilthKillLiquid>2</USFilthKillLiquid>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_FilthKill"]/statBases/MarketValue</xpath>
+          <value>
+            <MarketValue>142.6</MarketValue>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_Antifreeze"]/costList</xpath>
+          <value>
+            <costList>
+              <Chemfuel>2</Chemfuel>
+              <RimPlas>14</RimPlas>
+              <ComponentIndustrial>1</ComponentIndustrial>
+              <USAntifreeze>2</USAntifreeze>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_Antifreeze"]/statBases/MarketValue</xpath>
+          <value>
+            <MarketValue>212.4</MarketValue>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_InsectKill"]/costList</xpath>
+          <value>
+            <costList>
+              <Chemfuel>2</Chemfuel>
+              <RimPlas>14</RimPlas>
+              <ComponentIndustrial>1</ComponentIndustrial>
+              <USInsectKillLiquid>2</USInsectKillLiquid>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_InsectKill"]/statBases/MarketValue</xpath>
+          <value>
+            <MarketValue>152.6</MarketValue>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_PlantKill"]/costList</xpath>
+          <value>
+            <costList>
+              <Chemfuel>2</Chemfuel>
+              <RimPlas>14</RimPlas>
+              <ComponentIndustrial>1</ComponentIndustrial>
+              <USPlantKillLiquid>2</USPlantKillLiquid>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_PlantKill"]/statBases/MarketValue</xpath>
+          <value>
+            <MarketValue>138.6</MarketValue>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_TreeKill"]/costList</xpath>
+          <value>
+            <costList>
+              <Chemfuel>2</Chemfuel>
+              <RimPlas>14</RimPlas>
+              <ComponentIndustrial>1</ComponentIndustrial>
+              <USTreeKillLiquid>2</USTreeKillLiquid>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_TreeKill"]/statBases/MarketValue</xpath>
+          <value>
+            <MarketValue>141</MarketValue>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_WeedKill"]/costList</xpath>
+          <value>
+            <costList>
+              <Chemfuel>2</Chemfuel>
+              <RimPlas>14</RimPlas>
+              <ComponentIndustrial>1</ComponentIndustrial>
+              <USWeedKillLiquid>2</USWeedKillLiquid>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_USSprayer_WeedKill"]/statBases/MarketValue</xpath>
+          <value>
+            <MarketValue>142.2</MarketValue>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

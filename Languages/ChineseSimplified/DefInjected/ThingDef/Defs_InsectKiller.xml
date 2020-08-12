@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USInsectKillFoam.label>杀虫泡沫</Filth_USInsectKillFoam.label>
+  <!-- Liquid -->
+  <USInsectKillLiquid.label>杀虫剂</USInsectKillLiquid.label>
+  <USInsectKillLiquid.description>一种强力的腐蚀性神经毒剂，以喷泡形式施放. 这种化学物质会腐蚀并灼烧暴露于其中的虫类组织.</USInsectKillLiquid.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_InsectKill.label>杀虫剂喷雾器</Gun_USSprayer_InsectKill.label>
+  <Gun_USSprayer_InsectKill.description>这种喷雾器能喷出一种腐蚀性神经毒剂泡沫.这种化学物质会腐蚀并灼烧暴露于其中的虫类组织.</Gun_USSprayer_InsectKill.description>
+  <Gun_USSprayer_InsectKill.tools.0.label>剩余</Gun_USSprayer_InsectKill.tools.0.label>
+  <Gun_USSprayer_InsectKill.tools.1.label>装入桶中</Gun_USSprayer_InsectKill.tools.1.label>
+  <Bullet_USInsectKill_Foam.label>杀虫泡沫</Bullet_USInsectKill_Foam.label>
+</LanguageData>

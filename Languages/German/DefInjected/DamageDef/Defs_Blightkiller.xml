@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USBlightKill.label>Unkrautentferner</Dam_USBlightKill.label>
+  <Dam_USBlightKill.deathMessage>{0} würde getötet.</Dam_USBlightKill.deathMessage>
+</LanguageData>

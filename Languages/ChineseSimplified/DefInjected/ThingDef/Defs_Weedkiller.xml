@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USWeedKillFoam.label>除草泡沫</Filth_USWeedKillFoam.label>
+  <!-- Liquid -->
+  <USWeedKillLiquid.label>除草液</USWeedKillLiquid.label>
+  <USWeedKillLiquid.description>一种有毒的化学物质.这种液体对于所有杂草均有毒性.</USWeedKillLiquid.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_WeedKill.label>除草喷雾器</Gun_USSprayer_WeedKill.label>
+  <Gun_USSprayer_WeedKill.description>施用有毒化学物质的喷雾器. 喷出的毒性化学液体能杀死所有杂草.</Gun_USSprayer_WeedKill.description>
+  <Gun_USSprayer_WeedKill.tools.0.label>存有</Gun_USSprayer_WeedKill.tools.0.label>
+  <Gun_USSprayer_WeedKill.tools.1.label>桶</Gun_USSprayer_WeedKill.tools.1.label>
+  <Bullet_USWeedKill_Foam.label>除草泡沫</Bullet_USWeedKill_Foam.label>
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Plant -->
+  <Plant_USStinkroot.label>恶臭根</Plant_USStinkroot.label>
+  <Plant_USStinkroot.description>一种经过基因改造的开花植物，会释放出恶臭气体.这种花用释放出有毒的气体的方式来保卫自己的生存领地</Plant_USStinkroot.description>
+  <!-- Petals -->
+  <USStinkrootLeaves.label>恶臭根叶片</USStinkrootLeaves.label>
+  <USStinkrootLeaves.description>从恶臭根植株上收获的叶片，有着极强的毒性.</USStinkrootLeaves.description>
+  <!-- Gas -->
+  <Gas_USStinkroot.label>恶臭根气体</Gas_USStinkroot.label>
+</LanguageData>

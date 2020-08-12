@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USFilthKill.label>Schmutzentferner</Dam_USFilthKill.label>
+  <Dam_USFilthKill.deathMessage>{0} würde getötet.</Dam_USFilthKill.deathMessage>
+</LanguageData>

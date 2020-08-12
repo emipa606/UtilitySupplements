@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USInsectKill.label>杀虫剂</Dam_USInsectKill.label>
+  <Dam_USInsectKill.deathMessage>{0}已经被杀死.</Dam_USInsectKill.deathMessage>
+</LanguageData>

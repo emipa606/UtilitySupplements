@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Acid Gas Damage -->
+  <USAcidBurn.label>Verätzung</USAcidBurn.label>
+  <USAcidBurn.description>Eine Verätzung.</USAcidBurn.description>
+  <USAcidBurn.comps.0.labelTendedWell>verbunden</USAcidBurn.comps.0.labelTendedWell>
+  <USAcidBurn.comps.0.labelTendedWellInner>versorgt</USAcidBurn.comps.0.labelTendedWellInner>
+  <USAcidBurn.comps.0.labelSolidTendedWell>versorgt</USAcidBurn.comps.0.labelSolidTendedWell>
+  <USAcidBurn.injuryProps.destroyedLabel>Verätzung (Säure)</USAcidBurn.injuryProps.destroyedLabel>
+  <USAcidBurn.injuryProps.destroyedOutLabel>Verätzung (Säure)</USAcidBurn.injuryProps.destroyedOutLabel>
+  <USAcidBurn.labelNoun>Eine Verätzung</USAcidBurn.labelNoun>
+  <!-- Hediff -->
+  <HED_USAcidGas.label>Säuregas-Effekt</HED_USAcidGas.label>
+  <HED_USAcidGas.description>Säuregas-Effekt</HED_USAcidGas.description>
+  <HED_USAcidGas.stages.0.label>Leicht</HED_USAcidGas.stages.0.label>
+  <HED_USAcidGas.stages.1.label>Schwer</HED_USAcidGas.stages.1.label>
+  <HED_USAcidGas.stages.2.label>Extrem</HED_USAcidGas.stages.2.label>
+  <HED_USAcidGas.stages.3.label>Extrem</HED_USAcidGas.stages.3.label>
+</LanguageData>

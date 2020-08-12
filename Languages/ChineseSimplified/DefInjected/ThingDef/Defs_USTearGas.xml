@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Tear Gas -->
+  <Gas_USTearGas.label>催泪瓦斯</Gas_USTearGas.label>
+  <!-- Tear Gas Grenade -->
+  <Weapon_USGrenade_TearGas.label>催泪弹</Weapon_USGrenade_TearGas.label>
+  <Weapon_USGrenade_TearGas.description>放出催泪弹的手雷. 手雷中的化学物质有着极强的刺激性，会造成疼痛.</Weapon_USGrenade_TearGas.description>
+  <Weapon_USGrenade_TearGas.verbs.0.label>扔出催泪弹</Weapon_USGrenade_TearGas.verbs.0.label>
+  <Grenade_USTearGas.label>催泪弹</Grenade_USTearGas.label>
+  <!-- Shell and IED -->
+  <Shell_USTearGas.label>催泪弹（大）</Shell_USTearGas.label>
+  <Shell_USTearGas.description>压缩入大量催泪瓦斯的迫击炮弹. 可以从迫击炮管内发射或者放在地上作为陷阱. 受到伤害时爆炸.</Shell_USTearGas.description>
+  <Bullet_Shell_USTearGas.label>心灵杀手弹</Bullet_Shell_USTearGas.label>
+  <TrapIED_USTearGas.label>简易催泪陷阱</TrapIED_USTearGas.label>
+  <TrapIED_USTearGas.description>由催泪弹和压感触发器组成的陷阱. 因为它需要隐藏于环境中, 不能把它和其他陷阱放得太近. 动物在未发狂时能避开它.</TrapIED_USTearGas.description>
+  <TrapIED_USTearGas_Blueprint.label>简易催泪陷阱 (蓝图)</TrapIED_USTearGas_Blueprint.label>
+  <TrapIED_USTearGas_Blueprint_Install.label>简易催泪陷阱(蓝图)</TrapIED_USTearGas_Blueprint_Install.label>
+  <TrapIED_USTearGas_Frame.label>简易催泪陷阱(建造中)</TrapIED_USTearGas_Frame.label>
+  <TrapIED_USTearGas_Frame.description>由催泪弹和压感触发器组成的陷阱. 因为它需要隐藏于环境中, 不能把它和其他陷阱放得太近. 动物在未发狂时能避开它.</TrapIED_USTearGas_Frame.description>
+</LanguageData>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USTreeKillFoam.label>Baumentferner</Filth_USTreeKillFoam.label>
+  <!-- Liquid -->
+  <USTreeKillLiquid.label>Baumentferner</USTreeKillLiquid.label>
+  <USTreeKillLiquid.description>Eine giftige Chemikalie. Diese besondere Flüssigkeit hat Eigenschaften, die sie für alle lebenden Bäume giftig macht.</USTreeKillLiquid.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_TreeKill.label>Baumentferner-Sprüher</Gun_USSprayer_TreeKill.label>
+  <Gun_USSprayer_TreeKill.description>Ein Sprühgerät, das giftige Chemikalien aufträgt. Das mit diesem Sprühgerät verbundene Toxin tötet alle lebenden Bäume ab.</Gun_USSprayer_TreeKill.description>
+  <Gun_USSprayer_TreeKill.tools.0.label>Griff</Gun_USSprayer_TreeKill.tools.0.label>
+  <Gun_USSprayer_TreeKill.tools.1.label>Lauf</Gun_USSprayer_TreeKill.tools.1.label>
+  <Bullet_USTreeKill_Foam.label>Baumentferner</Bullet_USTreeKill_Foam.label>
+</LanguageData>

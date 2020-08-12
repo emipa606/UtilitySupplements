@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Gas_USTangleKill.label>混乱杀手气体</Gas_USTangleKill.label>
+  <!-- Liquid -->
+  <USTangleKillLiquid.label>混乱杀手药液</USTangleKillLiquid.label>
+  <USTangleKillLiquid.description>经过浓缩的混乱根药剂，会释放出有毒的气体.</USTangleKillLiquid.description>
+</LanguageData>

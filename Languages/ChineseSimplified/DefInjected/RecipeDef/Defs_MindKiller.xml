@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Liquid Recipe -->
+  <MakeUSMindKillLiquid.label>制作心灵杀手药液</MakeUSMindKillLiquid.label>
+  <MakeUSMindKillLiquid.description>制作一份心灵杀手药液</MakeUSMindKillLiquid.description>
+  <MakeUSMindKillLiquid.jobString>正在制造药液.</MakeUSMindKillLiquid.jobString>
+  <MakeBulkUSMindKillLiquid.label>批量制作心灵杀手药液</MakeBulkUSMindKillLiquid.label>
+  <MakeBulkUSMindKillLiquid.description>制作五份心灵杀手药液</MakeBulkUSMindKillLiquid.description>
+  <MakeBulkUSMindKillLiquid.jobString>正在制造药液.</MakeBulkUSMindKillLiquid.jobString>
+</LanguageData>

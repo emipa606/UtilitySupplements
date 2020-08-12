@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Plant -->
+  <Plant_USTangleroot.label>Dornenranke</Plant_USTangleroot.label>
+  <Plant_USTangleroot.description>Ein gentechnisch veränderter Strauch mit messerscharfen Dornen.</Plant_USTangleroot.description>
+  <!-- Thorns -->
+  <USTanglerootThorns.label>Dornen</USTanglerootThorns.label>
+  <USTanglerootThorns.description>Geerntete Dornen der Dornenranke. Diese Dornen sind extrem scharf und enthalten verschiedene starke chemische Alkaloide.</USTanglerootThorns.description>
+  <!-- Gas -->
+  <Gas_USTangleroot.label>Nervengas</Gas_USTangleroot.label>
+</LanguageData>

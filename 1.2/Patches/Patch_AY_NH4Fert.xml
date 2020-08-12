@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Apothecary (Continued)</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ResearchProjectDef>
+              <defName>USAmmoniaFert</defName>
+              <label>Ammonia Fertiliser</label>
+              <description>Grants the ability to make liquid ammonia fertiliser.</description>
+              <baseCost>750</baseCost>
+              <techLevel>Industrial</techLevel>
+              <prerequisites>
+                <li>MSPhenol</li>
+              </prerequisites>
+              <tab>UtilitySuppTab</tab>
+            </ResearchProjectDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="ResourceBase">
+              <defName>USAmmoniaFertiliser</defName>
+              <label>Ammonia Fertiliser Liquid</label>
+              <description>Can be used to spray onto plants and other vegetation to improve growth.</description>
+              <graphicData>
+                <texPath>Things/Item/Resource/USAmmoniaFertiliser</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+                <drawSize>0.95</drawSize>
+              </graphicData>
+              <stackLimit>150</stackLimit>
+              <statBases>
+                <MaxHitPoints>50</MaxHitPoints>
+                <MarketValue>2.24</MarketValue>
+                <Mass>0.02</Mass>
+                <Flammability>0.3</Flammability>
+                <DeteriorationRate>2.0</DeteriorationRate>
+              </statBases>
+              <thingCategories>
+                <li>UtilitySupps</li>
+              </thingCategories>
+              <tradeTags>
+                <li>Exotic</li>
+              </tradeTags>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <RecipeDef>
+              <defName>MakeUSAmmoniaFertiliser</defName>
+              <label>Make Ammonia Fertiliser</label>
+              <description>Make 50 Ammonia Fertiliser</description>
+              <jobString>Making ammonia fertiliser.</jobString>
+              <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+              <effectWorking>Cremate</effectWorking>
+              <soundWorking>Recipe_Cremate</soundWorking>
+              <allowMixingIngredients>true</allowMixingIngredients>
+              <workAmount>1000</workAmount>
+              <targetCountAdjustment>50</targetCountAdjustment>
+              <workSkill>Intellectual</workSkill>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>AYAmmoniaWater</li>
+                    </thingDefs>
+                  </filter>
+                  <count>50</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Neutroamine</li>
+                    </thingDefs>
+                  </filter>
+                  <count>5</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>MSPhenol</li>
+                    </thingDefs>
+                  </filter>
+                  <count>1</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>AYAmmoniaWater</li>
+                  <li>Neutroamine</li>
+                  <li>MSPhenol</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <products>
+                <USAmmoniaFertiliser>50</USAmmoniaFertiliser>
+              </products>
+              <recipeUsers>
+                <li>BiofuelRefinery</li>
+              </recipeUsers>
+              <skillRequirements>
+                <Intellectual>7</Intellectual>
+              </skillRequirements>
+              <researchPrerequisite>USAmmoniaFert</researchPrerequisite>
+            </RecipeDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <RecipeDef>
+              <defName>MakeBulkUSAmmoniaFertiliser</defName>
+              <label>Make Ammonia Fertiliser in bulk</label>
+              <description>Make 100 Ammonia Fertiliser</description>
+              <jobString>Making ammonia fertiliser.</jobString>
+              <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+              <effectWorking>Cremate</effectWorking>
+              <soundWorking>Recipe_Cremate</soundWorking>
+              <allowMixingIngredients>true</allowMixingIngredients>
+              <workAmount>2000</workAmount>
+              <targetCountAdjustment>100</targetCountAdjustment>
+              <workSkill>Intellectual</workSkill>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>AYAmmoniaWater</li>
+                    </thingDefs>
+                  </filter>
+                  <count>100</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Neutroamine</li>
+                    </thingDefs>
+                  </filter>
+                  <count>10</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>MSPhenol</li>
+                    </thingDefs>
+                  </filter>
+                  <count>2</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>AYAmmoniaWater</li>
+                  <li>Neutroamine</li>
+                  <li>MSPhenol</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <products>
+                <USAmmoniaFertiliser>100</USAmmoniaFertiliser>
+              </products>
+              <recipeUsers>
+                <li>BiofuelRefinery</li>
+              </recipeUsers>
+              <skillRequirements>
+                <Intellectual>8</Intellectual>
+              </skillRequirements>
+              <researchPrerequisite>USAmmoniaFert</researchPrerequisite>
+            </RecipeDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="BaseMakeableUSSprayer">
+              <defName>Gun_USSprayer_AmmoniaFert</defName>
+              <label>Ammonia Fertiliser Sprayer</label>
+              <description>Sprayer that applies liquid ammonia fertiliser.</description>
+              <graphicData>
+                <texPath>Things/Item/Gun_USSprayer_AmmoniaFert</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <soundInteract>Interact_Grenade</soundInteract>
+              <recipeMaker>
+                <researchPrerequisite>USAmmoniaFert</researchPrerequisite>
+                <skillRequirements>
+                  <Crafting>5</Crafting>
+                </skillRequirements>
+                <recipeUsers>
+                  <li>TableMachining</li>
+                </recipeUsers>
+              </recipeMaker>
+              <techLevel>Industrial</techLevel>
+              <weaponTags Inherit="false">
+                <li>USSpray_NotUsed</li>
+              </weaponTags>
+              <thingCategories>
+                <li>UtilitySupps</li>
+              </thingCategories>
+              <generateCommonality>0.003</generateCommonality>
+              <statBases>
+                <WorkToMake>4000</WorkToMake>
+                <Mass>1.2</Mass>
+                <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+                <Flammability>1.0</Flammability>
+                <SellPriceFactor>0.5</SellPriceFactor>
+                <MarketValue>172</MarketValue>
+              </statBases>
+              <costList>
+                <Chemfuel>20</Chemfuel>
+                <Steel>20</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <USAmmoniaFertiliser>25</USAmmoniaFertiliser>
+              </costList>
+              <tradeTags>
+                <li>Exotic</li>
+              </tradeTags>
+              <verbs>
+                <li>
+                  <forcedMissRadius>1</forcedMissRadius>
+                  <verbClass>Verb_Shoot</verbClass>
+                  <hasStandardCommand>true</hasStandardCommand>
+                  <defaultProjectile>Bullet_USAmmoniaFert_Foam</defaultProjectile>
+                  <warmupTime>1.5</warmupTime>
+                  <range>4</range>
+                  <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                  <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                  </targetParams>
+                  <!--
+								<burstShotCount>2</burstShotCount>
+								<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+							-->
+                  <soundCast>DispensePaste</soundCast>
+                  <soundCastTail>GunTail_Light</soundCastTail>
+                  <muzzleFlashScale>1</muzzleFlashScale>
+                </li>
+              </verbs>
+              <tools>
+                <li>
+                  <label>stock</label>
+                  <capacities>
+                    <li>Blunt</li>
+                  </capacities>
+                  <power>2</power>
+                  <cooldownTime>1.8</cooldownTime>
+                </li>
+                <li>
+                  <label>barrel</label>
+                  <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                  </capacities>
+                  <power>2</power>
+                  <cooldownTime>2.5</cooldownTime>
+                </li>
+              </tools>
+              <comps>
+                <li Class="USToxins.CompProperties_USToxUses">
+                  <USToxUses>50</USToxUses>
+                </li>
+              </comps>
+              <thingClass>USToxins.USToxUsesData</thingClass>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="BaseBullet">
+              <defName>Bullet_USAmmoniaFert_Foam</defName>
+              <label>Ammonia Fertiliser Foam</label>
+              <graphicData>
+                <texPath>Things/Projectile/USAmmoniaFert_Spray</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>TransparentPostLight</shaderType>
+              </graphicData>
+              <thingClass>Projectile_Explosive</thingClass>
+              <projectile>
+                <damageDef>Dam_USAmmoniaFert</damageDef>
+                <!-- damage amount is the damage def default -->
+                <speed>30</speed>
+                <explosionRadius>3</explosionRadius>
+                <flyOverhead>false</flyOverhead>
+                <soundExplode>DispensePaste</soundExplode>
+                <postExplosionSpawnThingDef>Filth_USAmmoniaFertFoam</postExplosionSpawnThingDef>
+                <postExplosionSpawnChance>1</postExplosionSpawnChance>
+                <postExplosionSpawnThingCount>2</postExplosionSpawnThingCount>
+                <applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
+                <!-- <explosionEffect>ExtinguisherExplosion</explosionEffect> -->
+              </projectile>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="BuildingBase">
+              <defName>USNH4FertPopper</defName>
+              <label>Ammonia fertiliser popper</label>
+              <description>Can be triggered manually to release ammonia fertiliser in a wide area.</description>
+              <graphicData>
+                <texPath>Things/Building/Misc/USNH4FertPopper</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shadowData>
+                  <volume>(0.25, 0.35, 0.25)</volume>
+                  <offset>(0,0,-0.1)</offset>
+                </shadowData>
+                <damageData>
+                  <rect>(0.2,0.2,0.6,0.6)</rect>
+                </damageData>
+              </graphicData>
+              <comps>
+                <li Class="CompProperties_Explosive">
+                  <explosiveRadius>9.9</explosiveRadius>
+                  <explosiveDamageType>Dam_USAmmoniaFert</explosiveDamageType>
+                  <startWickHitPointsPercent>-1</startWickHitPointsPercent>
+                  <startWickOnDamageTaken>
+                    <li>Flame</li>
+                  </startWickOnDamageTaken>
+                  <postExplosionSpawnThingDef>Filth_USAmmoniaFertFoam</postExplosionSpawnThingDef>
+                  <postExplosionSpawnChance>1</postExplosionSpawnChance>
+                  <postExplosionSpawnThingCount>2</postExplosionSpawnThingCount>
+                  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                  <explosionEffect>ExtinguisherExplosion</explosionEffect>
+                </li>
+                <li Class="CompProperties_Usable">
+                  <useJob>TriggerFirefoamPopper</useJob>
+                  <useLabel>Trigger firefoam popper</useLabel>
+                </li>
+                <li Class="CompProperties_UseEffect">
+                  <compClass>CompUseEffect_StartWick</compClass>
+                </li>
+              </comps>
+              <tickerType>Normal</tickerType>
+              <altitudeLayer>Building</altitudeLayer>
+              <minifiedDef>MinifiedThing</minifiedDef>
+              <thingCategories>
+                <li>BuildingsMisc</li>
+              </thingCategories>
+              <statBases>
+                <MaxHitPoints>50</MaxHitPoints>
+                <WorkToBuild>1500</WorkToBuild>
+                <Mass>10</Mass>
+                <Flammability>1.0</Flammability>
+                <Beauty>-8</Beauty>
+              </statBases>
+              <fillPercent>0.30</fillPercent>
+              <costList>
+                <Steel>75</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <USAmmoniaFertiliser>25</USAmmoniaFertiliser>
+              </costList>
+              <specialDisplayRadius>9.9</specialDisplayRadius>
+              <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+              <pathCost>25</pathCost>
+              <designationCategory>Misc</designationCategory>
+              <rotatable>false</rotatable>
+              <designationHotKey>Misc7</designationHotKey>
+              <researchPrerequisites>
+                <li>Firefoam</li>
+                <li>USAmmoniaFert</li>
+              </researchPrerequisites>
+              <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+            </ThingDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Apothecary</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>Ammunition[1.1]</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationAddModExtension">
+            <xpath>/Defs/ThingDef[defName="Gun_USSprayer_AmmoniaFert"]</xpath>
+            <value>
+              <li Class="Ammunition.AmmoExtension">
+                <ammo>none</ammo>
+              </li>
+            </value>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+</Patch>

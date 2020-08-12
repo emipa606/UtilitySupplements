@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- <ThingDef ParentName="USBaseFilth">
+    		<defName>Filth_USTangleKillFoam</defName>
+    		<label>Tangle Killer Foam</label>
+		<thingClass>USToxins.USTangleKiller</thingClass>
+		<tickerType>Normal</tickerType>
+    		<statBases>
+      		<Beauty>-20</Beauty>
+      		<Cleanliness>-4</Cleanliness>
+    		</statBases>
+    		<graphicData>
+      		<texPath>Things/Filth/Spatter</texPath>
+      		<color>(117, 71, 23, 100)</color>
+    		</graphicData>
+    		<pathCost>5</pathCost>
+    		<filth>
+      		<rainWashes>false</rainWashes>
+      		<cleaningWorkToReduceThickness>120</cleaningWorkToReduceThickness>
+      		<canFilthAttach>true</canFilthAttach>
+      		<allowsFire>true</allowsFire>
+    		</filth>
+  </ThingDef> -->
+
+  <Gas_USTangleKill.label>Tangle Killer Gas</Gas_USTangleKill.label>
+
+
+  <!-- Liquid -->
+
+  <USTangleKillLiquid.label>Tangle Killer Liquid</USTangleKillLiquid.label>
+  <USTangleKillLiquid.description>A concentrated chemical of the Tangleroot. This particular liquid will release toxic gas.</USTangleKillLiquid.description>
+
+
+</LanguageData>

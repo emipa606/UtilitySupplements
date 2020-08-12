@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Plants -->
+  <USStinkroot.label>Stinkwurzel</USStinkroot.label>
+  <USStinkroot.description>Gewährt die Fähigkeit, die Stinkwurzel anzupflanzen.</USStinkroot.description>
+  <USTangleroot.label>Dornenranke</USTangleroot.label>
+  <USTangleroot.description>Gewährt die Fähigkeit, die Dornenranke anzupflanzen.</USTangleroot.description>
+  <!-- Generic -->
+  <USAcidGas.label>Säuregas</USAcidGas.label>
+  <USAcidGas.description>Gewährt die Fähigkeit, ein sehr aggressives und ätzendes Gas herzustellen.</USAcidGas.description>
+  <USFilthKill.label>Schmutzentferner</USFilthKill.label>
+  <USFilthKill.description>Gewährt die Fähigkeit, ein aktives Reinigungsmittel herzustellen.</USFilthKill.description>
+  <USAntifreeze.label>Frostschutzmittel</USAntifreeze.label>
+  <USAntifreeze.description>Gewährt die Fähigkeit, Frostschutzmittel herzustellen.</USAntifreeze.description>
+  <USInsectKill.label>Insektenvernicher</USInsectKill.label>
+  <USInsectKill.description>Gewährt die Fähigkeit, insektentötende Gifte herzustellen.</USInsectKill.description>
+  <USMindKill.label>Reizgas</USMindKill.label>
+  <USMindKill.description>Gewährt die Fähigkeit, ein Gas herzustellen, welches die Sinne beeinflusst.</USMindKill.description>
+  <USGlowers.label>Glühschaum</USGlowers.label>
+  <USGlowers.description>Gewährt die Fähigkeit, Lumineszenzgegenstände herzustellen.</USGlowers.description>
+  <!-- Stinkroot -->
+  <USPlantKill.label>Pflanzenentferner</USPlantKill.label>
+  <USPlantKill.description>Gewährt die Fähigkeit, pflanzentötende Gifte herzustellen.</USPlantKill.description>
+  <USTreeKill.label>Baumentferner</USTreeKill.label>
+  <USTreeKill.description>Gewährt die Fähigkeit, baumtötende Gifte herzustellen.</USTreeKill.description>
+  <USWeedKill.label>Grasentferner</USWeedKill.label>
+  <USWeedKill.description>Gewährt die Fähigkeit, grastötende Gifte herzustellen.</USWeedKill.description>
+  <USBlightKill.label>Unkrautentferner</USBlightKill.label>
+  <USBlightKill.description>Gewährt die Fähigkeit, unkrauttötende Gifte (Pflanzenseuche) herzustellen.</USBlightKill.description>
+  <!-- Tangleroot -->
+  <USTangleKill.label>Nervengas</USTangleKill.label>
+  <USTangleKill.description>Gewährt die Fähigkeit, ein Gas herzustellen, welches die Nerven angreift und bei einer hohen Dosis zum Tode führt.</USTangleKill.description>
+</LanguageData>

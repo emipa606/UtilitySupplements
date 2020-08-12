@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Bulk Recipe -->
+  <MakeBulkTangleThorn.label>Stelle Dornensaft in Massen her</MakeBulkTangleThorn.label>
+  <MakeBulkTangleThorn.description>Stelle 5 Dornensaft her.</MakeBulkTangleThorn.description>
+  <MakeBulkTangleThorn.jobString>Stellt Dornensaft her.</MakeBulkTangleThorn.jobString>
+</LanguageData>

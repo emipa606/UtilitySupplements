@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Liquid Recipe -->
+  <MakeUSTangleKillLiquid.label>制作混乱杀手药液</MakeUSTangleKillLiquid.label>
+  <MakeUSTangleKillLiquid.description>制作一份混乱杀手药液</MakeUSTangleKillLiquid.description>
+  <MakeUSTangleKillLiquid.jobString>正在制造药液.</MakeUSTangleKillLiquid.jobString>
+  <MakeBulkUSTangleKillLiquid.label>批量制作混乱杀手药液</MakeBulkUSTangleKillLiquid.label>
+  <MakeBulkUSTangleKillLiquid.description>制作五份混乱杀手药液</MakeBulkUSTangleKillLiquid.description>
+  <MakeBulkUSTangleKillLiquid.jobString>正在制造药液.</MakeBulkUSTangleKillLiquid.jobString>
+</LanguageData>

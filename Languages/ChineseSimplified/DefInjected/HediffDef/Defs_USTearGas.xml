@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Hediff -->
+  <HED_USTearGas.label>催泪瓦斯</HED_USTearGas.label>
+  <HED_USTearGas.stages.0.label>轻微</HED_USTearGas.stages.0.label>
+  <HED_USTearGas.stages.1.label>显著</HED_USTearGas.stages.1.label>
+  <HED_USTearGas.stages.2.label>严重</HED_USTearGas.stages.2.label>
+  <HED_USTearGas.stages.3.label>严重</HED_USTearGas.stages.3.label>
+</LanguageData>

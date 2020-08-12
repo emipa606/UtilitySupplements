@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USAntifreeze.label>Frostschutzmittel</Filth_USAntifreeze.label>
+  <!-- Liquid -->
+  <USAntifreeze.label>Frostschutzmittel</USAntifreeze.label>
+  <USAntifreeze.description>Diese Flüssigkeit kann zum Schmelzen von Schnee verwendet werden.</USAntifreeze.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_Antifreeze.label>Frostschutzmittel-Sprüher</Gun_USSprayer_Antifreeze.label>
+  <Gun_USSprayer_Antifreeze.description>Ein Sprühgerät, das Frostschutzmittel aufträgt. Die Flüssigkeit im Sprühgerät kann zum Schneeräumen verwendet werden.</Gun_USSprayer_Antifreeze.description>
+  <Gun_USSprayer_Antifreeze.tools.0.label>Griff</Gun_USSprayer_Antifreeze.tools.0.label>
+  <Gun_USSprayer_Antifreeze.tools.1.label>Lauf</Gun_USSprayer_Antifreeze.tools.1.label>
+  <Bullet_USAntifreeze.label>Frostschutzmittel</Bullet_USAntifreeze.label>
+</LanguageData>

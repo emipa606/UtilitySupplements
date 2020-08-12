@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USGlowFoam.label>荧光泡沫</Filth_USGlowFoam.label>
+  <Filth_USGlowStick.label>荧光棒</Filth_USGlowStick.label>
+  <!-- Liquid -->
+  <USGlowLiquid.label>荧光液</USGlowLiquid.label>
+  <USGlowLiquid.description>一种不稳定液体，暴露于空气中时会缓慢氧化并发出荧光.</USGlowLiquid.description>
+</LanguageData>

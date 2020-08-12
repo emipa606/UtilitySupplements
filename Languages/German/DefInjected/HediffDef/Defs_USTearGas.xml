@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Hediff -->
+  <HED_USTearGas.label>Tränengas</HED_USTearGas.label>
+  <HED_USTearGas.description>Tränengas-Effekt</HED_USTearGas.description>
+  <HED_USTearGas.stages.0.label>leicht</HED_USTearGas.stages.0.label>
+  <HED_USTearGas.stages.1.label>schwer</HED_USTearGas.stages.1.label>
+  <HED_USTearGas.stages.2.label>extrem</HED_USTearGas.stages.2.label>
+  <HED_USTearGas.stages.3.label>extrem</HED_USTearGas.stages.3.label>
+</LanguageData>

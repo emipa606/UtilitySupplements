@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Ammunition</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <!--  Grenades -->
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Weapon_USGrenade_InsectKill"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Weapon_USGrenade_MindKill"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Weapon_USGrenade_TangleKill"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Weapon_USGrenade_GlowStick"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Weapon_USGrenade_TearGas"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Weapon_USGrenade_TearGas"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+        <!--  Sprayers -->
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Gun_USSprayer_Antifreeze"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Gun_USSprayer_BlightKill"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Gun_USSprayer_FilthKill"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Gun_USSprayer_InsectKill"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Gun_USSprayer_PlantKill"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Gun_USSprayer_TreeKill"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName="Gun_USSprayer_WeedKill"]</xpath>
+          <value>
+            <li Class="Ammunition.AmmoExtension">
+              <ammo>none</ammo>
+            </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

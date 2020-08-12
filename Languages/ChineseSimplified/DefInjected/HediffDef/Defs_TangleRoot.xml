@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- hediff -->
+  <HED_USTangleRoot.label>混乱根作用</HED_USTangleRoot.label>
+  <HED_USTangleRoot.stages.0.label>轻微</HED_USTangleRoot.stages.0.label>
+  <HED_USTangleRoot.stages.1.label>显著</HED_USTangleRoot.stages.1.label>
+  <HED_USTangleRoot.stages.2.label>较重</HED_USTangleRoot.stages.2.label>
+  <HED_USTangleRoot.stages.3.label>严重</HED_USTangleRoot.stages.3.label>
+</LanguageData>

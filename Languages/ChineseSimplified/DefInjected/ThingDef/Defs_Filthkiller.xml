@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USFilthKillFoam.label>除垢剂</Filth_USFilthKillFoam.label>
+  <!-- Liquid -->
+  <USFilthKillLiquid.label>除垢液</USFilthKillLiquid.label>
+  <USFilthKillLiquid.description>一种强力的活性除垢剂，能够去除各种类型的污渍.</USFilthKillLiquid.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_FilthKill.label>除垢喷雾</Gun_USSprayer_FilthKill.label>
+  <Gun_USSprayer_FilthKill.description>施用除垢剂的喷雾器，喷出的药液能去除各种类型的污渍.</Gun_USSprayer_FilthKill.description>
+  <Gun_USSprayer_FilthKill.tools.0.label>剩余</Gun_USSprayer_FilthKill.tools.0.label>
+  <Gun_USSprayer_FilthKill.tools.1.label>装入桶中</Gun_USSprayer_FilthKill.tools.1.label>
+  <Bullet_USFilthKill_Foam.label>除垢剂</Bullet_USFilthKill_Foam.label>
+</LanguageData>

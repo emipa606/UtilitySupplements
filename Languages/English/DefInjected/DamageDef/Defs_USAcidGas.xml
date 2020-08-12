@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Acid Gas Damage -->
+
+  <Dam_USAcidGas.label>Acid Gas</Dam_USAcidGas.label>
+  <Dam_USAcidGas.deathMessage>{0} has burned to death.</Dam_USAcidGas.deathMessage>
+
+
+</LanguageData>

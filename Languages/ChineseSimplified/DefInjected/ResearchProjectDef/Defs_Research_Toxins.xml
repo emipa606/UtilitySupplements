@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Plants -->
+  <USStinkroot.label>恶臭根</USStinkroot.label>
+  <USStinkroot.description>使你掌握如何种植恶臭根.</USStinkroot.description>
+  <USTangleroot.label>混乱根</USTangleroot.label>
+  <USTangleroot.description>使你掌握如何种植混乱根.</USTangleroot.description>
+  <!-- Generic -->
+  <USFilthKill.label>除垢剂</USFilthKill.label>
+  <USFilthKill.description>使你掌握如何制造除垢剂.</USFilthKill.description>
+  <USInsectKill.label>杀虫剂</USInsectKill.label>
+  <USInsectKill.description>使你掌握如何制造杀虫剂.</USInsectKill.description>
+  <USMindKill.label>神经毒剂</USMindKill.label>
+  <USMindKill.description>使你掌握如何制造神经毒剂.</USMindKill.description>
+  <USGlowers.label>荧光液</USGlowers.label>
+  <USGlowers.description>使你掌握如何制造荧光物.</USGlowers.description>
+  <!-- Stinkroot -->
+  <USPlantKill.label>百草枯</USPlantKill.label>
+  <USPlantKill.description>使你掌握如何制造百草枯.</USPlantKill.description>
+  <USTreeKill.label>百树枯</USTreeKill.label>
+  <USTreeKill.description>使你掌握如何制造百树枯.</USTreeKill.description>
+  <USWeedKill.label>除草剂</USWeedKill.label>
+  <USWeedKill.description>使你掌握如何制造除草剂.</USWeedKill.description>
+  <USBlightKill.label>灭枯灵</USBlightKill.label>
+  <USBlightKill.description>使你掌握如何制造灭枯灵，一种应对枯萎病的药剂.</USBlightKill.description>
+  <!-- Tangleroot -->
+  <USTangleKill.label>混乱杀手药液</USTangleKill.label>
+  <USTangleKill.description>使你掌握如何制造混乱根毒剂.</USTangleKill.description>
+</LanguageData>

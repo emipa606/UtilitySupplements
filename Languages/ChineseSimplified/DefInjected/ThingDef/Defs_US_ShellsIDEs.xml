@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Blight Killer -->
+  <Shell_USBlightFoam.label>灭枯灵弹</Shell_USBlightFoam.label>
+  <Shell_USBlightFoam.description>一个装满了压缩能杀死枯萎病的化学合剂的迫击炮弹.可以从迫击炮处发射或者做成陷阱。受到伤害时爆炸。</Shell_USBlightFoam.description>
+  <Bullet_Shell_USBlightFoam.label>灭枯灵弹</Bullet_Shell_USBlightFoam.label>
+  <!-- Filth Killer -->
+  <Shell_USFilthFoam.label>除垢剂弹</Shell_USFilthFoam.label>
+  <Shell_USFilthFoam.description>装满了活性除垢剂的迫击炮弹.可以从迫击炮处发射或者做成陷阱。受到伤害时爆炸。</Shell_USFilthFoam.description>
+  <Bullet_Shell_USFilthFoam.label>除垢剂弹</Bullet_Shell_USFilthFoam.label>
+  <!-- 杀虫 -->
+  <Shell_USInsectFoam.label>杀虫弹</Shell_USInsectFoam.label>
+  <Shell_USInsectFoam.description>一个装满了压缩杀虫泡沫的迫击炮弹，可以从迫击炮处发射或者做成陷阱。受到伤害时爆炸。</Shell_USInsectFoam.description>
+  <Bullet_Shell_USInsectFoam.label>杀虫弹</Bullet_Shell_USInsectFoam.label>
+  <TrapIED_USInsectfoam.label>简易杀虫陷阱</TrapIED_USInsectfoam.label>
+  <TrapIED_USInsectfoam.description>由杀虫弹和压感触发器组成的陷阱. 因为它需要隐藏于环境中, 不能把它和其他陷阱放得太近. 动物在未发狂时能避开它.</TrapIED_USInsectfoam.description>
+  <TrapIED_USInsectfoam_Blueprint.label>简易杀虫陷阱 (蓝图)</TrapIED_USInsectfoam_Blueprint.label>
+  <TrapIED_USInsectfoam_Blueprint_Install.label>简易杀虫陷阱 (蓝图)</TrapIED_USInsectfoam_Blueprint_Install.label>
+  <TrapIED_USInsectfoam_Frame.label>简易杀虫陷阱 (建造中)</TrapIED_USInsectfoam_Frame.label>
+  <TrapIED_USInsectfoam_Frame.description>由杀虫弹和压感触发器组成的陷阱. 因为它需要隐藏于环境中, 不能把它和其他陷阱放得太近. 动物在未发狂时能避开它.</TrapIED_USInsectfoam_Frame.description>
+  <!-- Plant Killer -->
+  <Shell_USPlantFoam.label>百草枯弹</Shell_USPlantFoam.label>
+  <Shell_USPlantFoam.description>一个装满了压缩百草枯泡沫的迫击炮弹，可以从迫击炮处发射或者做成陷阱。受到伤害时爆炸。</Shell_USPlantFoam.description>
+  <Bullet_Shell_USPlantFoam.label>百草枯弹</Bullet_Shell_USPlantFoam.label>
+  <!-- Tree Killer -->
+  <Shell_USTreeFoam.label>百树枯弹</Shell_USTreeFoam.label>
+  <Shell_USTreeFoam.description>一个装满了压缩百树枯泡沫的迫击炮弹，可以从迫击炮处发射或者做成陷阱。受到伤害时爆炸。</Shell_USTreeFoam.description>
+  <Bullet_Shell_USTreeFoam.label>百树枯弹</Bullet_Shell_USTreeFoam.label>
+  <!-- Weed Killer -->
+  <Shell_USWeedFoam.label>除草灵弹</Shell_USWeedFoam.label>
+  <Shell_USWeedFoam.description>一个装满了压缩除草剂泡沫的迫击炮弹，可以从迫击炮处发射或者做成陷阱。受到伤害时爆炸。</Shell_USWeedFoam.description>
+  <Bullet_Shell_USWeedFoam.label>除草灵弹</Bullet_Shell_USWeedFoam.label>
+  <!-- 心灵杀手 -->
+  <Shell_USMindGas.label>心灵杀手弹</Shell_USMindGas.label>
+  <Shell_USMindGas.description>一个装满了压缩心灵杀手合剂.可以从迫击炮处发射或者做成陷阱。受到伤害时爆炸。</Shell_USMindGas.description>
+  <Bullet_Shell_USMindGas.label>心灵杀手弹</Bullet_Shell_USMindGas.label>
+  <TrapIED_USMindGas.label>简易心灵杀手陷阱</TrapIED_USMindGas.label>
+  <TrapIED_USMindGas.description>由心灵杀手弹和压感触发器组成的陷阱. 因为它需要隐藏于环境中, 不能把它和其他陷阱放得太近. 动物在未发狂时能避开它.</TrapIED_USMindGas.description>
+  <TrapIED_USMindGas_Blueprint.label>简易心灵杀手陷阱 (蓝图)</TrapIED_USMindGas_Blueprint.label>
+  <TrapIED_USMindGas_Blueprint_Install.label>简易心灵杀手陷阱 (蓝图)</TrapIED_USMindGas_Blueprint_Install.label>
+  <TrapIED_USMindGas_Frame.label>简易心灵杀手陷阱 (建造中)</TrapIED_USMindGas_Frame.label>
+  <TrapIED_USMindGas_Frame.description>由心灵杀手弹和压感触发器组成的陷阱. 因为它需要隐藏于环境中, 不能把它和其他陷阱放得太近. 动物在未发狂时能避开它.</TrapIED_USMindGas_Frame.description>
+  <!-- 混乱杀手-->
+  <Shell_USTangleGas.label>混乱杀手弹</Shell_USTangleGas.label>
+  <Shell_USTangleGas.description>一个装满了压缩混乱杀手合剂.可以从迫击炮处发射或者做成陷阱。受到伤害时爆炸。</Shell_USTangleGas.description>
+  <Bullet_Shell_USTangleGas.label>混乱杀手弹</Bullet_Shell_USTangleGas.label>
+  <TrapIED_USTangleGas.label>简易混乱杀手陷阱</TrapIED_USTangleGas.label>
+  <TrapIED_USTangleGas.description>由混乱杀手弹和压感触发器组成的陷阱. 因为它需要隐藏于环境中, 不能把它和其他陷阱放得太近. 动物在未发狂时能避开它.</TrapIED_USTangleGas.description>
+  <TrapIED_USTangleGas_Blueprint.label>简易混乱杀手陷阱 (蓝图)</TrapIED_USTangleGas_Blueprint.label>
+  <TrapIED_USTangleGas_Blueprint_Install.label>简易混乱杀手陷阱 (蓝图)</TrapIED_USTangleGas_Blueprint_Install.label>
+  <TrapIED_USTangleGas_Frame.label>简易混乱杀手陷阱 (建造中)</TrapIED_USTangleGas_Frame.label>
+  <TrapIED_USTangleGas_Frame.description>由混乱杀手弹和压感触发器组成的陷阱. 和压感触发器组成的陷阱. 因为它需要隐藏于环境中, 不能把它和其他陷阱放得太近. 动物在未发狂时能避开它.</TrapIED_USTangleGas_Frame.description>
+  <!-- Glower -->
+  <Shell_USGlowFoam.label>荧光弹，</Shell_USGlowFoam.label>
+  <Shell_USGlowFoam.description>一个装满了压缩荧光剂的迫击炮弹.可以从迫击炮处发射或者做成陷阱。受到伤害时爆炸。</Shell_USGlowFoam.description>
+  <Bullet_Shell_USGlowFoam.label>荧光弹</Bullet_Shell_USGlowFoam.label>
+  <TrapIED_USGlowFoam.label>简易荧光陷阱</TrapIED_USGlowFoam.label>
+  <TrapIED_USGlowFoam.description>由荧光弹和压感触发器组成的陷阱. 因为它需要隐藏于环境中, 不能把它和其他陷阱放得太近. 动物在未发狂时能避开它.</TrapIED_USGlowFoam.description>
+  <TrapIED_USGlowFoam_Blueprint.label>简易荧光陷阱(蓝图)</TrapIED_USGlowFoam_Blueprint.label>
+  <TrapIED_USGlowFoam_Blueprint_Install.label>简易荧光陷阱(蓝图)</TrapIED_USGlowFoam_Blueprint_Install.label>
+  <TrapIED_USGlowFoam_Frame.label>简易荧光陷阱(建造中)</TrapIED_USGlowFoam_Frame.label>
+  <TrapIED_USGlowFoam_Frame.description>由荧光弹和压感触发器组成的陷阱. 因为它需要隐藏于环境中, 不能把它和其他陷阱放得太近. 动物在未发狂时能避开它.</TrapIED_USGlowFoam_Frame.description>
+</LanguageData>

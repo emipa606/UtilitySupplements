@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Damage -->
+
+  <Dam_USFilthKill.label>Filth Killer</Dam_USFilthKill.label>
+  <Dam_USFilthKill.deathMessage>{0} has been killed.</Dam_USFilthKill.deathMessage>
+
+
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Plant -->
+  <Plant_USTangleroot.label>混乱根</Plant_USTangleroot.label>
+  <Plant_USTangleroot.description>一种基因改造过的灌木，有着剃刀般锋利的棘刺.</Plant_USTangleroot.description>
+  <!-- Thorns -->
+  <USTanglerootThorns.label>混乱棘刺</USTanglerootThorns.label>
+  <USTanglerootThorns.description>从混乱根植株上采下的棘刺.这些刺非常锋利，而且含有许多种强力生物碱.</USTanglerootThorns.description>
+  <!-- Gas -->
+  <Gas_USTangleroot.label>混乱根气体</Gas_USTangleroot.label>
+</LanguageData>

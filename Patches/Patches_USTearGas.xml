@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Social Supplements</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ResearchProjectDef>
+              <defName>USTearGas</defName>
+              <label>Tear Gas Toxins</label>
+              <description>Grants the ability to make tear gas toxins.</description>
+              <baseCost>500</baseCost>
+              <techLevel>Industrial</techLevel>
+              <prerequisites>
+                <li>MSPhenol</li>
+              </prerequisites>
+              <tab>UtilitySuppTab</tab>
+            </ResearchProjectDef>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Weapon_USGrenade_TearGas"]/recipeMaker</xpath>
+          <value>
+            <recipeMaker>
+              <researchPrerequisite>USTearGas</researchPrerequisite>
+              <skillRequirements>
+                <Crafting>6</Crafting>
+              </skillRequirements>
+              <recipeUsers>
+                <li>TableMachining</li>
+              </recipeUsers>
+            </recipeMaker>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Weapon_USGrenade_TearGas"]/costList</xpath>
+          <value>
+            <costList>
+              <Chemfuel>10</Chemfuel>
+              <Steel>10</Steel>
+              <ComponentIndustrial>1</ComponentIndustrial>
+              <MSPhenol>5</MSPhenol>
+              <SSHotSauce>10</SSHotSauce>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Weapon_USGrenade_TearGas"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites Inherit="false">
+              <li>USTearGas</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Shell_USTearGas"]/costList</xpath>
+          <value>
+            <costList>
+              <Steel>10</Steel>
+              <Chemfuel>5</Chemfuel>
+              <MSPhenol>5</MSPhenol>
+              <SSHotSauce>3</SSHotSauce>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Shell_USTearGas"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites Inherit="false">
+              <li>Mortars</li>
+              <li>USTearGas</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <RecipeDef>
+              <defName>MakeBulkUSTearGasShell</defName>
+              <label>Make tear gas shells in bulk</label>
+              <description>Make 4 tear gas shells</description>
+              <jobString>Making tear gas shells.</jobString>
+              <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+              <effectWorking>Smith</effectWorking>
+              <soundWorking>Recipe_Machining</soundWorking>
+              <workSkill>Crafting</workSkill>
+              <allowMixingIngredients>true</allowMixingIngredients>
+              <workAmount>3200</workAmount>
+              <targetCountAdjustment>4</targetCountAdjustment>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Steel</li>
+                    </thingDefs>
+                  </filter>
+                  <count>40</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Chemfuel</li>
+                    </thingDefs>
+                  </filter>
+                  <count>20</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>MSPhenol</li>
+                      <li>MSSulphuricAcid</li>
+                      <li>MSHydrochloricAcid</li>
+                    </thingDefs>
+                  </filter>
+                  <count>20</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>SSHotSauce</li>
+                    </thingDefs>
+                  </filter>
+                  <count>12</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>Steel</li>
+                  <li>Chemfuel</li>
+                  <li>MSPhenol</li>
+                  <li>MSSulphuricAcid</li>
+                  <li>MSHydrochloricAcid</li>
+                  <li>SSHotSauce</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <products>
+                <Shell_USTearGas>4</Shell_USTearGas>
+              </products>
+              <recipeUsers>
+                <li>TableMachining</li>
+              </recipeUsers>
+              <skillRequirements>
+                <Crafting>5</Crafting>
+              </skillRequirements>
+              <researchPrerequisite>USTearGas</researchPrerequisite>
+            </RecipeDef>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="TrapIED_USTearGas"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites Inherit="false">
+              <li>IEDs</li>
+              <li>USTearGas</li>
+            </researchPrerequisites>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

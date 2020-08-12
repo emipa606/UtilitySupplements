@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Damage -->
+
+  <Dam_USAntifreeze.label>Antifreeze</Dam_USAntifreeze.label>
+  <Dam_USAntifreeze.deathMessage>{0} has been killed.</Dam_USAntifreeze.deathMessage>
+
+
+</LanguageData>

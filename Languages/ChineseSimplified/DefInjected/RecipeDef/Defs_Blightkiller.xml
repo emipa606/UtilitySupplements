@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Liquid Recipe -->
+  <MakeUSBlightKillLiquid.label>制作灭枯灵药液</MakeUSBlightKillLiquid.label>
+  <MakeUSBlightKillLiquid.description>制作一份灭枯灵药液</MakeUSBlightKillLiquid.description>
+  <MakeUSBlightKillLiquid.jobString>正在制造药液.</MakeUSBlightKillLiquid.jobString>
+  <MakeBulkUSBlightKillLiquid.label>批量制作灭枯灵药液</MakeBulkUSBlightKillLiquid.label>
+  <MakeBulkUSBlightKillLiquid.description>制作五份灭枯灵药液</MakeBulkUSBlightKillLiquid.description>
+  <MakeBulkUSBlightKillLiquid.jobString>正在制造药液.</MakeBulkUSBlightKillLiquid.jobString>
+</LanguageData>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Liquid Recipe -->
+  <MakeUSAntifreeze.label>制造融雪弹</MakeUSAntifreeze.label>
+  <MakeUSAntifreeze.description>制造1枚融雪弹</MakeUSAntifreeze.description>
+  <MakeUSAntifreeze.jobString>正在制造融雪弹.</MakeUSAntifreeze.jobString>
+  <MakeBulkUSAntifreeze.label>批量制造融雪弹</MakeBulkUSAntifreeze.label>
+  <MakeBulkUSAntifreeze.description>制造5枚融雪弹</MakeBulkUSAntifreeze.description>
+  <MakeBulkUSAntifreeze.jobString>正在制造融雪弹.</MakeBulkUSAntifreeze.jobString>
+</LanguageData>

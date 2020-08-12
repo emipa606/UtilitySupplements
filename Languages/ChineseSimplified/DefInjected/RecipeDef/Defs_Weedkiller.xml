@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Liquid Recipe -->
+  <MakeUSWeedKillLiquid.label>制作百草枯药液</MakeUSWeedKillLiquid.label>
+  <MakeUSWeedKillLiquid.description>制作一份百草枯药液</MakeUSWeedKillLiquid.description>
+  <MakeUSWeedKillLiquid.jobString>正在制造药液.</MakeUSWeedKillLiquid.jobString>
+  <MakeBulkUSWeedKillLiquid.label>批量制作百草枯药液</MakeBulkUSWeedKillLiquid.label>
+  <MakeBulkUSWeedKillLiquid.description>制作五份百草枯药液</MakeBulkUSWeedKillLiquid.description>
+  <MakeBulkUSWeedKillLiquid.jobString>正在制造药液.</MakeBulkUSWeedKillLiquid.jobString>
+</LanguageData>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Liquid Recipe -->
+  <MakeUSTreeKillLiquid.label>制作百树枯药液</MakeUSTreeKillLiquid.label>
+  <MakeUSTreeKillLiquid.description>制作一份百树枯药液</MakeUSTreeKillLiquid.description>
+  <MakeUSTreeKillLiquid.jobString>正在制造药液.</MakeUSTreeKillLiquid.jobString>
+  <MakeBulkUSTreeKillLiquid.label>批量制作百树枯药液</MakeBulkUSTreeKillLiquid.label>
+  <MakeBulkUSTreeKillLiquid.description>制作五份百树枯药液</MakeBulkUSTreeKillLiquid.description>
+  <MakeBulkUSTreeKillLiquid.jobString>正在制造药液.</MakeBulkUSTreeKillLiquid.jobString>
+</LanguageData>

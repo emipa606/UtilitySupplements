@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Blight Killer -->
+  <MakeBulkUSBlightKillShell.label>批量制作灭枯灵弹</MakeBulkUSBlightKillShell.label>
+  <MakeBulkUSBlightKillShell.description>制作4枚灭枯灵弹</MakeBulkUSBlightKillShell.description>
+  <MakeBulkUSBlightKillShell.jobString>正在制造灭枯灵弹.</MakeBulkUSBlightKillShell.jobString>
+  <!-- Filth Killer -->
+  <MakeBulkUSFilthKillShell.label>批量制作除垢弹</MakeBulkUSFilthKillShell.label>
+  <MakeBulkUSFilthKillShell.description>制作4枚除垢弹</MakeBulkUSFilthKillShell.description>
+  <MakeBulkUSFilthKillShell.jobString>正在制造除垢弹.</MakeBulkUSFilthKillShell.jobString>
+  <!-- Insect Killer -->
+  <MakeBulkUSInsectKillShell.label>批量制作杀虫弹</MakeBulkUSInsectKillShell.label>
+  <MakeBulkUSInsectKillShell.description>制作4枚杀虫弹</MakeBulkUSInsectKillShell.description>
+  <MakeBulkUSInsectKillShell.jobString>正在制造杀虫弹.</MakeBulkUSInsectKillShell.jobString>
+  <!-- Plant Killer -->
+  <MakeBulkUSPlantKillShell.label>批量制作百草枯弹</MakeBulkUSPlantKillShell.label>
+  <MakeBulkUSPlantKillShell.description>制作4枚百草枯弹</MakeBulkUSPlantKillShell.description>
+  <MakeBulkUSPlantKillShell.jobString>正在制造百草枯弹.</MakeBulkUSPlantKillShell.jobString>
+  <!-- Tree Killer -->
+  <MakeBulkUSTreeKillShell.label>批量制作百树枯弹</MakeBulkUSTreeKillShell.label>
+  <MakeBulkUSTreeKillShell.description>制作4枚百树枯弹</MakeBulkUSTreeKillShell.description>
+  <MakeBulkUSTreeKillShell.jobString>正在制造百树枯弹.</MakeBulkUSTreeKillShell.jobString>
+  <!-- Weed Killer -->
+  <MakeBulkUSWeedKillShell.label>批量制作除草弹</MakeBulkUSWeedKillShell.label>
+  <MakeBulkUSWeedKillShell.description>制作4枚除草弹</MakeBulkUSWeedKillShell.description>
+  <MakeBulkUSWeedKillShell.jobString>正在制造除草弹.</MakeBulkUSWeedKillShell.jobString>
+  <!-- Mind Killer -->
+  <MakeBulkUSMindKillShell.label>批量制作心灵杀手弹</MakeBulkUSMindKillShell.label>
+  <MakeBulkUSMindKillShell.description>制作4枚心灵杀手弹</MakeBulkUSMindKillShell.description>
+  <MakeBulkUSMindKillShell.jobString>正在制造心灵杀手弹.</MakeBulkUSMindKillShell.jobString>
+  <!-- Tangle Killer -->
+  <MakeBulkUSTangleKillShell.label>批量制作混乱杀手弹</MakeBulkUSTangleKillShell.label>
+  <MakeBulkUSTangleKillShell.description>制作4枚混乱杀手弹</MakeBulkUSTangleKillShell.description>
+  <MakeBulkUSTangleKillShell.jobString>正在制造混乱杀手弹.</MakeBulkUSTangleKillShell.jobString>
+  <!-- Glower -->
+  <MakeBulkUSGlowFoamShell.label>批量制作荧光弹</MakeBulkUSGlowFoamShell.label>
+  <MakeBulkUSGlowFoamShell.description>制作4枚荧光弹</MakeBulkUSGlowFoamShell.description>
+  <MakeBulkUSGlowFoamShell.jobString>正在制造荧光弹.</MakeBulkUSGlowFoamShell.jobString>
+</LanguageData>

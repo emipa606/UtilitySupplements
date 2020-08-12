@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Liquid Recipe -->
+  <MakeUSInsectKillLiquid.label>制作杀虫药液</MakeUSInsectKillLiquid.label>
+  <MakeUSInsectKillLiquid.description>制作一份杀虫药液</MakeUSInsectKillLiquid.description>
+  <MakeUSInsectKillLiquid.jobString>正在制造药液.</MakeUSInsectKillLiquid.jobString>
+  <MakeBulkUSInsectKillLiquid.label>批量制作杀虫药液</MakeBulkUSInsectKillLiquid.label>
+  <MakeBulkUSInsectKillLiquid.description>制作五份杀虫药液</MakeBulkUSInsectKillLiquid.description>
+  <MakeBulkUSInsectKillLiquid.jobString>正在制造药液.</MakeBulkUSInsectKillLiquid.jobString>
+</LanguageData>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USWeedKillFoam.label>Grasentferner</Filth_USWeedKillFoam.label>
+  <!-- Liquid -->
+  <USWeedKillLiquid.label>Grasentferner</USWeedKillLiquid.label>
+  <USWeedKillLiquid.description>Eine giftige Chemikalie. Diese besondere Flüssigkeit hat Eigenschaften, die sie für alle lebenden Gräser giftig macht.</USWeedKillLiquid.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_WeedKill.label>Grasentferner-Sprüher</Gun_USSprayer_WeedKill.label>
+  <Gun_USSprayer_WeedKill.description>Ein Sprühgerät, das giftige Chemikalien aufträgt. Das mit diesem Sprühgerät verbundene Toxin tötet alle lebenden Gräser ab.</Gun_USSprayer_WeedKill.description>
+  <Gun_USSprayer_WeedKill.tools.0.label>Griff</Gun_USSprayer_WeedKill.tools.0.label>
+  <Gun_USSprayer_WeedKill.tools.1.label>Lauf</Gun_USSprayer_WeedKill.tools.1.label>
+  <Bullet_USWeedKill_Foam.label>Grasentferner</Bullet_USWeedKill_Foam.label>
+</LanguageData>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USBlightKill.label>灭枯灵</Dam_USBlightKill.label>
+  <Dam_USBlightKill.deathMessage>{0}已经被杀死.</Dam_USBlightKill.deathMessage>
+</LanguageData>

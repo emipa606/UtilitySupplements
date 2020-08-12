@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USWeedKill.label>百草枯</Dam_USWeedKill.label>
+  <Dam_USWeedKill.deathMessage>{0}已经被杀死.</Dam_USWeedKill.deathMessage>
+</LanguageData>

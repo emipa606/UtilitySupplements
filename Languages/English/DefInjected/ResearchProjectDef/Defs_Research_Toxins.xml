@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Plants -->
+
+  <USStinkroot.label>Stinkroot</USStinkroot.label>
+  <USStinkroot.description>Grants the ability to plant the stinkroot flower.</USStinkroot.description>
+
+  <USTangleroot.label>Tangleroot</USTangleroot.label>
+  <USTangleroot.description>Grants the ability to plant the tangleroot vine.</USTangleroot.description>
+
+
+  <!-- Generic -->
+
+  <USAcidGas.label>Acid Gas</USAcidGas.label>
+  <USAcidGas.description>Grants the ability to make acid gas.</USAcidGas.description>
+
+  <USFilthKill.label>Detergant</USFilthKill.label>
+  <USFilthKill.description>Grants the ability to make active detergant.</USFilthKill.description>
+
+  <USAntifreeze.label>Antifreeze</USAntifreeze.label>
+  <USAntifreeze.description>Grants the ability to make antifreeze.</USAntifreeze.description>
+
+  <USInsectKill.label>Insect Killer Toxins</USInsectKill.label>
+  <USInsectKill.description>Grants the ability to make insect killing toxins.</USInsectKill.description>
+
+  <USMindKill.label>Mind Killer Toxins</USMindKill.label>
+  <USMindKill.description>Grants the ability to make mind effecting toxins.</USMindKill.description>
+
+  <USGlowers.label>Glowers</USGlowers.label>
+  <USGlowers.description>Grants the ability to make luminescent items.</USGlowers.description>
+
+
+  <!-- Stinkroot -->
+
+  <USPlantKill.label>Plant Killer Toxins</USPlantKill.label>
+  <USPlantKill.description>Grants the ability to make plant killing toxins.</USPlantKill.description>
+
+  <USTreeKill.label>Tree Killer Toxins</USTreeKill.label>
+  <USTreeKill.description>Grants the ability to make tree killing toxins.</USTreeKill.description>
+
+  <USWeedKill.label>Weed Killer Toxins</USWeedKill.label>
+  <USWeedKill.description>Grants the ability to make weed killing toxins.</USWeedKill.description>
+
+  <USBlightKill.label>Blight Killer Toxins</USBlightKill.label>
+  <USBlightKill.description>Grants the ability to make blight killing toxins.</USBlightKill.description>
+
+
+  <!-- Tangleroot -->
+
+  <USTangleKill.label>Tangle Killer Toxins</USTangleKill.label>
+  <USTangleKill.description>Grants the ability to make tangleroot toxins.</USTangleKill.description>
+
+
+</LanguageData>

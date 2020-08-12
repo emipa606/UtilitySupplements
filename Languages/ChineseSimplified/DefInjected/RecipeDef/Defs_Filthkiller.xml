@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Liquid Recipe -->
+  <MakeUSFilthKillLiquid.label>制作除垢药液</MakeUSFilthKillLiquid.label>
+  <MakeUSFilthKillLiquid.description>制作一份除垢药液</MakeUSFilthKillLiquid.description>
+  <MakeUSFilthKillLiquid.jobString>正在制造detergant.</MakeUSFilthKillLiquid.jobString>
+  <MakeBulkUSFilthKillLiquid.label>批量制作除垢药液</MakeBulkUSFilthKillLiquid.label>
+  <MakeBulkUSFilthKillLiquid.description>制作五份除垢药液</MakeBulkUSFilthKillLiquid.description>
+  <MakeBulkUSFilthKillLiquid.jobString>正在制造除垢剂.</MakeBulkUSFilthKillLiquid.jobString>
+</LanguageData>

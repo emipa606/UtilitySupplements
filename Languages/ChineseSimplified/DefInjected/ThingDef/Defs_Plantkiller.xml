@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USPlantKillFoam.label>百草枯泡沫</Filth_USPlantKillFoam.label>
+  <!-- Liquid -->
+  <USPlantKillLiquid.label>百草枯药液</USPlantKillLiquid.label>
+  <USPlantKillLiquid.description>一种有毒的化学物质，这种液体会杀死所有的植物.</USPlantKillLiquid.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_PlantKill.label>百草枯喷雾</Gun_USSprayer_PlantKill.label>
+  <Gun_USSprayer_PlantKill.description>施用有毒物质的喷雾器，内含的药液会杀死所有的植物.</Gun_USSprayer_PlantKill.description>
+  <Gun_USSprayer_PlantKill.tools.0.label>剩余</Gun_USSprayer_PlantKill.tools.0.label>
+  <Gun_USSprayer_PlantKill.tools.1.label>装入桶中</Gun_USSprayer_PlantKill.tools.1.label>
+  <Bullet_USPlantKill_Foam.label>百草枯泡沫</Bullet_USPlantKill_Foam.label>
+</LanguageData>
