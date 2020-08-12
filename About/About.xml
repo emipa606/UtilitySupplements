@@ -95,6 +95,8 @@ Remote Tech - Some of the IDEs become available for use when this mod is loaded.
 RimPlas - Sprayers will use RimPlas instead of Steel in their ingredients.
 Seeds Please - Adds patch support to generate seeds for plants used in this mod.
 
+Drug Policy Fix https://steamcommunity.com/sharedfiles/filedetails/?id=2195390245 ; can be used to help manage and correct drugs added or removed part way through a save game. It will also sort the drug listings alphabetically.
+
 Muliplayer support (beta).
 
 (Includes custom harmony C# override process to apply only this mods filth to any fertile terrain).
