@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Tanglethorn Juice -->
+  <USTangleThornJuice.label>Dornenrankensaft</USTangleThornJuice.label>
+  <USTangleThornJuice.description>Eine ziemlich starke und unangenehme Tinktur zur Verhinderung von Krankheiten. Wird alle 7 Tage eingenommen.</USTangleThornJuice.description>
+  <USTangleThornJuice.ingestible.ingestCommandString>Trinke {0}</USTangleThornJuice.ingestible.ingestCommandString>
+  <USTangleThornJuice.ingestible.ingestReportString>Trinkt {0}.</USTangleThornJuice.ingestible.ingestReportString>
+</LanguageData>

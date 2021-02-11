@@ -9,6 +9,8 @@
   <USAcidBurn.injuryProps.destroyedLabel>Verätzung (Säure)</USAcidBurn.injuryProps.destroyedLabel>
   <USAcidBurn.injuryProps.destroyedOutLabel>Verätzung (Säure)</USAcidBurn.injuryProps.destroyedOutLabel>
   <USAcidBurn.labelNoun>Eine Verätzung</USAcidBurn.labelNoun>
+  <USAcidBurn.comps.HediffComp_GetsPermanent.permanentLabel>Verätzungsnarbe</USAcidBurn.comps.HediffComp_GetsPermanent.permanentLabel>
+  <USAcidBurn.labelNounPretty>{0} am {1}</USAcidBurn.labelNounPretty>
   <!-- Hediff -->
   <HED_USAcidGas.label>Säuregas-Effekt</HED_USAcidGas.label>
   <HED_USAcidGas.description>Säuregas-Effekt</HED_USAcidGas.description>

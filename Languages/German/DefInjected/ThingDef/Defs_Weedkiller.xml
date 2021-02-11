@@ -11,4 +11,5 @@
   <Gun_USSprayer_WeedKill.tools.0.label>Griff</Gun_USSprayer_WeedKill.tools.0.label>
   <Gun_USSprayer_WeedKill.tools.1.label>Lauf</Gun_USSprayer_WeedKill.tools.1.label>
   <Bullet_USWeedKill_Foam.label>Grasentferner</Bullet_USWeedKill_Foam.label>
+  <Gun_USSprayer_WeedKill.verbs.Verb_Shoot.label>Grasentferner-Sprüher</Gun_USSprayer_WeedKill.verbs.Verb_Shoot.label>
 </LanguageData>

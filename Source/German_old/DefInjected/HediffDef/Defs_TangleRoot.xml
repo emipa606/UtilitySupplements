@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- hediff -->
+  <HED_USTangleRoot.label>Nervengas</HED_USTangleRoot.label>
+  <HED_USTangleRoot.description>Nervengas-Effekt</HED_USTangleRoot.description>
+  <HED_USTangleRoot.stages.0.label>leicht</HED_USTangleRoot.stages.0.label>
+  <HED_USTangleRoot.stages.1.label>mittel</HED_USTangleRoot.stages.1.label>
+  <HED_USTangleRoot.stages.2.label>schwer</HED_USTangleRoot.stages.2.label>
+  <HED_USTangleRoot.stages.3.label>extrem</HED_USTangleRoot.stages.3.label>
+</LanguageData>

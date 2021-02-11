@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USMindKill.label>Reizgas</Dam_USMindKill.label>
+  <Dam_USMindKill.deathMessage>{0} wurde getötet.</Dam_USMindKill.deathMessage>
+</LanguageData>

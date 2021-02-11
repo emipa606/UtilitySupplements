@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Insect Killer -->
+  <Weapon_USGrenade_InsectKill.label>Insektenvernichtergranate</Weapon_USGrenade_InsectKill.label>
+  <Weapon_USGrenade_InsectKill.description>Eine Granate, die ein ätzendes Neurotoxin für Insekten freisetzt. Die mit dieser Granate verbundenen Chemikalien zersetzen und verbrennen freiliegendes Insektenfleisch.</Weapon_USGrenade_InsectKill.description>
+  <Weapon_USGrenade_InsectKill.verbs.0.label>Werfe Insektenvernichtergranate</Weapon_USGrenade_InsectKill.verbs.0.label>
+  <Grenade_USInsectKill.label>Insektenvernichtergranate</Grenade_USInsectKill.label>
+  <!-- Mind Killer -->
+  <Weapon_USGrenade_MindKill.label>Reizgasgranate</Weapon_USGrenade_MindKill.label>
+  <Weapon_USGrenade_MindKill.description>Eine Granate die Reizgas freisetzt. Die mit dieser Granate verbundenen Chemikalien wirken sich verursachen Reizungen und Schmerzen.</Weapon_USGrenade_MindKill.description>
+  <Weapon_USGrenade_MindKill.verbs.0.label>Werfe Reizgasgranate</Weapon_USGrenade_MindKill.verbs.0.label>
+  <Grenade_USMindKill.label>Reizgasgranate</Grenade_USMindKill.label>
+  <!-- Tangle Killer -->
+  <Weapon_USGrenade_TangleKill.label>Nervengasgranate</Weapon_USGrenade_TangleKill.label>
+  <Weapon_USGrenade_TangleKill.description>Eine Granate die Nervengas freisetzt.</Weapon_USGrenade_TangleKill.description>
+  <Weapon_USGrenade_TangleKill.verbs.0.label>Werfe Nervengasgranate</Weapon_USGrenade_TangleKill.verbs.0.label>
+  <Grenade_USTangleKill.label>Nervengasgranate</Grenade_USTangleKill.label>
+  <!-- Glow Sticks -->
+  <Weapon_USGrenade_GlowStick.label>Leuchtstab</Weapon_USGrenade_GlowStick.label>
+  <Weapon_USGrenade_GlowStick.description>Transparenter Behätler gefüllt mit Glühschaum.</Weapon_USGrenade_GlowStick.description>
+  <Weapon_USGrenade_GlowStick.verbs.0.label>Werfe Leuchtstab</Weapon_USGrenade_GlowStick.verbs.0.label>
+  <Grenade_USGlowStick.label>Leuchtstab</Grenade_USGlowStick.label>
+</LanguageData>

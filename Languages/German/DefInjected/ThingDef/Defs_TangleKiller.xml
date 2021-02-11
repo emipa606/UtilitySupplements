@@ -1,26 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!-- <ThingDef ParentName="BaseFilth">
-    		<defName>Filth_USTangleKillFoam</defName>
-    		<label>Tangle Killer Foam</label>
-		<thingClass>USToxins.USTangleKiller</thingClass>
-		<tickerType>Normal</tickerType>
-    		<statBases>
-      		<Beauty>-20</Beauty>
-      		<Cleanliness>-4</Cleanliness>
-    		</statBases>
-    		<graphicData>
-      		<texPath>Things/Filth/Spatter</texPath>
-      		<color>(117, 71, 23, 100)</color>
-    		</graphicData>
-    		<pathCost>5</pathCost>
-    		<filth>
-      		<rainWashes>false</rainWashes>
-      		<cleaningWorkToReduceThickness>120</cleaningWorkToReduceThickness>
-      		<canFilthAttach>true</canFilthAttach>
-      		<allowsFire>true</allowsFire>
-    		</filth>
-  </ThingDef> -->
   <Gas_USTangleKill.label>Nervengas</Gas_USTangleKill.label>
   <!-- Liquid -->
   <USTangleKillLiquid.label>Nervengas</USTangleKillLiquid.label>

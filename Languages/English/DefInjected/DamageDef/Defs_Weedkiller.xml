@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Damage -->
-
   <Dam_USWeedKill.label>Weed Killer</Dam_USWeedKill.label>
   <Dam_USWeedKill.deathMessage>{0} has been killed.</Dam_USWeedKill.deathMessage>
-
-
 </LanguageData>

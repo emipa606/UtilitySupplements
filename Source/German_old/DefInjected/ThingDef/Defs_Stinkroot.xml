@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Plant -->
+  <Plant_USStinkroot.label>Stinkwurzel</Plant_USStinkroot.label>
+  <Plant_USStinkroot.description>Eine gentechnisch veränderte Blume, die einen schrecklichen Geruch abgibt. Diese Blume nutzt einen Giftgasabwehrmechanismus, um ihr Territorium zu verteidigen.</Plant_USStinkroot.description>
+  <!-- Petals -->
+  <USStinkrootLeaves.label>Stinkwurzelblätter</USStinkrootLeaves.label>
+  <USStinkrootLeaves.description>Geerntete Blätter der Stinkwurzelblüte. Diese Blätter sind extrem giftig.</USStinkrootLeaves.description>
+  <!-- Gas -->
+  <Gas_USStinkroot.label>Reizgas</Gas_USStinkroot.label>
+</LanguageData>

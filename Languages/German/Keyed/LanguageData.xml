@@ -9,6 +9,8 @@
   <USTox.DoTanglerootCreep>Erlaube Dornenranken zu wandern:</USTox.DoTanglerootCreep>
   <USTox.USToxLevels>Toxizität (%):</USTox.USToxLevels>
   <USTox.USToxLevelsTip>Standardwert ist [100]. (Effektivität in Prozent.)</USTox.USToxLevelsTip>
+  <USTox.DoAnimalFlee>Tiere fliehen vor gefährlichen Pflanzen</USTox.DoAnimalFlee>
+  <USTox.DoAcidWalls>Erlaube Säuregas, Gebäude zu beschädigen</USTox.DoAcidWalls>
   <USTox.ResPct>Forschungskosten in %:</USTox.ResPct>
   <USTox.ResTip>Diese Änderung wird erst nach einem Neustart von RimWorld wirksam.</USTox.ResTip>
   <USTox.ResWarn>(Warnung: Wenn du diesen Wert erhöhst, wird die Forschung mit dem vorherigen Wert abgebrochen.)</USTox.ResWarn>

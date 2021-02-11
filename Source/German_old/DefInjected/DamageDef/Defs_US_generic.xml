@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage Def Plant Toxin -->
+  <Dam_USPlantToxin.label>Pflanzengift</Dam_USPlantToxin.label>
+  <Dam_USPlantToxin.deathMessage>{0} wurde getötet.</Dam_USPlantToxin.deathMessage>
+</LanguageData>

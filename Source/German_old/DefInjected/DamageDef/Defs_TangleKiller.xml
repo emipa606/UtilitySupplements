@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USTangleKill.label>Nervengas</Dam_USTangleKill.label>
+  <Dam_USTangleKill.deathMessage>{0} wurde getötet.</Dam_USTangleKill.deathMessage>
+</LanguageData>

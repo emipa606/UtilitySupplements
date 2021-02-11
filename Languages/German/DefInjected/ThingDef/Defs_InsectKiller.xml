@@ -11,4 +11,5 @@
   <Gun_USSprayer_InsectKill.tools.0.label>Griff</Gun_USSprayer_InsectKill.tools.0.label>
   <Gun_USSprayer_InsectKill.tools.1.label>Lauf</Gun_USSprayer_InsectKill.tools.1.label>
   <Bullet_USInsectKill_Foam.label>Insektenvernichter</Bullet_USInsectKill_Foam.label>
+  <Gun_USSprayer_InsectKill.verbs.Verb_Shoot.label>Insektenvernichter-Sprüher</Gun_USSprayer_InsectKill.verbs.Verb_Shoot.label>
 </LanguageData>

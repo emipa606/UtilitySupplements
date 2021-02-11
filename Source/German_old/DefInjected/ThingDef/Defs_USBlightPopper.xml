@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <USBlightFoamPopper.label>Unkrautentfernersprüher</USBlightFoamPopper.label>
+  <USBlightFoamPopper.description>Wenn er Fäule entdeckt, sprüht es Unkrautentfernerschaum in einem kreisförmigen Feld um sich herum. Kann auch manuell ausgelöst werden.</USBlightFoamPopper.description>
+  <USBlightFoamPopper.comps.1.useLabel>Löse Unkrautentfernersprüher aus</USBlightFoamPopper.comps.1.useLabel>
+</LanguageData>

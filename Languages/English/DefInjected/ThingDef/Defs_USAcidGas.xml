@@ -1,29 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Acid Gas -->
-
   <Gas_USAcidGas.label>Acid Gas</Gas_USAcidGas.label>
-
-
   <!-- Acid Gas Grenade -->
-
   <Weapon_USGrenade_AcidGas.label>Acid Gas Grenade</Weapon_USGrenade_AcidGas.label>
   <Weapon_USGrenade_AcidGas.description>Grenade that applies Acid gas. The chemicals associated with this grenade will cause irritation and pain, chemical acid burns and significantly effect breathing.</Weapon_USGrenade_AcidGas.description>
   <Weapon_USGrenade_AcidGas.verbs.0.label>throw acid gas grenade</Weapon_USGrenade_AcidGas.verbs.0.label>
-
   <Grenade_USAcidGas.label>Acid Gas Grenade</Grenade_USAcidGas.label>
-
-
   <!-- Shell and IED -->
-
   <Shell_USAcidGas.label>Acid Gas shell</Shell_USAcidGas.label>
   <Shell_USAcidGas.description>A pressurized shell filled with acid gas. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USAcidGas.description>
-
   <Bullet_Shell_USAcidGas.label>Acid Gas shell</Bullet_Shell_USAcidGas.label>
-
   <TrapIED_USAcidGas.label>IED Acid Gas trap</TrapIED_USAcidGas.label>
   <TrapIED_USAcidGas.description>A pair of acid gas shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</TrapIED_USAcidGas.description>
-
-
 </LanguageData>

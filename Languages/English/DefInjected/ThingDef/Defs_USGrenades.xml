@@ -1,40 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Insect Killer -->
-
   <Weapon_USGrenade_InsectKill.label>Insect Killer Grenade</Weapon_USGrenade_InsectKill.label>
   <Weapon_USGrenade_InsectKill.description>Grenade that applies a caustic neurotoxin as a foam. The chemicals associated with this grenade will break down and combust with exposed insectoid flesh and fluids.</Weapon_USGrenade_InsectKill.description>
   <Weapon_USGrenade_InsectKill.verbs.0.label>throw insect killer grenade</Weapon_USGrenade_InsectKill.verbs.0.label>
-
   <Grenade_USInsectKill.label>Insect Killer Grenade</Grenade_USInsectKill.label>
-
-
   <!-- Mind Killer -->
-
   <Weapon_USGrenade_MindKill.label>Mind Killer Grenade</Weapon_USGrenade_MindKill.label>
   <Weapon_USGrenade_MindKill.description>Grenade that applies mind killer gas. The chemicals associated with this grenade will detrimentally effect the mind.</Weapon_USGrenade_MindKill.description>
   <Weapon_USGrenade_MindKill.verbs.0.label>throw mind killer grenade</Weapon_USGrenade_MindKill.verbs.0.label>
-
   <Grenade_USMindKill.label>Mind Killer Grenade</Grenade_USMindKill.label>
-
-
   <!-- Tangle Killer -->
-
   <Weapon_USGrenade_TangleKill.label>Tangle Killer Grenade</Weapon_USGrenade_TangleKill.label>
   <Weapon_USGrenade_TangleKill.description>Grenade that applies tangle kill gas.</Weapon_USGrenade_TangleKill.description>
   <Weapon_USGrenade_TangleKill.verbs.0.label>throw tangle killer grenade</Weapon_USGrenade_TangleKill.verbs.0.label>
-
   <Grenade_USTangleKill.label>Tangle Killer Grenade</Grenade_USTangleKill.label>
-
-
   <!-- Glow Sticks -->
-
   <Weapon_USGrenade_GlowStick.label>Glow Sticks</Weapon_USGrenade_GlowStick.label>
   <Weapon_USGrenade_GlowStick.description>Glow Sticks, contianed within the transparent container is luminescent liquid.</Weapon_USGrenade_GlowStick.description>
   <Weapon_USGrenade_GlowStick.verbs.0.label>throw glow stick</Weapon_USGrenade_GlowStick.verbs.0.label>
-
   <Grenade_USGlowStick.label>Glow Stick</Grenade_USGlowStick.label>
-
-
 </LanguageData>

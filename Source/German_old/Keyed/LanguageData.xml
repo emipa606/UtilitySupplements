@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <USTox.Name>Utility Supplements (by Pelador)</USTox.Name>
+  <USTox.DoStinkrootGas>Erlaube Stinkwurzeln Reizgas freizusetzen:</USTox.DoStinkrootGas>
+  <USTox.SRGasRadius>Stinkwurzel-Gasausstoßreichweite der voll ausgereiften Pflanze:</USTox.SRGasRadius>
+  <USTox.SRGasRadiusTip>Standardwert ist [2]. (Nur von Bedeutung wenn die obere Einstellung aktiviert ist.)</USTox.SRGasRadiusTip>
+  <USTox.StinkyTip>(Änderungen an Stinkwurzel-Gas werden erst nach dem Neustart von RimWorld wirksam.)</USTox.StinkyTip>
+  <USTox.DoTanglerootGas>Erlaube Dornenranken Nervengas freizusetzen:</USTox.DoTanglerootGas>
+  <USTox.DoTanglerootCreep>Erlaube Dornenranken zu wandern:</USTox.DoTanglerootCreep>
+  <USTox.USToxLevels>Toxizität (%):</USTox.USToxLevels>
+  <USTox.USToxLevelsTip>Standardwert ist [100]. (Effektivität in Prozent.)</USTox.USToxLevelsTip>
+  <USTox.ResPct>Forschungskosten in %:</USTox.ResPct>
+  <USTox.ResTip>Diese Änderung wird erst nach einem Neustart von RimWorld wirksam.</USTox.ResTip>
+  <USTox.ResWarn>(Warnung: Wenn du diesen Wert erhöhst, wird die Forschung mit dem vorherigen Wert abgebrochen.)</USTox.ResWarn>
+</LanguageData>

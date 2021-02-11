@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USInsectKill.label>Insektenvernichter</Dam_USInsectKill.label>
+  <Dam_USInsectKill.deathMessage>{0} würde getötet.</Dam_USInsectKill.deathMessage>
+</LanguageData>

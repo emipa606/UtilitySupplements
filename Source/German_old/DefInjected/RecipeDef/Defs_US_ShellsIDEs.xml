@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Blight Killer -->
+  <MakeBulkUSBlightKillShell.label>Stelle Unkrautvernichter-Granaten in Massen her</MakeBulkUSBlightKillShell.label>
+  <MakeBulkUSBlightKillShell.description>Stelle 4 Unkrautvernichter-Granaten her.</MakeBulkUSBlightKillShell.description>
+  <MakeBulkUSBlightKillShell.jobString>Stellt Unkrautvernichter-Granate her.</MakeBulkUSBlightKillShell.jobString>
+  <!-- Filth Killer -->
+  <MakeBulkUSFilthKillShell.label>Stelle Schmutzentferner-Granaten in Massen her</MakeBulkUSFilthKillShell.label>
+  <MakeBulkUSFilthKillShell.description>Stelle 4 Unkrautvernichter-Granaten her.</MakeBulkUSFilthKillShell.description>
+  <MakeBulkUSFilthKillShell.jobString>Stellt Schmutzentferner-Granate her.</MakeBulkUSFilthKillShell.jobString>
+  <!-- Insect Killer -->
+  <MakeBulkUSInsectKillShell.label>Stelle Insektenvernichter-Granaten in Massen her</MakeBulkUSInsectKillShell.label>
+  <MakeBulkUSInsectKillShell.description>Stele 4 Insektenvernichter-Granaten her.</MakeBulkUSInsectKillShell.description>
+  <MakeBulkUSInsectKillShell.jobString>Stellt Insektenvernichter-Granate her.</MakeBulkUSInsectKillShell.jobString>
+  <!-- Plant Killer -->
+  <MakeBulkUSPlantKillShell.label>Stelle Pflanzenentferner-Granaten in Massen her</MakeBulkUSPlantKillShell.label>
+  <MakeBulkUSPlantKillShell.description>Stelle 4 Pflanzenentferner-Granaten her.</MakeBulkUSPlantKillShell.description>
+  <MakeBulkUSPlantKillShell.jobString>Stellt Pflanzenentferner-Granate her.</MakeBulkUSPlantKillShell.jobString>
+  <!-- Tree Killer -->
+  <MakeBulkUSTreeKillShell.label>Stelle Baumentferner-Granaten in Massen her.</MakeBulkUSTreeKillShell.label>
+  <MakeBulkUSTreeKillShell.description>Stelle 4 Baumentferner-Granaten her.</MakeBulkUSTreeKillShell.description>
+  <MakeBulkUSTreeKillShell.jobString>Stellt Baumentferner-Granate her.</MakeBulkUSTreeKillShell.jobString>
+  <!-- Weed Killer -->
+  <MakeBulkUSWeedKillShell.label>Stelle Grasentferner-Granaten in Massen her</MakeBulkUSWeedKillShell.label>
+  <MakeBulkUSWeedKillShell.description>Stelle 4 Grasentferner-Granaten her.</MakeBulkUSWeedKillShell.description>
+  <MakeBulkUSWeedKillShell.jobString>Stellt Grasentferner-Granate her.</MakeBulkUSWeedKillShell.jobString>
+  <!-- Mind Killer -->
+  <MakeBulkUSMindKillShell.label>Stelle Reizgas-Granaten in Massen her</MakeBulkUSMindKillShell.label>
+  <MakeBulkUSMindKillShell.description>Stelle 4 Reizgas-Granaten her.</MakeBulkUSMindKillShell.description>
+  <MakeBulkUSMindKillShell.jobString>Stellt Reizgas-Granaten her.</MakeBulkUSMindKillShell.jobString>
+  <!-- Tangle Killer -->
+  <MakeBulkUSTangleKillShell.label>Stelle Nervengas-Granaten in Massen her</MakeBulkUSTangleKillShell.label>
+  <MakeBulkUSTangleKillShell.description>Stelle 4 Nervengas-Granaten her.</MakeBulkUSTangleKillShell.description>
+  <MakeBulkUSTangleKillShell.jobString>Stellt Nervengas-Granate her.</MakeBulkUSTangleKillShell.jobString>
+  <!-- Glower -->
+  <MakeBulkUSGlowFoamShell.label>Stelle Glühschaum-Granaten in Massen her</MakeBulkUSGlowFoamShell.label>
+  <MakeBulkUSGlowFoamShell.description>Stelle 4 Glühschaum-Granaten her.</MakeBulkUSGlowFoamShell.description>
+  <MakeBulkUSGlowFoamShell.jobString>Stellt Glühschaum-Granate her.</MakeBulkUSGlowFoamShell.jobString>
+  <!-- Antifreeze -->
+  <MakeBulkUSAntifreezeShell.label>Stelle Frostschutzmittel-Granaten in Massen her</MakeBulkUSAntifreezeShell.label>
+  <MakeBulkUSAntifreezeShell.description>Stelle 4 Frostschutzmittel-Granaten her.</MakeBulkUSAntifreezeShell.description>
+  <MakeBulkUSAntifreezeShell.jobString>Stellt Frostschutzmittel-Granate her.</MakeBulkUSAntifreezeShell.jobString>
+</LanguageData>

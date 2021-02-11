@@ -40,4 +40,8 @@
   <MakeBulkUSAntifreezeShell.label>Stelle Frostschutzmittel-Granaten in Massen her</MakeBulkUSAntifreezeShell.label>
   <MakeBulkUSAntifreezeShell.description>Stelle 4 Frostschutzmittel-Granaten her.</MakeBulkUSAntifreezeShell.description>
   <MakeBulkUSAntifreezeShell.jobString>Stellt Frostschutzmittel-Granate her.</MakeBulkUSAntifreezeShell.jobString>
+  <!-- Acid Gas -->
+  <MakeBulkUSAcidGasShell.label>Stelle Säuregas-Granaten in Massen her</MakeBulkUSAcidGasShell.label>
+  <MakeBulkUSAcidGasShell.description>Stelle 4 Säuregas-Granaten her.</MakeBulkUSAcidGasShell.description>
+  <MakeBulkUSAcidGasShell.jobString>Stellt Säuregas-Granate her.</MakeBulkUSAcidGasShell.jobString>
 </LanguageData>

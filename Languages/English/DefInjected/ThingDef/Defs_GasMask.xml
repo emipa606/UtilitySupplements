@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Modified copy of Defs from Unlimited Hugs Remote Tech mod with permission -->
-
   <USApparel_GasMask.label>gas mask</USApparel_GasMask.label>
   <USApparel_GasMask.description>A mask that protects the wearer from toxic gasses and other air-borne contaminants.
 The filters wear out fairly quickly, so it's recommended to wear this only when necessary.</USApparel_GasMask.description>
-
-
 </LanguageData>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USTreeKill.label>Baumentferner</Dam_USTreeKill.label>
+  <Dam_USTreeKill.deathMessage>{0} wurde getötet.</Dam_USTreeKill.deathMessage>
+</LanguageData>

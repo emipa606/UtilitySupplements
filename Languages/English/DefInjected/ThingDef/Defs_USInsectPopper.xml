@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <USInsectFoamPopper.label>Insect foam popper</USInsectFoamPopper.label>
   <USInsectFoamPopper.description>When it detects a hive it sprays insect killer foam in a circular field around itself. Can also be triggered manually.</USInsectFoamPopper.description>
   <USInsectFoamPopper.comps.1.useLabel>Trigger firefoam popper</USInsectFoamPopper.comps.1.useLabel>
-
-
 </LanguageData>

@@ -11,4 +11,5 @@
   <Gun_USSprayer_BlightKill.tools.0.label>Griff</Gun_USSprayer_BlightKill.tools.0.label>
   <Gun_USSprayer_BlightKill.tools.1.label>Lauf</Gun_USSprayer_BlightKill.tools.1.label>
   <Bullet_USBlightKill_Foam.label>Unkrautvernichter</Bullet_USBlightKill_Foam.label>
+  <Gun_USSprayer_BlightKill.verbs.Verb_Shoot.label>Unkrautvernichter-Sprüher</Gun_USSprayer_BlightKill.verbs.Verb_Shoot.label>
 </LanguageData>

@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Liquid Recipe -->
-
   <MakeBulkUSBlightKillLiquid.label>Make blight killer liquid</MakeBulkUSBlightKillLiquid.label>
   <MakeBulkUSBlightKillLiquid.description>Make 5 blight killer liquid</MakeBulkUSBlightKillLiquid.description>
   <MakeBulkUSBlightKillLiquid.jobString>Making toxins.</MakeBulkUSBlightKillLiquid.jobString>
-
-
 </LanguageData>

@@ -11,4 +11,5 @@
   <Gun_USSprayer_TreeKill.tools.0.label>Griff</Gun_USSprayer_TreeKill.tools.0.label>
   <Gun_USSprayer_TreeKill.tools.1.label>Lauf</Gun_USSprayer_TreeKill.tools.1.label>
   <Bullet_USTreeKill_Foam.label>Baumentferner</Bullet_USTreeKill_Foam.label>
+  <Gun_USSprayer_TreeKill.verbs.Verb_Shoot.label>Baumentferner-Sprüher</Gun_USSprayer_TreeKill.verbs.Verb_Shoot.label>
 </LanguageData>

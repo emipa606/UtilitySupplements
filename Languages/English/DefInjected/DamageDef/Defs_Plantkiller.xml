@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Damage -->
-
   <Dam_USPlantKill.label>Plant Killer</Dam_USPlantKill.label>
   <Dam_USPlantKill.deathMessage>{0} has been killed.</Dam_USPlantKill.deathMessage>
-
-
 </LanguageData>

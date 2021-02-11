@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Liquid Recipe -->
-
   <MakeBulkUSTreeKillLiquid.label>Make tree killer liquid</MakeBulkUSTreeKillLiquid.label>
   <MakeBulkUSTreeKillLiquid.description>Make 5 tree killer liquid</MakeBulkUSTreeKillLiquid.description>
   <MakeBulkUSTreeKillLiquid.jobString>Making toxins.</MakeBulkUSTreeKillLiquid.jobString>
-
-
 </LanguageData>

@@ -11,4 +11,5 @@
   <Gun_USSprayer_Antifreeze.tools.0.label>Griff</Gun_USSprayer_Antifreeze.tools.0.label>
   <Gun_USSprayer_Antifreeze.tools.1.label>Lauf</Gun_USSprayer_Antifreeze.tools.1.label>
   <Bullet_USAntifreeze.label>Frostschutzmittel</Bullet_USAntifreeze.label>
+  <Gun_USSprayer_Antifreeze.verbs.Verb_Shoot.label>Frostschutzmittel-Sprüher</Gun_USSprayer_Antifreeze.verbs.Verb_Shoot.label>
 </LanguageData>

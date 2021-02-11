@@ -11,4 +11,5 @@
   <Gun_USSprayer_FilthKill.tools.0.label>Griff</Gun_USSprayer_FilthKill.tools.0.label>
   <Gun_USSprayer_FilthKill.tools.1.label>Lauf</Gun_USSprayer_FilthKill.tools.1.label>
   <Bullet_USFilthKill_Foam.label>Schmutzentferner</Bullet_USFilthKill_Foam.label>
+  <Gun_USSprayer_FilthKill.verbs.Verb_Shoot.label>Schmutzentferner-Sprüher</Gun_USSprayer_FilthKill.verbs.Verb_Shoot.label>
 </LanguageData>

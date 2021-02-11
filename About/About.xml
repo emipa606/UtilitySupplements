@@ -26,52 +26,54 @@
     <li>brrainz.harmony</li>
     <li>Mlie.MedicalSupplements</li>
   </loadAfter>
-  <description>Update of peladors mod
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of peladors mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2012459600
 
-[img]https://i.imgur.com/GYswkZ7.png[/img]
+- Since I did not have the source-code there might be some issues, report if anything seems off.
 
-Support-chat:
-https://invite.gg/mlie
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
-Non-steam version:
-https://github.com/emipa606/UtilitySupplements
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/UtilitySupplements][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
 	
-- Since I did not have the source-code there might be some issues, report if anything seems off.	
+[img]https://i.imgur.com/NOW7jU1.png[/img]
 
---- Original Description ---
 Optional Expansion: Adds various utility items. (Note Medical Supplements mod is required).
 
-Overview
+[h1]Overview[/h1] V1.1
 
 This mod will be used to add various additional items of varying nature that can be of practical benefit but not considered as medical or social supplements.
 
-Mod details
+[h1]Mod details[/h1]
 
 The following PDF describes what this mod offers:
 
-Utility Supplements Notes
-https://1drv.ms/b/s!Au3GsmKyQkDYiuVxeFes0XYuoZd37A?e=wSiEpc
+[url=https://1drv.ms/b/s!Au3GsmKyQkDYiuVxeFes0XYuoZd37A?e=wSiEpc]Utility Supplements Notes[/url]
 
 
-Application
+[h1]Application[/h1]
 
 Application of the foam or use of these toxins is handled using multiple delivery methods.
 
-"Sprayer": allows the toxins to be directly applied as foam to small areas with control. (Manual process when drafted). The sprayers also have a limited number of uses (indicators provided).
+[b]"Sprayer"[/b]: allows the toxins to be directly applied as foam to small areas with control. (Manual process when drafted). The sprayers also have a limited number of uses (indicators provided).
 
-"Mortar Shells": The foams and gases can be delivered with shells using mortars.
+[b]"Mortar Shells"[/b]: The foams and gases can be delivered with shells using mortars.
 
-"IDEs": The shells can be used for IED traps. (Note only Insect Killer, Mind Killer, Tangle and Tear Gas IDEs are provided as default, the other types require additional mod support.)
+[b]"IDEs"[/b]: The shells can be used for IED traps. (Note only Insect Killer, Mind Killer, Tangle and Tear Gas IDEs are provided as default, the other types require additional mod support.)
 
-"Foam Poppers": Foam poppers can be setup for Blight and Insect foam , trigger is the presence of a hive in the case of insect foam poppers.
+[b]"Foam Poppers"[/b]: Foam poppers can be setup for Blight and Insect foam , trigger is the presence of a hive in the case of insect foam poppers. 
 
-"Grenades": Insect Killer, Mind Killer, Tangle Killer and Tear Gas can be weaponised.
+[b]"Grenades"[/b]: Insect Killer, Mind Killer, Tangle Killer and Tear Gas can be weaponised.
 
 Applied foam to a surface will linger for a while and remain active but it will eventually disperse.
 
 
-Mod Options
+[h1]Mod Options[/h1]
 
 Vary base research costs by a percentage level.
 
@@ -80,21 +82,18 @@ The mod includes settings to tweak which plant gases are used and whether a maxi
 The relative toxicity setting allows you to tweak how effective the various toxins and other active chemicals perform in relation to default values (percentage).
 
 
-Mod Compatibility
-*** Subject to Conversion ***
+[h1]Mod Compatibility[/h1] *** Subject to Conversion ***
 
-Apothecary - Allows the ability to make ammonia liquid fertiliser and plant sprayer applicator.
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2000244851]Apothecary[/url] - Allows the ability to make ammonia liquid fertiliser and plant sprayer applicator.
 Remote Tech - Some of the IDEs become available for use when this mod is loaded.
-RimPlas - Sprayers will use RimPlas instead of Steel in their ingredients.
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2004190331]RimPlas[/url] - Sprayers will use RimPlas instead of Steel in their ingredients.
 Seeds Please - Adds patch support to generate seeds for plants used in this mod.
-
-Drug Policy Fix https://steamcommunity.com/sharedfiles/filedetails/?id=2195390245 ; can be used to help manage and correct drugs added or removed part way through a save game. It will also sort the drug listings alphabetically.
 
 Muliplayer support (beta).
 
 (Includes custom harmony C# override process to apply only this mods filth to any fertile terrain).
 
-Mod Notes
+[h1]Mod Notes[/h1]
 
 Multiple research projects in own tab with bulk recipes as relevant.
 
@@ -102,7 +101,7 @@ Save compatible and mod friendly.
 
 To remove the mod you would have to remove all items introduced first and would expect some initial harmless error messages on removal that will subside with further saves.
 
-Credits
+[h1]Credits[/h1]
 
 Oleg Marko: Graphics Revision
 Uuugggg: For educating me about Harmony transpilers.
@@ -112,5 +111,19 @@ viirinsoftworks: Inspiration for Tangleroot.
 Maxwell.J: Chinese (simplified) translation.
 Erdnussbrot - German translation.
 
-(CC BY-NC-SA 4.0)</description>
+
+(CC BY-NC-SA 4.0)
+
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+

@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- <ThingDef ParentName="USBaseFilth">
     		<defName>Filth_USInsectKillFoam</defName>
     		<label>Insect Killer Foam</label>
@@ -22,14 +21,8 @@
       		<allowsFire>true</allowsFire>
     		</filth>
   </ThingDef> -->
-
   <Gas_USMindKill.label>Mind Killer Gas</Gas_USMindKill.label>
-
-
   <!-- Liquid -->
-
   <USMindKillLiquid.label>Mind Killer Liquid</USMindKillLiquid.label>
   <USMindKillLiquid.description>A concentrated chemical of the Stinkroot. This particular liquid will release a toxic gas cloud on release.</USMindKillLiquid.description>
-
-
 </LanguageData>

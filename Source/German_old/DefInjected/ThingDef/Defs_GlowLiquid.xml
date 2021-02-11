@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USGlowFoam.label>Glühschaum</Filth_USGlowFoam.label>
+  <Filth_USGlowStick.label>Leuchtstab</Filth_USGlowStick.label>
+  <!-- Liquid -->
+  <USGlowLiquid.label>Glühschaum</USGlowLiquid.label>
+  <USGlowLiquid.description>Ein instabiler Schaum, der an der Luft für einen bestimmten Zeitraum eine gewisse Lumineszenz abgibt.</USGlowLiquid.description>
+</LanguageData>

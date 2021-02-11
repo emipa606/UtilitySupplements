@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- <ThingDef ParentName="USBaseFilth">
     		<defName>Filth_USTangleKillFoam</defName>
     		<label>Tangle Killer Foam</label>
@@ -22,14 +21,8 @@
       		<allowsFire>true</allowsFire>
     		</filth>
   </ThingDef> -->
-
   <Gas_USTangleKill.label>Tangle Killer Gas</Gas_USTangleKill.label>
-
-
   <!-- Liquid -->
-
   <USTangleKillLiquid.label>Tangle Killer Liquid</USTangleKillLiquid.label>
   <USTangleKillLiquid.description>A concentrated chemical of the Tangleroot. This particular liquid will release toxic gas.</USTangleKillLiquid.description>
-
-
 </LanguageData>

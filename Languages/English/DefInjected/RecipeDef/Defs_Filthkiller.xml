@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Liquid Recipe -->
-
   <MakeBulkUSFilthKillLiquid.label>Make filth killer liquid</MakeBulkUSFilthKillLiquid.label>
   <MakeBulkUSFilthKillLiquid.description>Make 5 filth killer liquid</MakeBulkUSFilthKillLiquid.description>
   <MakeBulkUSFilthKillLiquid.jobString>Making detergant.</MakeBulkUSFilthKillLiquid.jobString>
-
-
 </LanguageData>

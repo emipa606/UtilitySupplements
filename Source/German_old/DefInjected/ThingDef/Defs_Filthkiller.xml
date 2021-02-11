@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USFilthKillFoam.label>Schmutzentferner</Filth_USFilthKillFoam.label>
+  <!-- Liquid -->
+  <USFilthKillLiquid.label>Schmutzentferner</USFilthKillLiquid.label>
+  <USFilthKillLiquid.description>Ein starkes aktives Reinigungsmittel. Diese spezielle Flüssigkeit wird dazu beitragen, alle Arten von Schmutz zu entfernen.</USFilthKillLiquid.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_FilthKill.label>Schmutzentferner-Sprüher</Gun_USSprayer_FilthKill.label>
+  <Gun_USSprayer_FilthKill.description>Ein Sprühgerät, das Reinigungsmittel aufträgt. Das mit diesem Sprühgerät verbundene Reinigungsmittel entfernt alle Arten von Schmutz.</Gun_USSprayer_FilthKill.description>
+  <Gun_USSprayer_FilthKill.tools.0.label>Griff</Gun_USSprayer_FilthKill.tools.0.label>
+  <Gun_USSprayer_FilthKill.tools.1.label>Lauf</Gun_USSprayer_FilthKill.tools.1.label>
+  <Bullet_USFilthKill_Foam.label>Schmutzentferner</Bullet_USFilthKill_Foam.label>
+</LanguageData>

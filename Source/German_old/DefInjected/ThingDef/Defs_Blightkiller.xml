@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Filth -->
+  <Filth_USBlightKillFoam.label>Unkrautvernichter</Filth_USBlightKillFoam.label>
+  <!-- Liquid -->
+  <USBlightKillLiquid.label>Unkrautvernichter</USBlightKillLiquid.label>
+  <USBlightKillLiquid.description>Eine giftige Chemikalie. Dieser Unkrautvernichter kann gegen die Pflanzenseuche eingesetzt werden und diese abtöten.</USBlightKillLiquid.description>
+  <!-- Applicator -->
+  <Gun_USSprayer_BlightKill.label>Unkrautvernichter-Sprüher</Gun_USSprayer_BlightKill.label>
+  <Gun_USSprayer_BlightKill.description>Ein Sprühgerät, das giftige Chemikalien aufträgt. Das mit diesem Sprühgerät verbundene Toxin tötet die Pflanzenseuche ab.</Gun_USSprayer_BlightKill.description>
+  <Gun_USSprayer_BlightKill.tools.0.label>Griff</Gun_USSprayer_BlightKill.tools.0.label>
+  <Gun_USSprayer_BlightKill.tools.1.label>Lauf</Gun_USSprayer_BlightKill.tools.1.label>
+  <Bullet_USBlightKill_Foam.label>Unkrautvernichter</Bullet_USBlightKill_Foam.label>
+</LanguageData>

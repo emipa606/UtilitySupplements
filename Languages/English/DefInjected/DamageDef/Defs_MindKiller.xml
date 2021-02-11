@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Damage -->
-
   <Dam_USMindKill.label>Mind Killer</Dam_USMindKill.label>
   <Dam_USMindKill.deathMessage>{0} has been killed.</Dam_USMindKill.deathMessage>
-
-
 </LanguageData>

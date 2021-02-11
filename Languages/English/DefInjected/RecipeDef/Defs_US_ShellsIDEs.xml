@@ -1,74 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Blight Killer -->
-
   <MakeBulkUSBlightKillShell.label>Make Blight killer shells in bulk</MakeBulkUSBlightKillShell.label>
   <MakeBulkUSBlightKillShell.description>Make 4 blight killer shells</MakeBulkUSBlightKillShell.description>
   <MakeBulkUSBlightKillShell.jobString>Making blight killer shells.</MakeBulkUSBlightKillShell.jobString>
-
-
   <!-- Filth Killer -->
-
   <MakeBulkUSFilthKillShell.label>Make filth detergant shells in bulk</MakeBulkUSFilthKillShell.label>
   <MakeBulkUSFilthKillShell.description>Make 4 filth detergant shells</MakeBulkUSFilthKillShell.description>
   <MakeBulkUSFilthKillShell.jobString>Making filth detergant shells.</MakeBulkUSFilthKillShell.jobString>
-
-
   <!-- Insect Killer -->
-
   <MakeBulkUSInsectKillShell.label>Make insect killer shells in bulk</MakeBulkUSInsectKillShell.label>
   <MakeBulkUSInsectKillShell.description>Make 4 insect killer shells</MakeBulkUSInsectKillShell.description>
   <MakeBulkUSInsectKillShell.jobString>Making insect killer shells.</MakeBulkUSInsectKillShell.jobString>
-
-
   <!-- Plant Killer -->
-
   <MakeBulkUSPlantKillShell.label>Make plant killer shells in bulk</MakeBulkUSPlantKillShell.label>
   <MakeBulkUSPlantKillShell.description>Make 4 plant killer shells</MakeBulkUSPlantKillShell.description>
   <MakeBulkUSPlantKillShell.jobString>Making plant killer shells.</MakeBulkUSPlantKillShell.jobString>
-
-
   <!-- Tree Killer -->
-
   <MakeBulkUSTreeKillShell.label>Make tree killer shells in bulk</MakeBulkUSTreeKillShell.label>
   <MakeBulkUSTreeKillShell.description>Make 4 tree killer shells</MakeBulkUSTreeKillShell.description>
   <MakeBulkUSTreeKillShell.jobString>Making tree killer shells.</MakeBulkUSTreeKillShell.jobString>
-
-
   <!-- Weed Killer -->
-
   <MakeBulkUSWeedKillShell.label>Make weed killer shells in bulk</MakeBulkUSWeedKillShell.label>
   <MakeBulkUSWeedKillShell.description>Make 4 weed killer shells</MakeBulkUSWeedKillShell.description>
   <MakeBulkUSWeedKillShell.jobString>Making weed killer shells.</MakeBulkUSWeedKillShell.jobString>
-
-
   <!-- Mind Killer -->
-
   <MakeBulkUSMindKillShell.label>Make Mind killer shells in bulk</MakeBulkUSMindKillShell.label>
   <MakeBulkUSMindKillShell.description>Make 4 mind killer shells</MakeBulkUSMindKillShell.description>
   <MakeBulkUSMindKillShell.jobString>Making mind killer shells.</MakeBulkUSMindKillShell.jobString>
-
-
   <!-- Tangle Killer -->
-
   <MakeBulkUSTangleKillShell.label>Make Tangle killer shells in bulk</MakeBulkUSTangleKillShell.label>
   <MakeBulkUSTangleKillShell.description>Make 4 tangle killer shells</MakeBulkUSTangleKillShell.description>
   <MakeBulkUSTangleKillShell.jobString>Making tangle killer shells.</MakeBulkUSTangleKillShell.jobString>
-
-
   <!-- Glower -->
-
   <MakeBulkUSGlowFoamShell.label>Make Glow foam shells in bulk</MakeBulkUSGlowFoamShell.label>
   <MakeBulkUSGlowFoamShell.description>Make 4 Glow foam shells</MakeBulkUSGlowFoamShell.description>
   <MakeBulkUSGlowFoamShell.jobString>Making Glow foam shells.</MakeBulkUSGlowFoamShell.jobString>
-
-
   <!-- Antifreeze -->
-
   <MakeBulkUSAntifreezeShell.label>Make antifreeze shells in bulk</MakeBulkUSAntifreezeShell.label>
   <MakeBulkUSAntifreezeShell.description>Make 4 antifreeze shells</MakeBulkUSAntifreezeShell.description>
   <MakeBulkUSAntifreezeShell.jobString>Making antifreeze shells.</MakeBulkUSAntifreezeShell.jobString>
-
-
 </LanguageData>

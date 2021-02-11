@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Damage -->
+  <Dam_USWeedKill.label>Grasentferner</Dam_USWeedKill.label>
+  <Dam_USWeedKill.deathMessage>{0} wurde getötet.</Dam_USWeedKill.deathMessage>
+</LanguageData>

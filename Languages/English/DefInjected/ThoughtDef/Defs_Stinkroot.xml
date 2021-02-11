@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Gas Hediff -->
-
   <Thought_USStinkRootGas.stages.0.label>Stinkroot Gas</Thought_USStinkRootGas.stages.0.label>
   <Thought_USStinkRootGas.stages.0.description>Stinkroot gas makes me feel groggy</Thought_USStinkRootGas.stages.0.description>
   <Thought_USStinkRootGas.stages.1.label>Stinkroot Gas</Thought_USStinkRootGas.stages.1.label>
@@ -13,6 +11,4 @@
   <Thought_USStinkRootGas.stages.3.description>Stinkroot gives me a headache</Thought_USStinkRootGas.stages.3.description>
   <Thought_USStinkRootGas.stages.4.label>Stinkroot Gas</Thought_USStinkRootGas.stages.4.label>
   <Thought_USStinkRootGas.stages.4.description>Stinkroot gives me a migraine</Thought_USStinkRootGas.stages.4.description>
-
-
 </LanguageData>

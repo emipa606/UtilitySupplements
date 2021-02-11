@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- <ThingDef ParentName="BaseFilth">
+    		<defName>Filth_USInsectKillFoam</defName>
+    		<label>Insect Killer Foam</label>
+		<thingClass>USToxins.USInsectKiller</thingClass>
+		<tickerType>Normal</tickerType>
+    		<statBases>
+      		<Beauty>-20</Beauty>
+      		<Cleanliness>-4</Cleanliness>
+    		</statBases>
+    		<graphicData>
+      		<texPath>Things/Filth/Spatter</texPath>
+      		<color>(117, 71, 23, 100)</color>
+    		</graphicData>
+    		<pathCost>5</pathCost>
+    		<filth>
+      		<rainWashes>false</rainWashes>
+      		<cleaningWorkToReduceThickness>120</cleaningWorkToReduceThickness>
+      		<canFilthAttach>true</canFilthAttach>
+      		<allowsFire>true</allowsFire>
+    		</filth>
+  </ThingDef> -->
+  <Gas_USMindKill.label>Reizgas</Gas_USMindKill.label>
+  <!-- Liquid -->
+  <USMindKillLiquid.label>Reizgas</USMindKillLiquid.label>
+  <USMindKillLiquid.description>Eine konzentrierte Chemikalie der Stinkwurzel. Diese spezielle Flüssigkeit setzt bei der Freisetzung eine giftige Gaswolke frei.</USMindKillLiquid.description>
+</LanguageData>

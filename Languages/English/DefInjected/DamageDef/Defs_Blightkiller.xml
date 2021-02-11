@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Damage -->
-
   <Dam_USBlightKill.label>Blight Killer</Dam_USBlightKill.label>
   <Dam_USBlightKill.deathMessage>{0} has been killed.</Dam_USBlightKill.deathMessage>
-
-
 </LanguageData>
