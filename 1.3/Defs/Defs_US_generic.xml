@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Thing Categories -->
+  <ThingCategoryDef>
+    <defName>UtilitySupps</defName>
+    <label>Utility Supplements</label>
+    <parent>Manufactured</parent>
+    <iconPath>UI/Icons/ThingCategories/Manufactured</iconPath>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>UtilitySuppsShells</defName>
+    <label>Utility Supplements</label>
+    <parent>MortarShells</parent>
+    <iconPath>UI/Icons/ThingCategories/MortarShells</iconPath>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+  </ThingCategoryDef>
+  <!-- Research Tab -->
+  <ResearchTabDef>
+    <defName>UtilitySuppTab</defName>
+    <label>Utility Supplements</label>
+  </ResearchTabDef>
+  <!-- Damage Def Plant Toxin -->
+  <DamageDef>
+    <defName>Dam_USPlantToxin</defName>
+    <label>Plant Toxin</label>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <canInterruptJobs>false</canInterruptJobs>
+    <harmsHealth>true</harmsHealth>
+  </DamageDef>
+</Defs>

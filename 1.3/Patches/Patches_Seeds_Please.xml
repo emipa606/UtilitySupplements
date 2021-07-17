@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Stinkroot -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>SeedsPlease</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <SeedsPlease.SeedDef ParentName="SeedBase">
+              <defName>Seed_USStinkroot</defName>
+              <label>stinkroot seeds</label>
+              <sources>
+                <li>Plant_USStinkroot</li>
+              </sources>
+            </SeedsPlease.SeedDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <RecipeDef ParentName="ExtractSeed">
+              <defName>ExtractSeed_USStinkroot</defName>
+              <label>extract stinkroot seeds</label>
+              <description>Extract seeds from stinkroot.</description>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>USStinkrootLeaves</li>
+                    </thingDefs>
+                  </filter>
+                  <count>7</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>USStinkrootLeaves</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <products>
+                <Seed_USStinkroot>3</Seed_USStinkroot>
+              </products>
+            </RecipeDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- Tangleroot -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>SeedsPlease</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <SeedsPlease.SeedDef ParentName="SeedBase">
+              <defName>Seed_USTangleroot</defName>
+              <label>tangleroot shoots</label>
+              <sources>
+                <li>Plant_USTangleroot</li>
+              </sources>
+            </SeedsPlease.SeedDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <RecipeDef ParentName="ExtractSeed">
+              <defName>ExtractSeed_USTangleroot</defName>
+              <label>extract tangleroot shoots</label>
+              <description>Extract shoots from tangleroot.</description>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>USTanglerootThorns</li>
+                    </thingDefs>
+                  </filter>
+                  <count>7</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>USTanglerootThorns</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <products>
+                <Seed_USTangleroot>3</Seed_USTangleroot>
+              </products>
+            </RecipeDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

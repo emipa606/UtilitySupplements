@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Research added in patch -->
+  <!-- Tear Gas Damage -->
+  <DamageDef>
+    <defName>Dam_USTearGas</defName>
+    <label>Tear Gas</label>
+    <workerClass>USToxins.DamageWorker_USTearGas</workerClass>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>0</defaultDamage>
+    <explosionCellMote>Mote_BlastExtinguisher</explosionCellMote>
+    <explosionColorEdge>(1, 1, 1, 0.05)</explosionColorEdge>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+    <harmsHealth>false</harmsHealth>
+    <combatLogRules>Damage_Extinguish</combatLogRules>
+  </DamageDef>
+  <!-- Tear Gas -->
+  <ThingDef ParentName="BaseGas">
+    <defName>Gas_USTearGas</defName>
+    <label>Tear Gas</label>
+    <graphicData>
+      <texPath>Things/Gas/Puff</texPath>
+      <drawSize>1.8</drawSize>
+      <color>(1.0,0.23,0.19,0.5)</color>
+    </graphicData>
+    <gas>
+      <expireSeconds>
+        <min>50</min>
+        <max>75</max>
+      </expireSeconds>
+      <blockTurretTracking>true</blockTurretTracking>
+      <accuracyPenalty>0.5</accuracyPenalty>
+      <rotationSpeed>10</rotationSpeed>
+    </gas>
+    <thingClass>USToxins.USTearGas</thingClass>
+  </ThingDef>
+  <!-- Hediff -->
+  <HediffDef>
+    <defName>HED_USTearGas</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Tear Gas effect</label>
+    <description>Tear Gas effect</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <initialSeverity>1.0</initialSeverity>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.95</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.00</severityPerDayNotImmune>
+      </li>
+    </comps>
+    <makesSickThought>true</makesSickThought>
+    <stages>
+      <!-- 0 -->
+      <li>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>0.1</painOffset>
+        <label>minor</label>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.07</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.07</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.12</offset>
+          </li>
+        </capMods>
+      </li>
+      <!-- 0.5 -->
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>0.15</painOffset>
+        <label>major</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+      <!-- 0.75 -->
+      <li>
+        <minSeverity>0.75</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>0.2</painOffset>
+        <label>severe</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.3</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.3</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.5</offset>
+          </li>
+        </capMods>
+      </li>
+      <!-- 0.95 -->
+      <li>
+        <minSeverity>0.95</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>0.25</painOffset>
+        <label>severe</label>
+        <vomitMtbDays>0.15</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.4</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.4</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.75</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <!-- Tear Gas Grenade -->
+  <ThingDef ParentName="BaseUSMakeableGrenade">
+    <defName>Weapon_USGrenade_TearGas</defName>
+    <label>Tear Gas Grenade</label>
+    <description>Grenade that applies tear gas. The chemicals associated with this grenade will cause severe irritation and pain.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/USGrenades/Weapon_USGrenade_TearGas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <tickerType>Normal</tickerType>
+    <recipeMaker>
+      <researchPrerequisite>MSPhenol</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Chemfuel>10</Chemfuel>
+      <Steel>10</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <MSPhenol>10</MSPhenol>
+    </costList>
+    <researchPrerequisites Inherit="false">
+      <li>MSPhenol</li>
+    </researchPrerequisites>
+    <techLevel>Industrial</techLevel>
+    <weaponTags Inherit="false">
+      <li>USGrenade_NotUsed</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <generateCommonality>0.3</generateCommonality>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>1.0</Mass>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>0.5</SellPriceFactor>
+      <MarketValue>169</MarketValue>
+    </statBases>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <verbs>
+      <li>
+        <label>throw tear gas grenade</label>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Grenade_USTearGas</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>12.9</range>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseUSGrenadeProjectile">
+    <defName>Grenade_USTearGas</defName>
+    <label>Tear Gas Grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/USTearGas_Grenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USTearGas</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>15</speed>
+      <explosionRadius>5.9</explosionRadius>
+      <flyOverhead>false</flyOverhead>
+      <soundExplode>DispensePaste</soundExplode>
+      <postExplosionSpawnThingDef>Gas_USTearGas</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionDelay>80</explosionDelay>
+    </projectile>
+  </ThingDef>
+  <!-- Shell and IED -->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_USTearGas</defName>
+    <label>Tear Gas shell</label>
+    <description>A pressurized shell filled with tear gas. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_USTearGas</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>15.9</explosiveRadius>
+        <explosiveDamageType>Dam_USTearGas</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Gas_USTearGas</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_USTearGas</projectileWhenLoaded>
+    <statBases>
+      <MarketValue>83.5</MarketValue>
+    </statBases>
+    <costList>
+      <Steel>10</Steel>
+      <Chemfuel>5</Chemfuel>
+      <MSPhenol>7</MSPhenol>
+    </costList>
+    <researchPrerequisites Inherit="false">
+      <li>Mortars</li>
+      <li>MSPhenol</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="false">
+      <li>UtilitySuppsShells</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_USTearGas</defName>
+    <label>Tear Gas shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellUSTearGas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USTearGas</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+      <explosionRadius>9.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Gas_USTearGas</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="TrapIEDBase">
+    <defName>TrapIED_USTearGas</defName>
+    <label>IED Tear Gas trap</label>
+    <description>A pair of tear gas shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/IEDUSTearGas</texPath>
+    </graphicData>
+    <costList>
+      <Shell_USTearGas>2</Shell_USTearGas>
+    </costList>
+    <statBases>
+      <MarketValue>167</MarketValue>
+    </statBases>
+    <designationHotKey>Misc10</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>12.9</explosiveRadius>
+        <explosiveDamageType>Dam_USTearGas</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Gas_USTearGas</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>15</min>
+          <max>15</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <specialDisplayRadius>12.9</specialDisplayRadius>
+    <researchPrerequisites Inherit="false">
+      <li>IEDs</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

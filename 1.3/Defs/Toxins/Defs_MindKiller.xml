@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Damage -->
+  <DamageDef>
+    <defName>Dam_USMindKill</defName>
+    <label>Mind Killer</label>
+    <workerClass>USToxins.DamageWorker_USMindKill</workerClass>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>0</defaultDamage>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorEdge>(1, 1, 1, 0.05)</explosionColorEdge>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+    <harmsHealth>false</harmsHealth>
+    <combatLogRules>Damage_Extinguish</combatLogRules>
+  </DamageDef>
+  <!-- Filth -->
+  <!--
+  <ThingDef ParentName="USBaseFilth">
+    		<defName>Filth_USInsectKillFoam</defName>
+    		<label>Insect Killer Foam</label>
+		<thingClass>USToxins.USInsectKiller</thingClass>
+		<tickerType>Normal</tickerType>
+    		<statBases>
+      		<Beauty>-20</Beauty>
+      		<Cleanliness>-4</Cleanliness>
+    		</statBases>
+    		<graphicData>
+      		<texPath>Things/Filth/Spatter</texPath>
+      		<color>(117, 71, 23, 100)</color>
+    		</graphicData>
+    		<pathCost>5</pathCost>
+    		<filth>
+      		<rainWashes>false</rainWashes>
+      		<cleaningWorkToReduceThickness>120</cleaningWorkToReduceThickness>
+      		<canFilthAttach>true</canFilthAttach>
+      		<allowsFire>true</allowsFire>
+    		</filth>
+  </ThingDef>
+	-->
+  <ThingDef ParentName="BaseGas">
+    <defName>Gas_USMindKill</defName>
+    <label>Mind Killer Gas</label>
+    <graphicData>
+      <texPath>Things/Gas/Puff</texPath>
+      <drawSize>1.8</drawSize>
+      <color>(0.81,0.13,0.09,0.5)</color>
+    </graphicData>
+    <gas>
+      <expireSeconds>
+        <min>90</min>
+        <max>100</max>
+      </expireSeconds>
+      <blockTurretTracking>true</blockTurretTracking>
+      <accuracyPenalty>0.5</accuracyPenalty>
+      <rotationSpeed>10</rotationSpeed>
+    </gas>
+    <thingClass>USToxins.USMindKillGas</thingClass>
+  </ThingDef>
+  <!-- Liquid -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>USMindKillLiquid</defName>
+    <label>Mind Killer Liquid</label>
+    <description>A concentrated chemical of the Stinkroot. This particular liquid will release a toxic gas cloud on release.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/USMindKillLiquid</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.95</drawSize>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>49.5</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>UtilitySupps</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- Liquid Recipe -->
+  <RecipeDef>
+    <defName>MakeBulkUSMindKillLiquid</defName>
+    <label>Make Mind killer liquid</label>
+    <description>Make 5 Mind killer liquid</description>
+    <jobString>Making toxins.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>950</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSPhenol</li>
+            <li>MSSulphuricAcid</li>
+            <li>MSHydrochloricAcid</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USStinkrootLeaves</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+        <li>MSPhenol</li>
+        <li>MSSulphuricAcid</li>
+        <li>MSHydrochloricAcid</li>
+        <li>USStinkrootLeaves</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <USMindKillLiquid>5</USMindKillLiquid>
+    </products>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Intellectual>10</Intellectual>
+    </skillRequirements>
+    <researchPrerequisite>USMindKill</researchPrerequisite>
+  </RecipeDef>
+  <!-- Applicator -->
+  <!--	
+<ThingDef ParentName="BaseMakeableUSSprayer">
+		<defName>Gun_USSprayer_MindKill</defName>
+		<label>Mind Killer Sprayer</label>
+		<description>Sprayer that applies toxic gas. The chemicals associated with this sprayer will detrimentally effect the mind.</description>
+		<graphicData>
+			<texPath>Things/Item/Gun_USSprayer_MindKill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>		
+		<soundInteract>Interact_Grenade</soundInteract>
+		<recipeMaker>
+		  <researchPrerequisite>USMindKill</researchPrerequisite>
+		  <skillRequirements>
+			<Crafting>4</Crafting>
+		  </skillRequirements>
+		  <recipeUsers>
+			  <li>TableMachining</li>
+		  </recipeUsers>
+		</recipeMaker>
+		<techLevel>Industrial</techLevel>
+    		<weaponTags Inherit="false">
+      		<li>USSpray_NotUsed</li>
+    		</weaponTags>
+   		<thingCategories>
+   	   		<li>UtilitySupps</li>
+    		</thingCategories>
+		<generateCommonality>0.3</generateCommonality>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>1.2</Mass>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+			<Flammability>1.0</Flammability>
+			<SellPriceFactor>0.5</SellPriceFactor>
+			<MarketValue>186.5</MarketValue>
+		</statBases>
+		<costList>
+			<Chemfuel>20</Chemfuel>
+			<Steel>5</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<USMindKillLiquid>2</USMindKillLiquid>
+		</costList>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<verbs>
+			<li>
+			    <forcedMissRadius>1</forcedMissRadius>			
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_USMindKill_Gas</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>4</range>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<targetParams>
+				    <canTargetLocations>true</canTargetLocations>
+				</targetParams>		
+	-->
+  <!--
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				-->
+  <!--
+				<soundCast>DispensePaste</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>1</muzzleFlashScale>			
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+		<li Class="USToxins.CompProperties_USToxUses">
+			<USToxUses>100</USToxUses>
+		</li>
+	</comps>
+	<thingClass>USToxins.USToxUsesData</thingClass>
+	</ThingDef>		
+-->
+  <!--
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_USMindKill_Gas</defName>
+    <label>Mind Killer Gas</label>
+    <graphicData>
+      	<texPath>Things/Projectile/USMindKill_Spray</texPath>
+      	<graphicClass>Graphic_Single</graphicClass>
+      	<shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      	<damageDef>Dam_USMindKill</damageDef>
+-->
+  <!-- damage amount is the damage def default -->
+  <!--
+      	<speed>30</speed>
+      	<explosionRadius>2</explosionRadius>
+      	<flyOverhead>false</flyOverhead>
+      	<soundExplode>DispensePaste</soundExplode>
+      	<postExplosionSpawnThingDef>Gas_USMindKill</postExplosionSpawnThingDef>
+      	<postExplosionSpawnChance>1</postExplosionSpawnChance>
+      	<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      	<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+-->
+  <!-- <explosionEffect>ExtinguisherExplosion</explosionEffect> -->
+  <!--
+    </projectile>
+  </ThingDef>
+-->
+</Defs>

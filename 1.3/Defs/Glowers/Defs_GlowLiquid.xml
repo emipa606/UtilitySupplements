@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef>
+    <defName>Dam_USGlower</defName>
+    <label>Glower</label>
+    <workerClass>USToxins.DamageWorker_USGlower</workerClass>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>0</defaultDamage>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorEdge>(0.5, 0.5, 0.5, 0.05)</explosionColorEdge>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+    <harmsHealth>false</harmsHealth>
+    <combatLogRules>Damage_Extinguish</combatLogRules>
+  </DamageDef>
+  <!-- Filth -->
+  <ThingDef ParentName="USBaseFilth">
+    <defName>Filth_USGlowFoam</defName>
+    <label>Glow Foam</label>
+    <thingClass>USToxins.USGlowFoam</thingClass>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Beauty>+1</Beauty>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(231, 195, 86, 100)</color>
+    </graphicData>
+    <pathCost>5</pathCost>
+    <filth>
+      <rainWashes>false</rainWashes>
+      <cleaningWorkToReduceThickness>120</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <allowsFire>true</allowsFire>
+    </filth>
+  </ThingDef>
+  <ThingDef ParentName="USBaseFilth">
+    <defName>Filth_USGlowStick</defName>
+    <label>Glow Stick</label>
+    <thingClass>USToxins.USGlowStick</thingClass>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Beauty>+2</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/USGlowStick/USGlowStick</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <onGroundRandomRotateAngle>95</onGroundRandomRotateAngle>
+    </graphicData>
+    <pathCost>5</pathCost>
+    <filth>
+      <rainWashes>false</rainWashes>
+      <cleaningWorkToReduceThickness>120</cleaningWorkToReduceThickness>
+      <canFilthAttach>false</canFilthAttach>
+      <allowsFire>true</allowsFire>
+    </filth>
+  </ThingDef>
+  <!-- Mote -->
+  <!-- Liquid -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>USGlowLiquid</defName>
+    <label>Glower Liquid</label>
+    <description>An unstable liquid that when exposed to air will give off some luminescence for a period of time.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/USGlowLiquid</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.95</drawSize>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>51.1</MarketValue>
+      <!-- 3 H202, 1 Phenol, 1 Glycerol, 1 Ethanol -->
+      <Mass>0.3</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>3.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>UtilitySupps</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- Liquid Recipe -->
+  <RecipeDef>
+    <defName>MakeBulkUSGlowLiquid</defName>
+    <label>Make Glow liquid</label>
+    <description>Make 5 Glow liquid</description>
+    <jobString>Making Glow liquid.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1250</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSHydrogenPeroxide</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSPhenol</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSGlycerol</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSEthanol</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MSHydrogenPeroxide</li>
+        <li>MSPhenol</li>
+        <li>MSGlycerol</li>
+        <li>MSEthanol</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <USGlowLiquid>5</USGlowLiquid>
+    </products>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Intellectual>10</Intellectual>
+    </skillRequirements>
+    <researchPrerequisite>USGlowers</researchPrerequisite>
+  </RecipeDef>
+</Defs>

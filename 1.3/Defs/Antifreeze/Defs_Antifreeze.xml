@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Damage -->
+  <DamageDef>
+    <defName>Dam_USAntifreeze</defName>
+    <label>Antifreeze</label>
+    <workerClass>USToxins.DamageWorker_USAntifreeze</workerClass>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>0</defaultDamage>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorEdge>(0.5, 0.5, 0.5, 0.05)</explosionColorEdge>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+    <harmsHealth>false</harmsHealth>
+    <combatLogRules>Damage_Extinguish</combatLogRules>
+  </DamageDef>
+  <!-- Filth -->
+  <ThingDef ParentName="USBaseFilth">
+    <defName>Filth_USAntifreeze</defName>
+    <label>Filth Antifreeze</label>
+    <thingClass>USToxins.USAntifreeze</thingClass>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Beauty>-4</Beauty>
+      <Cleanliness>+1</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(250, 250, 250, 100)</color>
+    </graphicData>
+    <pathCost>5</pathCost>
+    <filth>
+      <rainWashes>false</rainWashes>
+      <cleaningWorkToReduceThickness>120</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <allowsFire>true</allowsFire>
+    </filth>
+  </ThingDef>
+  <!-- Liquid -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>USAntifreeze</defName>
+    <label>Antifreeze</label>
+    <description>This liquid can be used to melt snow.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/USAntifreeze</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.95</drawSize>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>42.7</MarketValue>
+      <!-- 5 Chemfuel, 1 Phenol, 2 Ethanol -->
+      <Mass>0.3</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>UtilitySupps</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- Liquid Recipe -->
+  <RecipeDef>
+    <defName>MakeBulkUSAntifreeze</defName>
+    <label>Make antifreeze</label>
+    <description>Make 5 antifreeze</description>
+    <jobString>Making antifreeze.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>950</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSPhenol</li>
+            <li>MSSulphuricAcid</li>
+            <li>MSHydrochloricAcid</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSEthanol</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+        <li>MSPhenol</li>
+        <li>MSSulphuricAcid</li>
+        <li>MSHydrochloricAcid</li>
+        <li>MSEthanol</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <USAntifreeze>5</USAntifreeze>
+    </products>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+    <researchPrerequisite>USAntifreeze</researchPrerequisite>
+  </RecipeDef>
+  <!-- Applicator -->
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>Gun_USSprayer_Antifreeze</defName>
+    <label>Antifreeze Sprayer</label>
+    <description>Sprayer that applies antifreeze. The liquid in the sprayer can be used to clear snow.</description>
+    <graphicData>
+      <texPath>Things/Item/Gun_USSprayer_Antifreeze</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>USAntifreeze</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags Inherit="false">
+      <li>USSpray_NotUsed</li>
+    </weaponTags>
+    <thingCategories>
+      <li>UtilitySupps</li>
+    </thingCategories>
+    <generateCommonality>0.3</generateCommonality>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.2</Mass>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>0.5</SellPriceFactor>
+      <MarketValue>172.9</MarketValue>
+    </statBases>
+    <costList>
+      <Chemfuel>20</Chemfuel>
+      <Steel>5</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <USAntifreeze>2</USAntifreeze>
+    </costList>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <verbs>
+      <li>
+        <forcedMissRadius>1</forcedMissRadius>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_USAntifreeze</defaultProjectile>
+        <warmupTime>0.7</warmupTime>
+        <range>4</range>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <!--
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				-->
+        <soundCast>DispensePaste</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>1</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="USToxins.CompProperties_USToxUses">
+        <USToxUses>100</USToxUses>
+      </li>
+    </comps>
+    <thingClass>USToxins.USToxUsesData</thingClass>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_USAntifreeze</defName>
+    <label>Antifreeze</label>
+    <graphicData>
+      <texPath>Things/Projectile/USAntifreeze_Spray</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USAntifreeze</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>30</speed>
+      <explosionRadius>2</explosionRadius>
+      <flyOverhead>false</flyOverhead>
+      <soundExplode>DispensePaste</soundExplode>
+      <postExplosionSpawnThingDef>Filth_USAntifreeze</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <!-- <explosionEffect>ExtinguisherExplosion</explosionEffect> -->
+    </projectile>
+  </ThingDef>
+</Defs>

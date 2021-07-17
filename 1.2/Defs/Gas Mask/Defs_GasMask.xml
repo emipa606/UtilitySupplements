@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Modified copy of Defs from Unlimited Hugs Remote Tech mod with permission -->
+  <ThingDef Name="USApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <SellPriceFactor>0.5</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef Name="USApparelMakeableBase" ParentName="USApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="USApparelMakeableBase">
+    <defName>USApparel_GasMask</defName>
+    <label>gas mask</label>
+    <description>A mask that protects the wearer from toxic gasses and other air-borne contaminants.
+The filters wear out fairly quickly, so it's recommended to wear this only when necessary.</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>USStinkroot</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Apparel/USApparel_GasMask/USApparel_GasMask</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>3500</WorkToMake>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>150</MarketValue>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+      <StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
+      <Insulation_Cold>3</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+      <Mass>1</Mass>
+    </statBases>
+    <generateCommonality>0.8</generateCommonality>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <MedicineIndustrial>2</MedicineIndustrial>
+    </costList>
+    <equippedStatOffsets>
+      <ToxicSensitivity>-0.75</ToxicSensitivity>
+      <ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+      <SocialImpact>-0.2</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Apparel/USApparel_GasMask/USApparel_GasMask</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>Outlander</li>
+        <li>Military</li>
+      </tags>
+      <wearPerDay>10</wearPerDay>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>5</weight>
+          <only>RGBA(1,0.56,0.7,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ======================== Tangleroot  ==================================== -->
+  <!-- === Plant === -->
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_USTangleroot</defName>
+    <label>Tangleroot</label>
+    <description>A genetically modified shrub with razor sharp thorns.</description>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Nutrition>0.01</Nutrition>
+      <Beauty>-15</Beauty>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <pathCost>75</pathCost>
+    <graphicData>
+      <texPath>Things/Plant/USTangleroot</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <ingestible />
+    <plant>
+      <fertilitySensitivity>0.50</fertilitySensitivity>
+      <fertilityMin>0.2</fertilityMin>
+      <growDays>4</growDays>
+      <dieIfLeafless>false</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>USTanglerootThorns</harvestedThingDef>
+      <harvestYield>5</harvestYield>
+      <sowMinSkill>10</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <harvestWork>90</harvestWork>
+      <visualSizeRange Inherit="false">
+        <min>0.5</min>
+        <max>0.85</max>
+      </visualSizeRange>
+      <topWindExposure>0.5</topWindExposure>
+      <wildOrder>2</wildOrder>
+      <neverBlightable>true</neverBlightable>
+      <sowResearchPrerequisites>
+        <li>USTangleroot</li>
+      </sowResearchPrerequisites>
+    </plant>
+  </ThingDef>
+  <!-- === Thorns === -->
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>USTanglerootThorns</defName>
+    <label>Tangleroot Thorns</label>
+    <description>Harvested thorns of the tangleroot. These thorns are extremely sharp and contain various potent chemical alkaloids.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Raw/USTanglerootThorns/USTanglerootThorns</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.0</MarketValue>
+      <Flammability>0.1</Flammability>
+      <FoodPoisonChanceFixedHuman>0.25</FoodPoisonChanceFixedHuman>
+      <Nutrition>0.02</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+    </ingestible>
+  </ThingDef>
+  <!-- Gas -->
+  <ThingDef ParentName="BaseGas">
+    <defName>Gas_USTangleroot</defName>
+    <label>Tangleroot Gas</label>
+    <graphicData>
+      <texPath>Things/Gas/Puff</texPath>
+      <drawSize>1.8</drawSize>
+      <color>(0.18,0.60,0.22,0.5)</color>
+    </graphicData>
+    <gas>
+      <expireSeconds>
+        <min>31</min>
+        <max>32</max>
+      </expireSeconds>
+      <blockTurretTracking>true</blockTurretTracking>
+      <accuracyPenalty>0.5</accuracyPenalty>
+      <rotationSpeed>10</rotationSpeed>
+    </gas>
+    <thingClass>USToxins.USTanglerootGas</thingClass>
+  </ThingDef>
+  <!-- hediff -->
+  <HediffDef>
+    <defName>HED_USTangleRoot</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>TangleRoot effect</label>
+    <description>Tangleroot effect</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>2.0</maxSeverity>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.95</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.00</severityPerDayNotImmune>
+      </li>
+    </comps>
+    <lethalSeverity>2.0</lethalSeverity>
+    <makesSickThought>true</makesSickThought>
+    <stages>
+      <!-- 0 -->
+      <li>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>0.05</painOffset>
+        <label>minor</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.06</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.14</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.04</offset>
+          </li>
+        </capMods>
+      </li>
+      <!-- 0.5 -->
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>0.08</painOffset>
+        <label>moderate</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.10</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.24</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+      </li>
+      <!-- 1.0 -->
+      <li>
+        <minSeverity>1.0</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>0.12</painOffset>
+        <label>major</label>
+        <vomitMtbDays>0.12</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.16</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.34</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.14</offset>
+          </li>
+        </capMods>
+      </li>
+      <!-- 1.5 -->
+      <li>
+        <minSeverity>1.5</minSeverity>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.15</painOffset>
+        <label>severe</label>
+        <vomitMtbDays>0.25</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.50</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>MuscleParasites</hediff>
+            <mtbDays>1</mtbDays>
+            <canAffectAnyLivePart>true</canAffectAnyLivePart>
+          </li>
+          <li Class="HediffGiver_Random">
+            <hediff>ChemicalDamageModerate</hediff>
+            <mtbDays>2.5</mtbDays>
+            <partsToAffect>
+              <li>Brain</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  <!-- Animals can flee Tangleroot -->
+  <ThinkTreeDef>
+    <defName>USTangleRoot_AnimalsFlee</defName>
+    <insertTag>Animal_PreMain</insertTag>
+    <insertPriority>101</insertPriority>
+    <thinkRoot Class="USToxins.ThinkNode_USIFAnimalHasClarity">
+      <subNodes>
+        <li Class="ThinkNode_Priority">
+          <subNodes>
+            <li Class="USToxins.JobGiver_USTanglerootAnimalFlee" />
+          </subNodes>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+</Defs>

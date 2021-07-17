@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Acid Gas Damage -->
+  <DamageDef>
+    <defName>Dam_USAcidGas</defName>
+    <label>Acid Gas</label>
+    <workerClass>USToxins.DamageWorker_USAcidGas</workerClass>
+    <harmsHealth>true</harmsHealth>
+    <externalViolence>true</externalViolence>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <deathMessage>{0} has burned to death.</deathMessage>
+    <hediff>USAcidBurn</hediff>
+    <hediffSolid>USAcidBurn</hediffSolid>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>5</defaultDamage>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorEdge>(1, 1, 1, 0.05)</explosionColorEdge>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+  </DamageDef>
+  <HediffDef ParentName="InjuryBase">
+    <defName>USAcidBurn</defName>
+    <label>acid burn</label>
+    <labelNoun>an acid burn</labelNoun>
+    <description>An acid burn.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>tended</labelTendedWellInner>
+        <labelSolidTendedWell>tended</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.30</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>acid burn scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.01875</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <canMerge>true</canMerge>
+      <destroyedLabel>Burned off (acid)</destroyedLabel>
+      <destroyedOutLabel>Burned out (acid)</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+  <!-- Acid Gas -->
+  <ThingDef ParentName="BaseGas">
+    <defName>Gas_USAcidGas</defName>
+    <label>Acid Gas</label>
+    <graphicData>
+      <texPath>Things/Gas/Puff</texPath>
+      <drawSize>1.8</drawSize>
+      <color>(0.82,0.94,0.45,0.5)</color>
+    </graphicData>
+    <gas>
+      <expireSeconds>
+        <min>40</min>
+        <max>60</max>
+      </expireSeconds>
+      <blockTurretTracking>true</blockTurretTracking>
+      <accuracyPenalty>0.6</accuracyPenalty>
+      <rotationSpeed>10</rotationSpeed>
+    </gas>
+    <thingClass>USToxins.USAcidGas</thingClass>
+  </ThingDef>
+  <!-- Hediff -->
+  <HediffDef>
+    <defName>HED_USAcidGas</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Acid Gas effect</label>
+    <description>Acid Gas effect</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.95</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.00</severityPerDayNotImmune>
+      </li>
+    </comps>
+    <makesSickThought>true</makesSickThought>
+    <stages>
+      <!-- 0 -->
+      <li>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>0.1</painOffset>
+        <label>minor</label>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.03</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.03</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.06</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <!-- 0.3 -->
+      <li>
+        <minSeverity>0.3</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>0.15</painOffset>
+        <label>major</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.02</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.07</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.07</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.12</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+      <!-- 0.5 -->
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <lifeThreatening>false</lifeThreatening>
+        <painOffset>0.2</painOffset>
+        <label>severe</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.4</offset>
+          </li>
+        </capMods>
+      </li>
+      <!-- 0.85 -->
+      <li>
+        <minSeverity>0.85</minSeverity>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.25</painOffset>
+        <label>severe</label>
+        <vomitMtbDays>0.15</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.4</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.75</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <!-- Acid Gas Grenade -->
+  <ThingDef ParentName="BaseUSMakeableGrenade">
+    <defName>Weapon_USGrenade_AcidGas</defName>
+    <label>Acid Gas Grenade</label>
+    <description>Grenade that applies Acid gas. The chemicals associated with this grenade will cause irritation and pain, chemical acid burns and significantly effect breathing.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/USGrenades/Weapon_USGrenade_AcidGas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <tickerType>Normal</tickerType>
+    <recipeMaker>
+      <researchPrerequisite>USAcidGas</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Chemfuel>10</Chemfuel>
+      <Steel>10</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <MSHydrochloricAcid>10</MSHydrochloricAcid>
+    </costList>
+    <researchPrerequisites Inherit="false">
+      <li>USAcidGas</li>
+    </researchPrerequisites>
+    <techLevel>Industrial</techLevel>
+    <weaponTags Inherit="false">
+      <li>USGrenade_NotUsed</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <generateCommonality>0.3</generateCommonality>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>1.0</Mass>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>0.5</SellPriceFactor>
+      <MarketValue>151</MarketValue>
+    </statBases>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <verbs>
+      <li>
+        <label>throw acid gas grenade</label>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Grenade_USAcidGas</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>12.9</range>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseUSGrenadeProjectile">
+    <defName>Grenade_USAcidGas</defName>
+    <label>Acid Gas Grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/USAcidGas_Grenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USAcidGas</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>15</speed>
+      <explosionRadius>5.9</explosionRadius>
+      <flyOverhead>false</flyOverhead>
+      <soundExplode>DispensePaste</soundExplode>
+      <postExplosionSpawnThingDef>Gas_USAcidGas</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionDelay>80</explosionDelay>
+    </projectile>
+  </ThingDef>
+  <!-- Shell and IED -->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_USAcidGas</defName>
+    <label>Acid Gas shell</label>
+    <description>A pressurized shell filled with acid gas. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_USAcidGas</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>12.9</explosiveRadius>
+        <explosiveDamageType>Dam_USAcidGas</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Gas_USAcidGas</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_USAcidGas</projectileWhenLoaded>
+    <statBases>
+      <MarketValue>84.4</MarketValue>
+      <!-- 30.5 53.9  -->
+    </statBases>
+    <costList>
+      <Steel>10</Steel>
+      <Chemfuel>5</Chemfuel>
+      <MSHydrochloricAcid>7</MSHydrochloricAcid>
+    </costList>
+    <researchPrerequisites Inherit="false">
+      <li>Mortars</li>
+      <li>USAcidGas</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="false">
+      <li>UtilitySuppsShells</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_USAcidGas</defName>
+    <label>Acid Gas shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellUSAcidGas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USAcidGas</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+      <explosionRadius>9.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Gas_USAcidGas</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+    </projectile>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeBulkUSAcidGasShell</defName>
+    <label>Make Acid gas shells in bulk</label>
+    <description>Make 4 acid gas shells</description>
+    <jobString>Making acid gas shells.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3200</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSHydrochloricAcid</li>
+          </thingDefs>
+        </filter>
+        <count>28</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Chemfuel</li>
+        <li>MSHydrochloricAcid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Shell_USAcidGas>4</Shell_USAcidGas>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>USAcidGas</researchPrerequisite>
+  </RecipeDef>
+  <ThingDef ParentName="TrapIEDBase">
+    <defName>TrapIED_USAcidGas</defName>
+    <label>IED Acid Gas trap</label>
+    <description>A pair of acid gas shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/IEDUSAcidGas</texPath>
+    </graphicData>
+    <costList>
+      <Shell_USAcidGas>2</Shell_USAcidGas>
+    </costList>
+    <statBases>
+      <MarketValue>168.8</MarketValue>
+    </statBases>
+    <designationHotKey>Misc10</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>10.9</explosiveRadius>
+        <explosiveDamageType>Dam_USAcidGas</explosiveDamageType>
+        <startWickHitPointsPercent>0.25</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Gas_USAcidGas</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>15</min>
+          <max>15</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <specialDisplayRadius>10.9</specialDisplayRadius>
+    <researchPrerequisites Inherit="false">
+      <li>IEDs</li>
+      <li>USAcidGas</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

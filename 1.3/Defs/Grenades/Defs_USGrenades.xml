@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Grenades -->
+  <ThingDef Name="BaseUSMakeableGrenade" ParentName="BaseWeapon" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Name="BaseUSGrenadeProjectile" Abstract="True">
+    <category>Projectile</category>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Projectile_Explosive</thingClass>
+    <label>projectile</label>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>12</speed>
+      <flyOverhead>false</flyOverhead>
+    </projectile>
+  </ThingDef>
+  <!-- Insect Killer -->
+  <ThingDef ParentName="BaseUSMakeableGrenade">
+    <defName>Weapon_USGrenade_InsectKill</defName>
+    <label>Insect Killer Grenade</label>
+    <description>Grenade that applies a caustic neurotoxin as a foam. The chemicals associated with this grenade will break down and combust with exposed insectoid flesh and fluids.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/USGrenades/Weapon_USGrenade_InsectKill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <tickerType>Normal</tickerType>
+    <recipeMaker>
+      <researchPrerequisite>USInsectKill</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags Inherit="false">
+      <li>USGrenade_NotUsed</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <generateCommonality>0.3</generateCommonality>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>1.0</Mass>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>0.5</SellPriceFactor>
+      <MarketValue>141</MarketValue>
+    </statBases>
+    <costList>
+      <Chemfuel>10</Chemfuel>
+      <Steel>10</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <USInsectKillLiquid>2</USInsectKillLiquid>
+    </costList>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <verbs>
+      <li>
+        <label>throw insect killer grenade</label>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Grenade_USInsectKill</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>12.9</range>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseUSGrenadeProjectile">
+    <defName>Grenade_USInsectKill</defName>
+    <label>Insect Killer Grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/USInsectKill_Grenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USInsectKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>15</speed>
+      <explosionRadius>4.9</explosionRadius>
+      <flyOverhead>false</flyOverhead>
+      <soundExplode>DispensePaste</soundExplode>
+      <postExplosionSpawnThingDef>Filth_USInsectKillFoam</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionDelay>80</explosionDelay>
+    </projectile>
+  </ThingDef>
+  <!-- Mind Killer -->
+  <ThingDef ParentName="BaseUSMakeableGrenade">
+    <defName>Weapon_USGrenade_MindKill</defName>
+    <label>Mind Killer Grenade</label>
+    <description>Grenade that applies mind killer gas. The chemicals associated with this grenade will detrimentally effect the mind.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/USGrenades/Weapon_USGrenade_MindKill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <tickerType>Normal</tickerType>
+    <recipeMaker>
+      <researchPrerequisite>USMindKill</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags Inherit="false">
+      <li>USGrenade_NotUsed</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <generateCommonality>0.3</generateCommonality>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>1.0</Mass>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>0.5</SellPriceFactor>
+      <MarketValue>173</MarketValue>
+    </statBases>
+    <costList>
+      <Chemfuel>10</Chemfuel>
+      <Steel>10</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <USMindKillLiquid>2</USMindKillLiquid>
+    </costList>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <verbs>
+      <li>
+        <label>throw mind killer grenade</label>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Grenade_USMindKill</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>12.9</range>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseUSGrenadeProjectile">
+    <defName>Grenade_USMindKill</defName>
+    <label>Mind Killer Grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/USMindKill_Grenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USMindKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>15</speed>
+      <explosionRadius>5.9</explosionRadius>
+      <flyOverhead>false</flyOverhead>
+      <soundExplode>DispensePaste</soundExplode>
+      <postExplosionSpawnThingDef>Gas_USMindKill</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionDelay>80</explosionDelay>
+    </projectile>
+  </ThingDef>
+  <!-- Tangle Killer -->
+  <ThingDef ParentName="BaseUSMakeableGrenade">
+    <defName>Weapon_USGrenade_TangleKill</defName>
+    <label>Tangle Killer Grenade</label>
+    <description>Grenade that applies tangle kill gas.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/USGrenades/Weapon_USGrenade_TangleKill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <tickerType>Normal</tickerType>
+    <recipeMaker>
+      <researchPrerequisite>USTangleKill</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags Inherit="false">
+      <li>USGrenade_NotUsed</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <generateCommonality>0.3</generateCommonality>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>1.0</Mass>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>0.5</SellPriceFactor>
+      <MarketValue>165</MarketValue>
+    </statBases>
+    <costList>
+      <Chemfuel>10</Chemfuel>
+      <Steel>10</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <USTangleKillLiquid>2</USTangleKillLiquid>
+    </costList>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <verbs>
+      <li>
+        <label>throw tangle killer grenade</label>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Grenade_USTangleKill</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>12.9</range>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseUSGrenadeProjectile">
+    <defName>Grenade_USTangleKill</defName>
+    <label>Tangle Killer Grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/USTangleKill_Grenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USTangleKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>15</speed>
+      <explosionRadius>5.9</explosionRadius>
+      <flyOverhead>false</flyOverhead>
+      <soundExplode>DispensePaste</soundExplode>
+      <postExplosionSpawnThingDef>Gas_USTangleKill</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionDelay>80</explosionDelay>
+    </projectile>
+  </ThingDef>
+  <!-- Glow Sticks -->
+  <ThingDef ParentName="BaseUSMakeableGrenade">
+    <defName>Weapon_USGrenade_GlowStick</defName>
+    <label>Glow Sticks</label>
+    <description>Glow Sticks, contianed within the transparent container is luminescent liquid.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/USGrenades/Weapon_USGrenade_GlowStick</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <tickerType>Normal</tickerType>
+    <recipeMaker>
+      <researchPrerequisite>USGlowers</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags Inherit="false">
+      <li>USGrenade_NotUsed</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <generateCommonality>0.05</generateCommonality>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>1.0</Mass>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>0.5</SellPriceFactor>
+      <MarketValue>92.6</MarketValue>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <USGlowLiquid>1</USGlowLiquid>
+    </costList>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <verbs>
+      <li>
+        <label>throw glow stick</label>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Grenade_USGlowStick</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>16.9</range>
+        <noiseRadius>1</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>0</explosiveRadius>
+        <explosiveDamageType>Stun</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseUSGrenadeProjectile">
+    <defName>Grenade_USGlowStick</defName>
+    <label>Glow Stick</label>
+    <graphicData>
+      <texPath>Things/Projectile/USGlowStick_Grenade</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USGlower</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>19</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>false</flyOverhead>
+      <soundExplode>DispensePaste</soundExplode>
+      <postExplosionSpawnThingDef>Filth_USGlowStick</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
+      <explosionDelay>5</explosionDelay>
+    </projectile>
+  </ThingDef>
+</Defs>

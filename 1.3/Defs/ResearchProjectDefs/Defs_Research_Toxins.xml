@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Research -->
+  <!-- Plants -->
+  <ResearchProjectDef>
+    <defName>USStinkroot</defName>
+    <label>Stinkroot</label>
+    <description>Grants the ability to plant the stinkroot flower.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>MSPhenol</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>USTangleroot</defName>
+    <label>Tangleroot</label>
+    <description>Grants the ability to plant the tangleroot vine.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>MSPhenol</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+  <!-- Generic -->
+  <ResearchProjectDef>
+    <defName>USAcidGas</defName>
+    <label>Acid Gas</label>
+    <description>Grants the ability to make acid gas.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Machining</li>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>USFilthKill</defName>
+    <label>Detergant</label>
+    <description>Grants the ability to make active detergant.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Machining</li>
+      <li>MSPhenol</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>USAntifreeze</defName>
+    <label>Antifreeze</label>
+    <description>Grants the ability to make antifreeze.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>USFilthKill</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>USInsectKill</defName>
+    <label>Insect Killer Toxins</label>
+    <description>Grants the ability to make insect killing toxins.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>USFilthKill</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>USMindKill</defName>
+    <label>Mind Killer Toxins</label>
+    <description>Grants the ability to make mind effecting toxins.</description>
+    <baseCost>650</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>USFilthKill</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>USGlowers</defName>
+    <label>Glowers</label>
+    <description>Grants the ability to make luminescent items.</description>
+    <baseCost>450</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>USFilthKill</li>
+      <li>MSGlycerol</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+  <!-- Plant branch -->
+  <!-- Stinkroot -->
+  <ResearchProjectDef>
+    <defName>USPlantKill</defName>
+    <label>Plant Killer Toxins</label>
+    <description>Grants the ability to make plant killing toxins.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Machining</li>
+      <li>USStinkroot</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>USTreeKill</defName>
+    <label>Tree Killer Toxins</label>
+    <description>Grants the ability to make tree killing toxins.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>USPlantKill</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>USWeedKill</defName>
+    <label>Weed Killer Toxins</label>
+    <description>Grants the ability to make weed killing toxins.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>USPlantKill</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>USBlightKill</defName>
+    <label>Blight Killer Toxins</label>
+    <description>Grants the ability to make blight killing toxins.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>USPlantKill</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+  <!-- Tangleroot -->
+  <ResearchProjectDef>
+    <defName>USTangleKill</defName>
+    <label>Tangle Killer Toxins</label>
+    <description>Grants the ability to make tangleroot toxins.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>USTangleroot</li>
+    </prerequisites>
+    <tab>UtilitySuppTab</tab>
+  </ResearchProjectDef>
+</Defs>
