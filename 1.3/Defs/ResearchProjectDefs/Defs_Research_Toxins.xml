@@ -12,6 +12,8 @@
       <li>MSPhenol</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.60</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>USTangleroot</defName>
@@ -23,6 +25,8 @@
       <li>MSPhenol</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   <!-- Generic -->
   <ResearchProjectDef>
@@ -36,6 +40,8 @@
       <li>DrugProduction</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.40</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>USFilthKill</defName>
@@ -48,6 +54,8 @@
       <li>MSPhenol</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.10</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>USAntifreeze</defName>
@@ -59,6 +67,8 @@
       <li>USFilthKill</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>USInsectKill</defName>
@@ -70,6 +80,8 @@
       <li>USFilthKill</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>USMindKill</defName>
@@ -81,6 +93,8 @@
       <li>USFilthKill</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.65</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>USGlowers</defName>
@@ -93,6 +107,8 @@
       <li>MSGlycerol</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
   <!-- Plant branch -->
   <!-- Stinkroot -->
@@ -107,6 +123,8 @@
       <li>USStinkroot</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.60</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>USTreeKill</defName>
@@ -118,6 +136,8 @@
       <li>USPlantKill</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>2.85</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>USWeedKill</defName>
@@ -129,6 +149,8 @@
       <li>USPlantKill</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>3.60</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>USBlightKill</defName>
@@ -140,6 +162,8 @@
       <li>USPlantKill</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   <!-- Tangleroot -->
   <ResearchProjectDef>
@@ -152,5 +176,7 @@
       <li>USTangleroot</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 </Defs>

@@ -1,6 +1,6 @@
 # UtilitySupplements
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of peladors mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2012459600
@@ -8,19 +8,10 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2012459600
 - Since I did not have the source-code there might be some issues, report if anything seems off.
 - Updated German translation, via Erdnussbrot
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/UtilitySupplements]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 Optional Expansion: Adds various utility items. (Note Medical Supplements mod is required).
@@ -43,15 +34,15 @@ https://1drv.ms/b/s!Au3GsmKyQkDYiuVxeFes0XYuoZd37A?e=wSiEpc]Utility Supplements 
 
 Application of the foam or use of these toxins is handled using multiple delivery methods.
 
-**&quot;Sprayer&quot;**: allows the toxins to be directly applied as foam to small areas with control. (Manual process when drafted). The sprayers also have a limited number of uses (indicators provided).
+**"Sprayer"**: allows the toxins to be directly applied as foam to small areas with control. (Manual process when drafted). The sprayers also have a limited number of uses (indicators provided).
 
-**&quot;Mortar Shells&quot;**: The foams and gases can be delivered with shells using mortars.
+**"Mortar Shells"**: The foams and gases can be delivered with shells using mortars.
 
-**&quot;IDEs&quot;**: The shells can be used for IED traps. (Note only Insect Killer, Mind Killer, Tangle and Tear Gas IDEs are provided as default, the other types require additional mod support.)
+**"IDEs"**: The shells can be used for IED traps. (Note only Insect Killer, Mind Killer, Tangle and Tear Gas IDEs are provided as default, the other types require additional mod support.)
 
-**&quot;Foam Poppers&quot;**: Foam poppers can be setup for Blight and Insect foam , trigger is the presence of a hive in the case of insect foam poppers. 
+**"Foam Poppers"**: Foam poppers can be setup for Blight and Insect foam , trigger is the presence of a hive in the case of insect foam poppers. 
 
-**&quot;Grenades&quot;**: Insect Killer, Mind Killer, Tangle Killer and Tear Gas can be weaponised.
+**"Grenades"**: Insect Killer, Mind Killer, Tangle Killer and Tear Gas can be weaponised.
 
 Applied foam to a surface will linger for a while and remain active but it will eventually disperse.
 
@@ -61,7 +52,7 @@ Applied foam to a surface will linger for a while and remain active but it will 
 
 Vary base research costs by a percentage level.
 
-The mod includes settings to tweak which plant gases are used and whether a maximum radius at full maturity. Provided in case anyone experiences any graphical performance issues with their hardware. There&apos;s also a toggle for Tangleroot creep.
+The mod includes settings to tweak which plant gases are used and whether a maximum radius at full maturity. Provided in case anyone experiences any graphical performance issues with their hardware. There's also a toggle for Tangleroot creep.
 
 The relative toxicity setting allows you to tweak how effective the various toxins and other active chemicals perform in relation to default values (percentage).
 
@@ -102,7 +93,7 @@ Erdnussbrot - German translation.
 (CC BY-NC-SA 4.0)
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
