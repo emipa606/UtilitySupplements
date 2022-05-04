@@ -7,6 +7,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2012459600
 
 - Since I did not have the source-code there might be some issues, report if anything seems off.
 - Updated German translation, via Erdnussbrot
+- For detailed description, download the https://github.com/emipa606/UtilitySupplements/raw/main/Source/UtilitySupplementsNotes.pdf]PDF
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
