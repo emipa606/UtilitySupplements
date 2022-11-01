@@ -23,8 +23,9 @@ public class DamageWorker_USGlower : DamageWorker
     public override DamageResult Apply(DamageInfo dinfo, Thing victim)
     {
         var damageResult = new DamageResult();
-        if (victim.def.category != ThingCategory.Filth || victim.def.defName == "Filth_USGlowFoam" ||
-            victim.def.defName == "Filth_USGlowStick" || !victim.def.useHitPoints || !dinfo.Def.harmsHealth)
+        if (victim.def.category != ThingCategory.Filth ||
+            victim.def.defName is "Filth_USGlowFoam" or "Filth_USGlowStick" || !victim.def.useHitPoints ||
+            !dinfo.Def.harmsHealth)
         {
             return damageResult;
         }

@@ -72,11 +72,6 @@ public class JobGiver_USStinkrootAnimalFlee : ThinkNode_JobGiver
             tmpThings.Clear();
         }
 
-        if (intVec != pawn.Position)
-        {
-            return new Job(JobDefOf.Flee, intVec, danger);
-        }
-
-        return null;
+        return intVec != pawn.Position ? new Job(JobDefOf.Flee, intVec, danger) : null;
     }
 }

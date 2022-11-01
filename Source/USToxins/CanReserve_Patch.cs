@@ -18,14 +18,13 @@ public class CanReserve_Patch
         }
 
         var thing = target.Thing;
-        if (thing == null || thing is not Filth)
+        if (thing is not Filth)
         {
             return;
         }
 
         var defname = thing.def.defName;
-        if (defname == "Filth_USAntifreeze" || defname == "Filth_USGlowFoam" ||
-            defname == "Filth_USInsectKillFoam")
+        if (defname is "Filth_USAntifreeze" or "Filth_USGlowFoam" or "Filth_USInsectKillFoam")
         {
             __result = false;
             return;
@@ -38,11 +37,8 @@ public class CanReserve_Patch
         }
 
         var terDef = thing.Position.GetTerrain(map);
-        if (terDef is { fertility: > 0f } && (defname == "Filth_USBlightKillFoam" ||
-                                              defname == "Filth_USPlantKillFoam" ||
-                                              defname == "Filth_USTreeKillFoam" ||
-                                              defname == "Filth_USWeedKillFoam" ||
-                                              defname == "Filth_USAmmoniaFertFoam"))
+        if (terDef is { fertility: > 0f } && defname is "Filth_USBlightKillFoam" or "Filth_USPlantKillFoam"
+                or "Filth_USTreeKillFoam" or "Filth_USWeedKillFoam" or "Filth_USAmmoniaFertFoam")
         {
             __result = false;
         }

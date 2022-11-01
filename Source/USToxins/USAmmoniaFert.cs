@@ -48,7 +48,7 @@ public class USAmmoniaFert : Filth
 
     private void DoAYPlantBenefit(Thing targ, int thick)
     {
-        if (targ is not Plant plant || !(plant.Growth < 1f))
+        if (targ is not Plant { Growth: < 1f } plant)
         {
             return;
         }

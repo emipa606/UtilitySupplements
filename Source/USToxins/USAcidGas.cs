@@ -172,7 +172,7 @@ public class USAcidGas : Gas
 
     public static void DoAcidDamPawn(Pawn pawn)
     {
-        if (pawn == null || pawn.Map == null)
+        if (pawn?.Map == null)
         {
             return;
         }
@@ -242,10 +242,15 @@ public class USAcidGas : Gas
         var sensitivity = 1f;
         if (Victim != null && !Victim.RaceProps.IsMechanoid)
         {
-            sensitivity = Victim.GetStatValue(StatDefOf.ToxicSensitivity);
+            sensitivity = Victim.GetStatValue(StatDefOf.ToxicEnvironmentResistance);
         }
 
-        dmg *= toxRatio * sensitivity;
+        dmg *= toxRatio;
+        if (sensitivity != 0)
+        {
+            dmg /= sensitivity;
+        }
+
         candidate = null;
         var potentials = new List<BodyPartRecord>();
         if (Victim != null)
@@ -330,8 +335,14 @@ public class USAcidGas : Gas
             hediff = hediffSet?.GetFirstHediffOfDef(Globals.USAcidGasEffect);
         }
 
-        var sensitivity = victim.GetStatValue(StatDefOf.ToxicSensitivity);
-        var addsev = Rand.Range(0.01f * sensitivity * toxicRatio, 0.1f * sensitivity * toxicRatio);
+        var sensitivity = victim.GetStatValue(StatDefOf.ToxicEnvironmentResistance);
+        var num = toxicRatio;
+        if (sensitivity != 0)
+        {
+            num /= sensitivity;
+        }
+
+        var addsev = Rand.Range(0.01f * num, 0.1f * num);
         if (Globals.USVictimImmuneTo(victim, Globals.USAcidGasEffect))
         {
             return;

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <USTox.Name>Utility Supplements (by Pelador)</USTox.Name>
+  <USTox.CurrentModVersion>Installed mod-version: {0}</USTox.CurrentModVersion>
   <USTox.DoStinkrootGas>Allow Stinkroot plants to spawn gas:</USTox.DoStinkrootGas>
   <USTox.SRGasRadius>Stinkroot gas spawn radius of fully mature plant:</USTox.SRGasRadius>
   <USTox.SRGasRadiusTip>Default value is [2]. (Only relevant if Stinkroot gas is allowed.)</USTox.SRGasRadiusTip>

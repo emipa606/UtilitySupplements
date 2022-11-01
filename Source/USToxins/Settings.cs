@@ -63,7 +63,14 @@ public class Settings : ModSettings
             Text.Font = GameFont.Tiny;
             listing_Standard.Label("          " + "USTox.USToxLevelsTip".Translate());
             Text.Font = GameFont.Small;
-            listing_Standard.Gap(gap);
+            if (Controller.currentVersion != null)
+            {
+                listing_Standard.Gap();
+                GUI.contentColor = Color.gray;
+                listing_Standard.Label("USTox.CurrentModVersion".Translate(Controller.currentVersion));
+                GUI.contentColor = Color.white;
+            }
+
             listing_Standard.End();
         }
     }

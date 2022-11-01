@@ -71,8 +71,14 @@ public class USTangleKillGas : Gas
             hediff = hediffSet?.GetFirstHediffOfDef(Globals.USTangleRootStrike);
         }
 
-        var sensitivity = victim.GetStatValue(StatDefOf.ToxicSensitivity);
-        var addsev = Rand.Range(0.0249999985f * sensitivity * toxicRatio, 0.125f * sensitivity * toxicRatio);
+        var sensitivity = victim.GetStatValue(StatDefOf.ToxicEnvironmentResistance);
+        var num = toxicRatio;
+        if (sensitivity != 0)
+        {
+            num /= sensitivity;
+        }
+
+        var addsev = Rand.Range(0.0249999985f * num, 0.125f * num);
         if (Globals.USVictimImmuneTo(victim, Globals.USTangleRootStrike))
         {
             return;

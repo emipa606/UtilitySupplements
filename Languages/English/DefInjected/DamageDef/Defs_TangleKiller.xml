@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <!-- Damage -->
-  <Dam_USTangleKill.label>Tangle Killer</Dam_USTangleKill.label>
-  <Dam_USTangleKill.deathMessage>{0} has been killed.</Dam_USTangleKill.deathMessage>
-</LanguageData>

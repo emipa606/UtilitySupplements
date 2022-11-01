@@ -1,0 +1,1487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Blight Killer -->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_USBlightFoam</defName>
+    <label>Blight killer shell</label>
+    <description>A pressurized shell filled with blight killer liquid. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_USBlightFoam</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>15.9</explosiveRadius>
+        <explosiveDamageType>Dam_USBlightKill</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Filth_USBlightKillFoam</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_USBlightFoam</projectileWhenLoaded>
+    <costList>
+      <Steel>10</Steel>
+      <USBlightKillLiquid>1</USBlightKillLiquid>
+    </costList>
+    <statBases>
+      <MarketValue>51.5</MarketValue>
+    </statBases>
+    <researchPrerequisites Inherit="false">
+      <li>Mortars</li>
+      <li>USBlightKill</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="false">
+      <li>UtilitySuppsShells</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_USBlightFoam</defName>
+    <label>Blight killer shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellUSBlightFoam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USBlightKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+      <explosionRadius>5</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Filth_USBlightKillFoam</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+    </projectile>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeBulkUSBlightKillShell</defName>
+    <label>Make Blight killer shells in bulk</label>
+    <description>Make 4 blight killer shells</description>
+    <jobString>Making blight killer shells.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3200</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USBlightKillLiquid</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>USBlightKillLiquid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Shell_USBlightFoam>4</Shell_USBlightFoam>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>USBlightKill</researchPrerequisite>
+  </RecipeDef>
+  <!-- Added in mod patch if Remote Tech in use
+    <ThingDef ParentName="TrapIEDBase">
+    		<defName>TrapIED_USBlightfoam</defName>
+    		<label>IED Blight Killer trap</label>
+    		<description>A pair of blight killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    		<graphicData>
+      		<texPath>Things/Building/Security/IEDUSBlightfoam</texPath>
+    		</graphicData>
+    		<costList>
+      		<Shell_USBlightFoam>2</Shell_USBlightFoam>
+    		</costList>
+	<statBases>
+		  <MarketValue>103</MarketValue> 
+	  </statBases>
+    		<designationHotKey>Misc10</designationHotKey>
+    		<comps>
+      		<li Class="CompProperties_Explosive">
+        			<explosiveRadius>9.9</explosiveRadius>
+        			<explosiveDamageType>Dam_USBlightKill</explosiveDamageType>
+        			<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        			<postExplosionSpawnThingDef>Filth_USBlightKillFoam</postExplosionSpawnThingDef>
+        			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+        			<postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+        			<wickTicks>
+          			<min>15</min>
+          			<max>15</max>
+        			</wickTicks>
+      		</li>
+    		</comps>
+    		<specialDisplayRadius>9.9</specialDisplayRadius>
+		<researchPrerequisites Inherit="false">
+      		<li>IEDs</li>
+			<li>USBlightKill</li>
+    		</researchPrerequisites>
+  </ThingDef>
+	-->
+  <!-- Filth Killer -->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_USFilthFoam</defName>
+    <label>Filth detergant shell</label>
+    <description>A pressurized shell filled with active detergant. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_USFilthFoam</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>15.9</explosiveRadius>
+        <explosiveDamageType>Dam_USFilthKill</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Filth_USFilthKillFoam</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_USFilthFoam</projectileWhenLoaded>
+    <costList>
+      <Steel>10</Steel>
+      <USFilthKillLiquid>1</USFilthKillLiquid>
+    </costList>
+    <statBases>
+      <MarketValue>47.5</MarketValue>
+    </statBases>
+    <researchPrerequisites Inherit="false">
+      <li>Mortars</li>
+      <li>USFilthKill</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="false">
+      <li>UtilitySuppsShells</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_USFilthFoam</defName>
+    <label>Filth killer shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellUSFilthFoam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USFilthKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+      <explosionRadius>5</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Filth_USFilthKillFoam</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+    </projectile>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeBulkUSFilthKillShell</defName>
+    <label>Make filth detergant shells in bulk</label>
+    <description>Make 4 filth detergant shells</description>
+    <jobString>Making filth detergant shells.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3200</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USFilthKillLiquid</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>USFilthKillLiquid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Shell_USFilthFoam>4</Shell_USFilthFoam>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>USFilthKill</researchPrerequisite>
+  </RecipeDef>
+  <!-- Added in mod patch if Remote Tech in use
+    <ThingDef ParentName="TrapIEDBase">
+    		<defName>TrapIED_USFilthfoam</defName>
+    		<label>IED Filth Killer trap</label>
+    		<description>A pair of detergant shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    		<graphicData>
+      		<texPath>Things/Building/Security/IEDUSFilthfoam</texPath>
+    		</graphicData>
+    		<costList>
+      		<Shell_USFilthFoam>2</Shell_USFilthFoam>
+    		</costList>
+	<statBases>
+		  <MarketValue>95</MarketValue> 
+	  </statBases>
+    		<designationHotKey>Misc10</designationHotKey>
+    		<comps>
+      		<li Class="CompProperties_Explosive">
+        			<explosiveRadius>9.9</explosiveRadius>
+        			<explosiveDamageType>Dam_USFilthKill</explosiveDamageType>
+        			<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        			<postExplosionSpawnThingDef>Filth_USFilthKillFoam</postExplosionSpawnThingDef>
+        			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+        			<postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+        			<wickTicks>
+          			<min>15</min>
+          			<max>15</max>
+        			</wickTicks>
+      		</li>
+    		</comps>
+    		<specialDisplayRadius>9.9</specialDisplayRadius>
+		<researchPrerequisites Inherit="false">
+      		<li>IEDs</li>
+			<li>USFilthKill</li>
+    		</researchPrerequisites>
+  </ThingDef>
+	-->
+  <!-- Insect Killer -->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_USInsectFoam</defName>
+    <label>Insect killer shell</label>
+    <description>A pressurized shell filled with insect killer foam. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_USInsectFoam</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>15.9</explosiveRadius>
+        <explosiveDamageType>Dam_USInsectKill</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Filth_USInsectKillFoam</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_USInsectFoam</projectileWhenLoaded>
+    <costList>
+      <Steel>10</Steel>
+      <USInsectKillLiquid>1</USInsectKillLiquid>
+    </costList>
+    <statBases>
+      <MarketValue>52.5</MarketValue>
+    </statBases>
+    <researchPrerequisites Inherit="false">
+      <li>Mortars</li>
+      <li>USInsectKill</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="false">
+      <li>UtilitySuppsShells</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_USInsectFoam</defName>
+    <label>Insect killer shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellUSInsectFoam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USInsectKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+      <explosionRadius>5</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Filth_USInsectKillFoam</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+    </projectile>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeBulkUSInsectKillShell</defName>
+    <label>Make insect killer shells in bulk</label>
+    <description>Make 4 insect killer shells</description>
+    <jobString>Making insect killer shells.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3200</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USInsectKillLiquid</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>USInsectKillLiquid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Shell_USInsectFoam>4</Shell_USInsectFoam>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>USInsectKill</researchPrerequisite>
+  </RecipeDef>
+  <ThingDef ParentName="TrapIEDBase">
+    <defName>TrapIED_USInsectfoam</defName>
+    <label>IED Insect Killer trap</label>
+    <description>A pair of insect killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/IEDUSInsectfoam</texPath>
+    </graphicData>
+    <costList>
+      <Shell_USInsectFoam>2</Shell_USInsectFoam>
+    </costList>
+    <statBases>
+      <MarketValue>105</MarketValue>
+    </statBases>
+    <designationHotKey>Misc10</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>9.9</explosiveRadius>
+        <explosiveDamageType>Dam_USInsectKill</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Filth_USInsectKillFoam</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>15</min>
+          <max>15</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <specialDisplayRadius>9.9</specialDisplayRadius>
+    <researchPrerequisites Inherit="false">
+      <li>IEDs</li>
+      <li>USInsectKill</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!-- Plant Killer -->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_USPlantFoam</defName>
+    <label>Plant killer shell</label>
+    <description>A pressurized shell filled with plant killer foam. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_USPlantFoam</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>15.9</explosiveRadius>
+        <explosiveDamageType>Dam_USPlantKill</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Filth_USPlantKillFoam</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_USPlantFoam</projectileWhenLoaded>
+    <costList>
+      <Steel>10</Steel>
+      <USPlantKillLiquid>1</USPlantKillLiquid>
+    </costList>
+    <statBases>
+      <MarketValue>45.5</MarketValue>
+    </statBases>
+    <researchPrerequisites Inherit="false">
+      <li>Mortars</li>
+      <li>USPlantKill</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="false">
+      <li>UtilitySuppsShells</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_USPlantFoam</defName>
+    <label>Plant killer shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellUSPlantFoam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USPlantKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+      <explosionRadius>5</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Filth_USPlantKillFoam</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+    </projectile>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeBulkUSPlantKillShell</defName>
+    <label>Make plant killer shells in bulk</label>
+    <description>Make 4 plant killer shells</description>
+    <jobString>Making plant killer shells.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3200</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USPlantKillLiquid</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>USPlantKillLiquid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Shell_USPlantFoam>4</Shell_USPlantFoam>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>USPlantKill</researchPrerequisite>
+  </RecipeDef>
+  <!-- Added in mod patch if Remote Tech in use
+    <ThingDef ParentName="TrapIEDBase">
+    		<defName>TrapIED_USPlantfoam</defName>
+    		<label>IED Plant Killer trap</label>
+    		<description>A pair of plant killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    		<graphicData>
+      		<texPath>Things/Building/Security/IEDUSPlantfoam</texPath>
+    		</graphicData>
+    		<costList>
+      		<Shell_USPlantFoam>2</Shell_USPlantFoam>
+    		</costList>
+		<statBases>
+		  	<MarketValue>91</MarketValue> 
+		</statBases>
+    		<designationHotKey>Misc10</designationHotKey>
+    		<comps>
+      		<li Class="CompProperties_Explosive">
+        			<explosiveRadius>9.9</explosiveRadius>
+        			<explosiveDamageType>Dam_USPlantKill</explosiveDamageType>
+        			<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        			<postExplosionSpawnThingDef>Filth_USPlantKillFoam</postExplosionSpawnThingDef>
+        			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+        			<postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+        			<wickTicks>
+          			<min>15</min>
+          			<max>15</max>
+        			</wickTicks>
+      		</li>
+    		</comps>
+    		<specialDisplayRadius>9.9</specialDisplayRadius>
+		<researchPrerequisites Inherit="false">
+      		<li>IEDs</li>
+			<li>USPlantKill</li>
+    		</researchPrerequisites>
+  </ThingDef>
+  -->
+  <!-- Tree Killer -->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_USTreeFoam</defName>
+    <label>Tree killer shell</label>
+    <description>A pressurized shell filled with tree killer foam. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_USTreeFoam</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>15.9</explosiveRadius>
+        <explosiveDamageType>Dam_USTreeKill</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Filth_USTreeKillFoam</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_USTreeFoam</projectileWhenLoaded>
+    <costList>
+      <Steel>10</Steel>
+      <USTreeKillLiquid>1</USTreeKillLiquid>
+    </costList>
+    <statBases>
+      <MarketValue>46.7</MarketValue>
+    </statBases>
+    <researchPrerequisites Inherit="false">
+      <li>Mortars</li>
+      <li>USTreeKill</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="false">
+      <li>UtilitySuppsShells</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_USTreeFoam</defName>
+    <label>Tree killer shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellUSTreeFoam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USTreeKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+      <explosionRadius>5</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Filth_USTreeKillFoam</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+    </projectile>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeBulkUSTreeKillShell</defName>
+    <label>Make tree killer shells in bulk</label>
+    <description>Make 4 tree killer shells</description>
+    <jobString>Making tree killer shells.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3200</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USTreeKillLiquid</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>USTreeKillLiquid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Shell_USTreeFoam>4</Shell_USTreeFoam>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>USTreeKill</researchPrerequisite>
+  </RecipeDef>
+  <!-- Added in mod patch if Remote Tech in use
+    <ThingDef ParentName="TrapIEDBase">
+    		<defName>TrapIED_USTreefoam</defName>
+    		<label>IED Plant Killer trap</label>
+    		<description>A pair of tree killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    		<graphicData>
+      		<texPath>Things/Building/Security/IEDUSTreefoam</texPath>
+    		</graphicData>
+    		<costList>
+      		<Shell_USTreeFoam>2</Shell_USTreeFoam>
+    		</costList>
+				<statBases>
+		  	<MarketValue>93.4</MarketValue> 
+	</statBases>
+    		<designationHotKey>Misc10</designationHotKey>
+    		<comps>
+      		<li Class="CompProperties_Explosive">
+        			<explosiveRadius>9.9</explosiveRadius>
+        			<explosiveDamageType>Dam_USTreeKill</explosiveDamageType>
+        			<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        			<postExplosionSpawnThingDef>Filth_USTreeKillFoam</postExplosionSpawnThingDef>
+        			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+        			<postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+        			<wickTicks>
+          			<min>15</min>
+          			<max>15</max>
+        			</wickTicks>
+      		</li>
+    		</comps>
+    		<specialDisplayRadius>9.9</specialDisplayRadius>
+		<researchPrerequisites Inherit="false">
+      		<li>IEDs</li>
+			<li>USTreeKill</li>
+    		</researchPrerequisites>
+  </ThingDef>
+	-->
+  <!-- Weed Killer -->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_USWeedFoam</defName>
+    <label>Weed killer shell</label>
+    <description>A pressurized shell filled with weed killer foam. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_USWeedFoam</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>15.9</explosiveRadius>
+        <explosiveDamageType>Dam_USWeedKill</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Filth_USWeedKillFoam</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_USWeedFoam</projectileWhenLoaded>
+    <costList>
+      <Steel>10</Steel>
+      <USWeedKillLiquid>1</USWeedKillLiquid>
+    </costList>
+    <statBases>
+      <MarketValue>47.3</MarketValue>
+    </statBases>
+    <researchPrerequisites Inherit="false">
+      <li>Mortars</li>
+      <li>USWeedKill</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="false">
+      <li>UtilitySuppsShells</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_USWeedFoam</defName>
+    <label>Weed killer shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellUSWeedFoam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USWeedKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+      <explosionRadius>5</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Filth_USWeedKillFoam</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+    </projectile>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeBulkUSWeedKillShell</defName>
+    <label>Make weed killer shells in bulk</label>
+    <description>Make 4 weed killer shells</description>
+    <jobString>Making weed killer shells.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3200</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USWeedKillLiquid</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>USWeedKillLiquid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Shell_USWeedFoam>4</Shell_USWeedFoam>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>USWeedKill</researchPrerequisite>
+  </RecipeDef>
+  <!-- Added in mod patch if Remote Tech in use
+    <ThingDef ParentName="TrapIEDBase">
+    		<defName>TrapIED_USWeedfoam</defName>
+    		<label>IED Weed Killer trap</label>
+    		<description>A pair of weed killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    		<graphicData>
+      		<texPath>Things/Building/Security/IEDUSWeedfoam</texPath>
+    		</graphicData>
+    		<costList>
+      		<Shell_USWeedFoam>2</Shell_USWeedFoam>
+    		</costList>
+		<statBases>
+		  	<MarketValue>94.6</MarketValue> 
+		</statBases>
+    		<designationHotKey>Misc10</designationHotKey>
+    		<comps>
+      		<li Class="CompProperties_Explosive">
+        			<explosiveRadius>9.9</explosiveRadius>
+        			<explosiveDamageType>Dam_USWeedKill</explosiveDamageType>
+        			<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        			<postExplosionSpawnThingDef>Filth_USWeedKillFoam</postExplosionSpawnThingDef>
+        			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+        			<postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+        			<wickTicks>
+          			<min>15</min>
+          			<max>15</max>
+        			</wickTicks>
+      		</li>
+    		</comps>
+    		<specialDisplayRadius>9.9</specialDisplayRadius>
+		<researchPrerequisites Inherit="false">
+      		<li>IEDs</li>
+			<li>USWeedKill</li>
+    		</researchPrerequisites>
+  </ThingDef>
+	-->
+  <!-- Mind Killer -->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_USMindGas</defName>
+    <label>Mind Killer shell</label>
+    <description>A pressurized shell filled with mind killer liquid. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_USMindGas</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>15.9</explosiveRadius>
+        <explosiveDamageType>Dam_USMindKill</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Gas_USMindKill</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_USMindGas</projectileWhenLoaded>
+    <costList>
+      <Steel>10</Steel>
+      <USMindKillLiquid>1</USMindKillLiquid>
+    </costList>
+    <statBases>
+      <MarketValue>68.5</MarketValue>
+    </statBases>
+    <researchPrerequisites Inherit="false">
+      <li>Mortars</li>
+      <li>USMindKill</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="false">
+      <li>UtilitySuppsShells</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_USMindGas</defName>
+    <label>Mind killer shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellUSMindGas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USMindKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+      <explosionRadius>9.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Gas_USMindKill</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+    </projectile>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeBulkUSMindKillShell</defName>
+    <label>Make Mind killer shells in bulk</label>
+    <description>Make 4 mind killer shells</description>
+    <jobString>Making mind killer shells.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3200</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USMindKillLiquid</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>USMindKillLiquid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Shell_USMindGas>4</Shell_USMindGas>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>USMindKill</researchPrerequisite>
+  </RecipeDef>
+  <ThingDef ParentName="TrapIEDBase">
+    <defName>TrapIED_USMindGas</defName>
+    <label>IED Mind Killer trap</label>
+    <description>A pair of mind killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/IEDUSMindGas</texPath>
+    </graphicData>
+    <costList>
+      <Shell_USMindGas>2</Shell_USMindGas>
+    </costList>
+    <statBases>
+      <MarketValue>137</MarketValue>
+    </statBases>
+    <designationHotKey>Misc10</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>12.9</explosiveRadius>
+        <explosiveDamageType>Dam_USMindKill</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Gas_USMindKill</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>15</min>
+          <max>15</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <specialDisplayRadius>12.9</specialDisplayRadius>
+    <researchPrerequisites Inherit="false">
+      <li>IEDs</li>
+      <li>USMindKill</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!-- Tangle Killer -->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_USTangleGas</defName>
+    <label>Tangle Killer shell</label>
+    <description>A pressurized shell filled with tangle killer liquid. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_USTangleGas</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>15.9</explosiveRadius>
+        <explosiveDamageType>Dam_USTangleKill</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Gas_USTangleKill</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_USTangleGas</projectileWhenLoaded>
+    <costList>
+      <Steel>10</Steel>
+      <USTangleKillLiquid>1</USTangleKillLiquid>
+    </costList>
+    <statBases>
+      <MarketValue>66.5</MarketValue>
+    </statBases>
+    <researchPrerequisites Inherit="false">
+      <li>Mortars</li>
+      <li>USTangleKill</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="false">
+      <li>UtilitySuppsShells</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_USTangleGas</defName>
+    <label>Tangle killer shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellUSTangleGas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USTangleKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+      <explosionRadius>9.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Gas_USTangleKill</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+    </projectile>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeBulkUSTangleKillShell</defName>
+    <label>Make Tangle killer shells in bulk</label>
+    <description>Make 4 tangle killer shells</description>
+    <jobString>Making tangle killer shells.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3200</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USTangleKillLiquid</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>USTangleKillLiquid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Shell_USTangleGas>4</Shell_USTangleGas>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>USTangleKill</researchPrerequisite>
+  </RecipeDef>
+  <ThingDef ParentName="TrapIEDBase">
+    <defName>TrapIED_USTangleGas</defName>
+    <label>IED Tangle Killer trap</label>
+    <description>A pair of tangle killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/IEDUSTangleGas</texPath>
+    </graphicData>
+    <costList>
+      <Shell_USTangleGas>2</Shell_USTangleGas>
+    </costList>
+    <statBases>
+      <MarketValue>133</MarketValue>
+    </statBases>
+    <designationHotKey>Misc10</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>12.9</explosiveRadius>
+        <explosiveDamageType>Dam_USTangleKill</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Gas_USTangleKill</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>15</min>
+          <max>15</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <specialDisplayRadius>12.9</specialDisplayRadius>
+    <researchPrerequisites Inherit="false">
+      <li>IEDs</li>
+      <li>USTangleKill</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!-- Glower -->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_USGlowFoam</defName>
+    <label>Glow Foam shell</label>
+    <description>A pressurized shell filled with glow liquid. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_USGlowFoam</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>12.9</explosiveRadius>
+        <explosiveDamageType>Dam_USGlower</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Filth_USGlowFoam</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_USGlowFoam</projectileWhenLoaded>
+    <costList>
+      <Steel>10</Steel>
+      <USGlowLiquid>1</USGlowLiquid>
+    </costList>
+    <statBases>
+      <MarketValue>70.1</MarketValue>
+    </statBases>
+    <researchPrerequisites Inherit="false">
+      <li>Mortars</li>
+      <li>USGlowers</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="false">
+      <li>UtilitySuppsShells</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_USGlowFoam</defName>
+    <label>Glow foam shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellUSGlowFoam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USGlower</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+      <explosionRadius>9.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Filth_USGlowFoam</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+    </projectile>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeBulkUSGlowFoamShell</defName>
+    <label>Make Glow foam shells in bulk</label>
+    <description>Make 4 Glow foam shells</description>
+    <jobString>Making Glow foam shells.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3200</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USGlowLiquid</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>USGlowLiquid</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Shell_USGlowFoam>4</Shell_USGlowFoam>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>USGlowers</researchPrerequisite>
+  </RecipeDef>
+  <ThingDef ParentName="TrapIEDBase">
+    <defName>TrapIED_USGlowFoam</defName>
+    <label>IED Glow foam trap</label>
+    <description>A pair of glow foam shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/IEDUSGlowfoam</texPath>
+    </graphicData>
+    <costList>
+      <Shell_USGlowFoam>2</Shell_USGlowFoam>
+    </costList>
+    <statBases>
+      <MarketValue>140.2</MarketValue>
+    </statBases>
+    <designationHotKey>Misc10</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>12.9</explosiveRadius>
+        <explosiveDamageType>Dam_USGlower</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Filth_USGlowFoam</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>15</min>
+          <max>15</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <specialDisplayRadius>12.9</specialDisplayRadius>
+    <researchPrerequisites Inherit="false">
+      <li>IEDs</li>
+      <li>USGlowers</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--  Antifreeze -->
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_USAntifreeze</defName>
+    <label>Antifreeze shell</label>
+    <description>A pressurized shell filled with antifreeze. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_USAntifreeze</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>15.9</explosiveRadius>
+        <explosiveDamageType>Dam_USAntifreeze</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <postExplosionSpawnThingDef>Filth_USAntifreeze</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_USAntifreeze</projectileWhenLoaded>
+    <costList>
+      <Steel>10</Steel>
+      <USAntifreeze>1</USAntifreeze>
+    </costList>
+    <statBases>
+      <MarketValue>62</MarketValue>
+    </statBases>
+    <researchPrerequisites Inherit="false">
+      <li>Mortars</li>
+      <li>USAntifreeze</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="false">
+      <li>UtilitySuppsShells</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_USAntifreeze</defName>
+    <label>Atifreeze shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellUSAntifreeze</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USAntifreeze</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+      <explosionRadius>5</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Filth_USAntifreeze</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>ExtinguisherExplosion</explosionEffect>
+    </projectile>
+  </ThingDef>
+  <RecipeDef>
+    <defName>MakeBulkUSAntifreezeShell</defName>
+    <label>Make antifreeze shells in bulk</label>
+    <description>Make 4 antifreeze shells</description>
+    <jobString>Making antifreeze shells.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3200</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USAntifreeze</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>USAntifreeze</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Shell_USAntifreeze>4</Shell_USAntifreeze>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>USAntifreeze</researchPrerequisite>
+  </RecipeDef>
+</Defs>

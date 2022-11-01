@@ -18,7 +18,7 @@ public class Pawn_DraftController_GetGizmos_Patch
 
         var list = __result.ToList();
         var pawn = __instance.pawn;
-        if (pawn != null && pawn.equipment.Primary != null)
+        if (pawn?.equipment.Primary != null)
         {
             var ChkSprayer = pawn.equipment.Primary;
             if (ChkSprayer.def.HasComp(typeof(CompUSToxUses)))

@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <!-- Damage -->
-  <Dam_USTreeKill.label>Tree Killer</Dam_USTreeKill.label>
-  <Dam_USTreeKill.deathMessage>{0} has been killed.</Dam_USTreeKill.deathMessage>
-</LanguageData>

@@ -104,20 +104,10 @@ internal class Globals
                         return false;
                     }
 
-                    if (defName == "Filth_USAmmoniaFertFoam")
-                    {
-                        return true;
-                    }
-
-                    return false;
+                    return defName == "Filth_USAmmoniaFertFoam";
                 }
 
-                if (defName == "Filth_USWeedKillFoam")
-                {
-                    return true;
-                }
-
-                return false;
+                return defName == "Filth_USWeedKillFoam";
             }
 
             if (num != 1527094750U)
@@ -127,20 +117,10 @@ internal class Globals
                     return false;
                 }
 
-                if (defName == "Filth_USBlightKillFoam")
-                {
-                    return true;
-                }
-
-                return false;
+                return defName == "Filth_USBlightKillFoam";
             }
 
-            if (defName == "Filth_USAntifreeze")
-            {
-                return true;
-            }
-
-            return false;
+            return defName == "Filth_USAntifreeze";
         }
 
         if (num <= 1922711255U)
@@ -152,20 +132,10 @@ internal class Globals
                     return false;
                 }
 
-                if (defName == "Filth_USPlantKillFoam")
-                {
-                    return true;
-                }
-
-                return false;
+                return defName == "Filth_USPlantKillFoam";
             }
 
-            if (defName == "Filth_USInsectKillFoam")
-            {
-                return true;
-            }
-
-            return false;
+            return defName == "Filth_USInsectKillFoam";
         }
 
         if (num != 3589335437U)
@@ -177,28 +147,13 @@ internal class Globals
                     return false;
                 }
 
-                if (defName == "Filth_USFilthKillFoam")
-                {
-                    return true;
-                }
-
-                return false;
+                return defName == "Filth_USFilthKillFoam";
             }
 
-            if (defName == "Filth_USTreeKillFoam")
-            {
-                return true;
-            }
-
-            return false;
+            return defName == "Filth_USTreeKillFoam";
         }
 
-        if (defName == "Filth_USGlowFoam")
-        {
-            return true;
-        }
-
-        return false;
+        return defName == "Filth_USGlowFoam";
     }
 
     internal static bool USVictimImmuneTo(Pawn pawn, HediffDef def)
@@ -207,7 +162,7 @@ internal class Globals
         foreach (var hediff in hediffs)
         {
             var curStage = hediff.CurStage;
-            if (curStage == null || curStage.makeImmuneTo == null)
+            if (curStage?.makeImmuneTo == null)
             {
                 continue;
             }

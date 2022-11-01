@@ -35,8 +35,12 @@ public class DamageWorker_USTearGas : DamageWorker
         var num = dinfo.Amount;
         if (num > 0f)
         {
-            var sensitivity = victim.GetStatValue(StatDefOf.ToxicSensitivity);
-            num = num * sensitivity * toxicRatio;
+            var sensitivity = victim.GetStatValue(StatDefOf.ToxicEnvironmentResistance);
+            num = num * toxicRatio;
+            if (sensitivity != 0)
+            {
+                num /= sensitivity;
+            }
         }
 
         damageResult.totalDamageDealt = Mathf.Min(victim.HitPoints, GenMath.RoundRandom(num));

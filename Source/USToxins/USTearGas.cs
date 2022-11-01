@@ -69,8 +69,13 @@ public class USTearGas : Gas
             hediff = hediffSet?.GetFirstHediffOfDef(Globals.USTearGas);
         }
 
-        var sensitivity = victim.GetStatValue(StatDefOf.ToxicSensitivity);
-        var addsev = 0.125f * sensitivity * toxicRatio;
+        var sensitivity = victim.GetStatValue(StatDefOf.ToxicEnvironmentResistance);
+        var addsev = 0.125f * toxicRatio;
+        if (sensitivity != 0)
+        {
+            addsev /= sensitivity;
+        }
+
         if (Globals.USVictimImmuneTo(victim, Globals.USTearGas))
         {
             return;

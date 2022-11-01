@@ -1,121 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F1FB9D52-A5AD-4617-8012-836D0F09569A}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>USToxins</RootNamespace>
-    <AssemblyName>USToxins</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\1.2\Assemblies\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <OutputPath>..\..\1.4\Assemblies</OutputPath>
+    <TargetFramework>net48</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <DebugType>None</DebugType>
+    <LangVersion>latest</LangVersion>
+    <FileVersion>1.4.1</FileVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lib.Harmony.2.0.2\lib\net472\0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="0MultiplayerAPI, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RimWorld.MultiplayerAPI.0.2.0\lib\net472\0MultiplayerAPI.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\System.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>*</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>*</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="RimWorld.MultiplayerAPI">
+      <Version>*</Version>
+    </PackageReference>
+	  <PackageReference Include="Mlie_Rimworld_VersionFromManifest" Version="*" />
   </ItemGroup>
-  <ItemGroup>
-    <AppDesigner Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="CanReserve_Patch.cs" />
-    <Compile Include="CompProperties_USToxUses.cs" />
-    <Compile Include="CompUSToxUses.cs" />
-    <Compile Include="Controller.cs" />
-    <Compile Include="DamageWorker_USAcidGas.cs" />
-    <Compile Include="DamageWorker_USAmmoniaFert.cs" />
-    <Compile Include="DamageWorker_USAntifreeze.cs" />
-    <Compile Include="DamageWorker_USBlightKill.cs" />
-    <Compile Include="DamageWorker_USFilthKill.cs" />
-    <Compile Include="DamageWorker_USGlower.cs" />
-    <Compile Include="DamageWorker_USInsectKill.cs" />
-    <Compile Include="DamageWorker_USMindKill.cs" />
-    <Compile Include="DamageWorker_USPlantKill.cs" />
-    <Compile Include="DamageWorker_USTangleKill.cs" />
-    <Compile Include="DamageWorker_USTearGas.cs" />
-    <Compile Include="DamageWorker_USTreeKill.cs" />
-    <Compile Include="DamageWorker_USWeedKill.cs" />
-    <Compile Include="Filth_CanDropAt.cs" />
-    <Compile Include="Gizmo_SprayerStatus.cs" />
-    <Compile Include="Globals.cs" />
-    <Compile Include="HarmonyPatching.cs" />
-    <Compile Include="JobGiver_USStinkrootAnimalFlee.cs" />
-    <Compile Include="JobGiver_USTanglerootAnimalFlee.cs" />
-    <Compile Include="MultiplayerSupport.cs" />
-    <Compile Include="Pawn_DraftController_GetGizmos_Patch.cs" />
-    <Compile Include="Plant_TickLong.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Settings.cs" />
-    <Compile Include="TerrainAcceptsFilthPatch.cs" />
-    <Compile Include="ThinkNode_USIFAnimalHasClarity.cs" />
-    <Compile Include="TryCastShot.cs" />
-    <Compile Include="USAcidGas.cs" />
-    <Compile Include="USAmmoniaFert.cs" />
-    <Compile Include="USAntifreeze.cs" />
-    <Compile Include="USBlightKiller.cs" />
-    <Compile Include="USFilthKiller.cs" />
-    <Compile Include="USGlowFoam.cs" />
-    <Compile Include="USGlowStick.cs" />
-    <Compile Include="USInsectKiller.cs" />
-    <Compile Include="USMindKillGas.cs" />
-    <Compile Include="USOptions_Initializer.cs" />
-    <Compile Include="USPlantKiller.cs" />
-    <Compile Include="USStinkrootGas.cs" />
-    <Compile Include="USTangleKillGas.cs" />
-    <Compile Include="USTanglerootGas.cs" />
-    <Compile Include="USTearGas.cs" />
-    <Compile Include="USToxUsesData.cs" />
-    <Compile Include="USTreeKiller.cs" />
-    <Compile Include="USWeedKiller.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,8 +63,14 @@ public class USStinkrootGas : Gas
             hediff = hediffSet?.GetFirstHediffOfDef(Globals.USStinkRootGas);
         }
 
-        var sensitivity = victim.GetStatValue(StatDefOf.ToxicSensitivity);
-        var addsev = 0.05f * sensitivity * toxicRatio;
+        var sensitivity = victim.GetStatValue(StatDefOf.ToxicEnvironmentResistance);
+
+        var addsev = 0.05f * toxicRatio;
+        if (sensitivity != 0)
+        {
+            addsev /= sensitivity;
+        }
+
         if (Globals.USVictimImmuneTo(victim, Globals.USStinkRootGas))
         {
             return;
@@ -113,21 +119,17 @@ public class USStinkrootGas : Gas
         }
 
         var whichBreak = Rand.Range(0f, 1f);
-        if (whichBreak > 0.75f)
+        switch (whichBreak)
         {
-            victim.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk);
-            return;
-        }
-
-        if (whichBreak is >= 0.45f and <= 0.75f)
-        {
-            victim.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Wander_Psychotic);
-            return;
-        }
-
-        if (whichBreak < 0.45f)
-        {
-            victim.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.PanicFlee);
+            case > 0.75f:
+                victim.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk);
+                return;
+            case >= 0.45f and <= 0.75f:
+                victim.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Wander_Psychotic);
+                return;
+            case < 0.45f:
+                victim.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.PanicFlee);
+                break;
         }
     }
 }

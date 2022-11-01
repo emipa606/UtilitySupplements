@@ -14,7 +14,7 @@ public class TryCastShot
             return;
         }
 
-        if (__instance == null || __instance == null)
+        if (__instance is null or null)
         {
             return;
         }

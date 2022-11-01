@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <!-- Tear Gas Damage -->
-  <Dam_USTearGas.label>Tear Gas</Dam_USTearGas.label>
-  <Dam_USTearGas.deathMessage>{0} has been killed.</Dam_USTearGas.deathMessage>
-</LanguageData>

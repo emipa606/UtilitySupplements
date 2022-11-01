@@ -20,7 +20,7 @@ internal class Gizmo_SprayerStatus : Gizmo
 
     public Gizmo_SprayerStatus()
     {
-        order = -303f;
+        base.Order = -303f;
     }
 
     public override float GetWidth(float maxWidth)
@@ -46,8 +46,7 @@ internal class Gizmo_SprayerStatus : Gizmo
         Text.Font = GameFont.Small;
         Text.Anchor = TextAnchor.MiddleCenter;
         Widgets.Label(rect3,
-            ((USToxUsesData)Sprayer)?.USToxUses.ToString("F0") + " / " +
-            (Sprayer as USToxUsesData)?.ToxUses.Props.USToxUses.ToString("F0"));
+            $"{((USToxUsesData)Sprayer)?.USToxUses:F0} / {(Sprayer as USToxUsesData)?.ToxUses.Props.USToxUses:F0}");
         Text.Anchor = TextAnchor.UpperLeft;
         return new GizmoResult(GizmoState.Clear);
     }

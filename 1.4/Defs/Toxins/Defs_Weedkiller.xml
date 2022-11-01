@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Damage -->
+  <DamageDef>
+    <defName>Dam_USWeedKill</defName>
+    <label>Weed Killer</label>
+    <workerClass>USToxins.DamageWorker_USWeedKill</workerClass>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>0</defaultDamage>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorEdge>(1, 1, 1, 0.05)</explosionColorEdge>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+    <harmsHealth>false</harmsHealth>
+    <combatLogRules>Damage_Extinguish</combatLogRules>
+  </DamageDef>
+  <!-- Filth -->
+  <ThingDef ParentName="USBaseFilth">
+    <defName>Filth_USWeedKillFoam</defName>
+    <label>Weed Killer Foam</label>
+    <thingClass>USToxins.USWeedKiller</thingClass>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Beauty>-15</Beauty>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(255, 255, 43, 100)</color>
+    </graphicData>
+    <pathCost>5</pathCost>
+    <filth>
+      <rainWashes>false</rainWashes>
+      <cleaningWorkToReduceThickness>120</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <allowsFire>true</allowsFire>
+    </filth>
+  </ThingDef>
+  <!-- Liquid -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>USWeedKillLiquid</defName>
+    <label>Weed Killer Liquid</label>
+    <description>A toxic chemical. This particular liquid has properties that make it toxic to all live weeds.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/USWeedKillLiquid</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.95</drawSize>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>28.3</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>UtilitySupps</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- Liquid Recipe -->
+  <RecipeDef>
+    <defName>MakeBulkUSWeedKillLiquid</defName>
+    <label>Make weed killer liquid</label>
+    <description>Make 5 weed killer liquid</description>
+    <jobString>Making toxins.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>950</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSPhenol</li>
+            <li>MSSulphuricAcid</li>
+            <li>MSHydrochloricAcid</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USStinkrootLeaves</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hay</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+        <li>MSPhenol</li>
+        <li>MSSulphuricAcid</li>
+        <li>MSHydrochloricAcid</li>
+        <li>USStinkrootLeaves</li>
+        <li>Hay</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <USWeedKillLiquid>5</USWeedKillLiquid>
+    </products>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Intellectual>10</Intellectual>
+    </skillRequirements>
+    <researchPrerequisite>USWeedKill</researchPrerequisite>
+  </RecipeDef>
+  <!-- Applicator -->
+  <ThingDef ParentName="BaseMakeableUSSprayer">
+    <defName>Gun_USSprayer_WeedKill</defName>
+    <label>Weed Killer Sprayer</label>
+    <description>Sprayer that applies toxic chemicals. The toxin associated with this sprayer will kill all live weeds.</description>
+    <graphicData>
+      <texPath>Things/Item/Gun_USSprayer_WeedKill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>USWeedKill</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags Inherit="false">
+      <li>USSpray_NotUsed</li>
+    </weaponTags>
+    <thingCategories>
+      <li>UtilitySupps</li>
+    </thingCategories>
+    <generateCommonality>0.3</generateCommonality>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.2</Mass>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>0.5</SellPriceFactor>
+      <MarketValue>144.1</MarketValue>
+    </statBases>
+    <costList>
+      <Chemfuel>20</Chemfuel>
+      <Steel>5</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <USWeedKillLiquid>2</USWeedKillLiquid>
+    </costList>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <verbs>
+      <li>
+        <forcedMissRadius>1</forcedMissRadius>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_USWeedKill_Foam</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>4</range>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <!--
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				-->
+        <soundCast>DispensePaste</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>1</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="USToxins.CompProperties_USToxUses">
+        <USToxUses>100</USToxUses>
+      </li>
+    </comps>
+    <thingClass>USToxins.USToxUsesData</thingClass>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_USWeedKill_Foam</defName>
+    <label>Weed Killer Foam</label>
+    <graphicData>
+      <texPath>Things/Projectile/USWeedKill_Spray</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USWeedKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>30</speed>
+      <explosionRadius>2</explosionRadius>
+      <flyOverhead>false</flyOverhead>
+      <soundExplode>DispensePaste</soundExplode>
+      <postExplosionSpawnThingDef>Filth_USWeedKillFoam</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <!-- <explosionEffect>ExtinguisherExplosion</explosionEffect> -->
+    </projectile>
+  </ThingDef>
+</Defs>
