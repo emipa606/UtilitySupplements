@@ -25,7 +25,7 @@
       <li>MSPhenol</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
-    <researchViewX>1.00</researchViewX>
+    <researchViewX>0.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   <!-- Generic -->
@@ -176,7 +176,7 @@
       <li>USTangleroot</li>
     </prerequisites>
     <tab>UtilitySuppTab</tab>
-    <researchViewX>0.00</researchViewX>
+    <researchViewX>1.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 </Defs>

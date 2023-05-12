@@ -6,6 +6,7 @@ using Verse;
 
 namespace USToxins;
 
+// ReSharper disable all ForCanBeConvertedToForeach
 [HarmonyPatch(typeof(Plant), "TickLong")]
 public class Plant_TickLong
 {
@@ -66,8 +67,9 @@ public class Plant_TickLong
                     continue;
                 }
 
-                foreach (var chkcell in stinkycells)
+                for (var i = 0; i < stinkycells.Count; i++)
                 {
+                    var chkcell = stinkycells[i];
                     if (chkcell.IsValid && chkcell.InBounds(TargetMap) &&
                         !chkcell.Impassable(TargetMap))
                     {
@@ -86,8 +88,9 @@ public class Plant_TickLong
             var Pawnlist = TargetCell.GetThingList(TargetMap);
             if (Pawnlist.Count > 0)
             {
-                foreach (var thing1 in Pawnlist)
+                for (var i = 0; i < Pawnlist.Count; i++)
                 {
+                    var thing1 = Pawnlist[i];
                     if (thing1 is Pawn pawn && pawn.Position == TargetCell)
                     {
                         DoUSTangleDamage(pawn, plant);
@@ -114,8 +117,9 @@ public class Plant_TickLong
 
             var creepcelllist = new List<IntVec3>();
             creepcelllist.Clear();
-            foreach (var chkcreepcell in chkcreepcells)
+            for (var i = 0; i < chkcreepcells.Count; i++)
             {
+                var chkcreepcell = chkcreepcells[i];
                 if (!chkcreepcell.IsValid || !chkcreepcell.InBounds(TargetMap) ||
                     chkcreepcell.Impassable(TargetMap) || !(chkcreepcell.GetTerrain(TargetMap).fertility >=
                                                             Globals.USTanglePlantFertMin))
@@ -127,8 +131,9 @@ public class Plant_TickLong
                 var SamePlantlist = chkcreepcell.GetThingList(TargetMap);
                 if (SamePlantlist.Count > 0)
                 {
-                    foreach (var thing1 in SamePlantlist)
+                    for (var index1 = 0; index1 < SamePlantlist.Count; index1++)
                     {
+                        var thing1 = SamePlantlist[index1];
                         if (thing1 is Fire)
                         {
                             AddToList = false;
@@ -169,8 +174,9 @@ public class Plant_TickLong
             var ClearPlantlist = creeperCell.GetThingList(TargetMap);
             if (ClearPlantlist.Count > 0)
             {
-                foreach (var thing1 in ClearPlantlist)
+                for (var i = 0; i < ClearPlantlist.Count; i++)
                 {
+                    var thing1 = ClearPlantlist[i];
                     if (thing1 is not Plant plant1 || plant1.def.defName == "Plant_USTangleroot")
                     {
                         continue;
