@@ -312,7 +312,7 @@
   <ThingDef ParentName="BaseUSMakeableGrenade">
     <defName>Weapon_USGrenade_GlowStick</defName>
     <label>Glow Sticks</label>
-    <description>Glow Sticks, contianed within the transparent container is luminescent liquid.</description>
+    <description>Glow Sticks, contained within the transparent container is luminescent liquid.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/USGrenades/Weapon_USGrenade_GlowStick</texPath>
       <graphicClass>Graphic_Single</graphicClass>

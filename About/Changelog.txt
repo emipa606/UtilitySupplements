@@ -1,5 +1,8 @@
 # Changelog for UtilitySupplements
 
+1.4.3 - Typo fix
+
+
 1.4.2 - Fixed tangeweed iterator and research positions
 
 
