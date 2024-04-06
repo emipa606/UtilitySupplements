@@ -5,7 +5,7 @@ namespace USToxins;
 
 public class USStinkrootGas : Gas
 {
-    public float toxicRatio = Settings.USToxLevels / 100f;
+    public readonly float toxicRatio = Settings.USToxLevels / 100f;
 
     public override void Tick()
     {
@@ -28,6 +28,7 @@ public class USStinkrootGas : Gas
             return;
         }
 
+        // ReSharper disable once ForCanBeConvertedToForeach
         for (var index = 0; index < Thinglist.Count; index++)
         {
             var thing = Thinglist[index];

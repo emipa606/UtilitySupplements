@@ -17,7 +17,7 @@ public class USPlantKiller : Filth
     public override void Tick()
     {
         USspawnTick++;
-        if (USspawnTick >= 60000)
+        if (USspawnTick >= GenDate.TicksPerDay)
         {
             Destroy();
             return;
@@ -36,6 +36,7 @@ public class USPlantKiller : Filth
             return;
         }
 
+        // ReSharper disable once ForCanBeConvertedToForeach
         for (var index = 0; index < Plantlist.Count; index++)
         {
             var thing = Plantlist[index];

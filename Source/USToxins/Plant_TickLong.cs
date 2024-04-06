@@ -7,7 +7,7 @@ using Verse;
 namespace USToxins;
 
 // ReSharper disable all ForCanBeConvertedToForeach
-[HarmonyPatch(typeof(Plant), "TickLong")]
+[HarmonyPatch(typeof(Plant), nameof(Plant.TickLong))]
 public class Plant_TickLong
 {
     public static float toxRatio = Settings.USToxLevels / 100f;
@@ -196,7 +196,7 @@ public class Plant_TickLong
             }
 
             plantnew1.Growth = 0.05f;
-            TargetMap.mapDrawer.MapMeshDirty(plantnew1.Position, MapMeshFlag.Things);
+            TargetMap.mapDrawer.MapMeshDirty(plantnew1.Position, MapMeshFlagDefOf.Things);
         }
     }
 

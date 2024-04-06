@@ -18,7 +18,7 @@ internal static class MultiplayerSupport
         }
 
         MethodInfo[] array =
-        {
+        [
             AccessTools.Method(typeof(Plant_TickLong), "GenRndVal"),
             AccessTools.Method(typeof(Plant_TickLong), "DoUSTangleCreepDmg"),
             AccessTools.Method(typeof(Plant_TickLong), "DoUSTangleDamage"),
@@ -28,7 +28,7 @@ internal static class MultiplayerSupport
             AccessTools.Method(typeof(USAntifreeze), "GetRndMelt"),
             AccessTools.Method(typeof(USAcidGas), "Rnd100"),
             AccessTools.Method(typeof(USAcidGas), "DoUSAcidGasToxic")
-        };
+        ];
         foreach (var methodInfo in array)
         {
             FixRNG(methodInfo);

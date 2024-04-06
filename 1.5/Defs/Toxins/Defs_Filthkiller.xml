@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Damage -->
+  <DamageDef>
+    <defName>Dam_USFilthKill</defName>
+    <label>Filth Killer</label>
+    <workerClass>USToxins.DamageWorker_USFilthKill</workerClass>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>0</defaultDamage>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorEdge>(0.5, 0.5, 0.5, 0.05)</explosionColorEdge>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+    <harmsHealth>false</harmsHealth>
+    <combatLogRules>Damage_Extinguish</combatLogRules>
+  </DamageDef>
+  <!-- Filth -->
+  <ThingDef ParentName="USBaseFilth">
+    <defName>Filth_USFilthKillFoam</defName>
+    <label>Filth Killer Foam</label>
+    <thingClass>USToxins.USFilthKiller</thingClass>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Beauty>-10</Beauty>
+      <Cleanliness>+3</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(19, 69, 172, 100)</color>
+    </graphicData>
+    <pathCost>5</pathCost>
+    <filth>
+      <rainWashes>false</rainWashes>
+      <cleaningWorkToReduceThickness>120</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <allowsFire>true</allowsFire>
+    </filth>
+  </ThingDef>
+  <!-- Liquid -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>USFilthKillLiquid</defName>
+    <label>Filth Killer Liquid</label>
+    <description>A powerfull active detergant. This particular liquid will help to degrade all forms of filth.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/USFilthKillLiquid</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.95</drawSize>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>28.5</MarketValue>
+      <!-- 5 Chemfuel, 1 Phenol, 1 MedHerb -->
+      <Mass>0.3</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>UtilitySupps</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- Liquid Recipe -->
+  <RecipeDef>
+    <defName>MakeBulkUSFilthKillLiquid</defName>
+    <label>Make filth killer liquid</label>
+    <description>Make 5 filth killer liquid</description>
+    <jobString>Making detergant.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>950</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSPhenol</li>
+            <li>MSSulphuricAcid</li>
+            <li>MSHydrochloricAcid</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineHerbal</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+        <li>MSPhenol</li>
+        <li>MSSulphuricAcid</li>
+        <li>MSHydrochloricAcid</li>
+        <li>MedicineHerbal</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <USFilthKillLiquid>5</USFilthKillLiquid>
+    </products>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+    <researchPrerequisite>USFilthKill</researchPrerequisite>
+  </RecipeDef>
+  <!-- Applicator -->
+  <ThingDef ParentName="BaseMakeableUSSprayer">
+    <defName>Gun_USSprayer_FilthKill</defName>
+    <label>Filth Killer Sprayer</label>
+    <description>Sprayer that applies detergant. The cleaning agent associated with this sprayer will remove all forms of filth.</description>
+    <graphicData>
+      <texPath>Things/Item/Gun_USSprayer_FilthKill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>USFilthKill</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags Inherit="false">
+      <li>USSpray_NotUsed</li>
+    </weaponTags>
+    <thingCategories>
+      <li>UtilitySupps</li>
+    </thingCategories>
+    <generateCommonality>0.3</generateCommonality>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.2</Mass>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>0.5</SellPriceFactor>
+      <MarketValue>144.5</MarketValue>
+    </statBases>
+    <costList>
+      <Chemfuel>20</Chemfuel>
+      <Steel>5</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <USFilthKillLiquid>2</USFilthKillLiquid>
+    </costList>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <verbs>
+      <li>
+        <forcedMissRadius>1</forcedMissRadius>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_USFilthKill_Foam</defaultProjectile>
+        <warmupTime>0.7</warmupTime>
+        <range>4</range>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <!--
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				-->
+        <soundCast>DispensePaste</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>1</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="USToxins.CompProperties_USToxUses">
+        <USToxUses>100</USToxUses>
+      </li>
+    </comps>
+    <thingClass>USToxins.USToxUsesData</thingClass>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_USFilthKill_Foam</defName>
+    <label>Plant Killer Foam</label>
+    <graphicData>
+      <texPath>Things/Projectile/USFilthKill_Spray</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Dam_USFilthKill</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>30</speed>
+      <explosionRadius>2</explosionRadius>
+      <flyOverhead>false</flyOverhead>
+      <soundExplode>DispensePaste</soundExplode>
+      <postExplosionSpawnThingDef>Filth_USFilthKillFoam</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <!-- <explosionEffect>ExtinguisherExplosion</explosionEffect> -->
+    </projectile>
+  </ThingDef>
+</Defs>

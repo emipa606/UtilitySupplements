@@ -73,7 +73,7 @@ public class DamageWorker_USAcidGas : DamageWorker_AddInjury
         }
         else
         {
-            list2 = new List<BodyPartRecord>();
+            list2 = [];
         }
 
         list2.Add(dinfo.HitPart);

@@ -54,23 +54,23 @@ internal class Globals
 
     internal const string USTanglePlantdefName = "Plant_USTangleroot";
 
-    internal static DamageDef USPlantToxin = DefDatabase<DamageDef>.GetNamed("Dam_USPlantToxin");
+    internal static readonly DamageDef USPlantToxin = DefDatabase<DamageDef>.GetNamed("Dam_USPlantToxin");
 
-    internal static HediffDef USStinkRootGas = DefDatabase<HediffDef>.GetNamed("HED_USStinkRootGas");
+    internal static readonly HediffDef USStinkRootGas = DefDatabase<HediffDef>.GetNamed("HED_USStinkRootGas");
 
-    internal static ThingDef USStinkyGas = DefDatabase<ThingDef>.GetNamed("Gas_USStinkroot");
+    internal static readonly ThingDef USStinkyGas = DefDatabase<ThingDef>.GetNamed("Gas_USStinkroot");
 
-    internal static HediffDef USTangleRootStrike = DefDatabase<HediffDef>.GetNamed("HED_USTangleRoot");
+    internal static readonly HediffDef USTangleRootStrike = DefDatabase<HediffDef>.GetNamed("HED_USTangleRoot");
 
-    internal static ThingDef USTangleGas = DefDatabase<ThingDef>.GetNamed("Gas_USTangleroot");
+    internal static readonly ThingDef USTangleGas = DefDatabase<ThingDef>.GetNamed("Gas_USTangleroot");
 
-    internal static ThingDef USTanglePlant = DefDatabase<ThingDef>.GetNamed("Plant_USTangleroot");
+    internal static readonly ThingDef USTanglePlant = DefDatabase<ThingDef>.GetNamed("Plant_USTangleroot");
 
-    internal static float USTanglePlantFertMin = USTanglePlant.plant.fertilityMin;
+    internal static readonly float USTanglePlantFertMin = USTanglePlant.plant.fertilityMin;
 
-    internal static HediffDef USTearGas = DefDatabase<HediffDef>.GetNamed("HED_USTearGas");
+    internal static readonly HediffDef USTearGas = DefDatabase<HediffDef>.GetNamed("HED_USTearGas");
 
-    internal static HediffDef USAcidGasEffect = DefDatabase<HediffDef>.GetNamed("HED_USAcidGas");
+    internal static readonly HediffDef USAcidGasEffect = DefDatabase<HediffDef>.GetNamed("HED_USAcidGas");
 
     internal static uint ComputeStringHash(string s)
     {

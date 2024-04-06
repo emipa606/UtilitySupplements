@@ -36,6 +36,7 @@ public class USAmmoniaFert : Filth
             return;
         }
 
+        // ReSharper disable once ForCanBeConvertedToForeach
         for (var index = 0; index < Thinglist.Count; index++)
         {
             var thing = Thinglist[index];
@@ -68,6 +69,6 @@ public class USAmmoniaFert : Filth
             return 0f;
         }
 
-        return 1f / (60000f * plant.def.plant.growDays) * plant.GrowthRate * 500f;
+        return 1f / (GenDate.TicksPerDay * plant.def.plant.growDays) * plant.GrowthRate * 500f;
     }
 }

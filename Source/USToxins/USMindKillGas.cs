@@ -5,7 +5,7 @@ namespace USToxins;
 
 public class USMindKillGas : Gas
 {
-    public float toxicRatio = Settings.USToxLevels / 100f;
+    public readonly float toxicRatio = Settings.USToxLevels / 100f;
 
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
@@ -40,6 +40,7 @@ public class USMindKillGas : Gas
             return;
         }
 
+        // ReSharper disable once ForCanBeConvertedToForeach
         for (var index = 0; index < Thinglist.Count; index++)
         {
             var thing = Thinglist[index];

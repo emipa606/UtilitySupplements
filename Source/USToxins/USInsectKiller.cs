@@ -5,7 +5,7 @@ namespace USToxins;
 
 public class USInsectKiller : Filth
 {
-    public float toxRatio = Settings.USToxLevels / 100f;
+    public readonly float toxRatio = Settings.USToxLevels / 100f;
 
     private int USspawnTick;
 
@@ -18,7 +18,7 @@ public class USInsectKiller : Filth
     public override void Tick()
     {
         USspawnTick++;
-        if (USspawnTick >= 60000)
+        if (USspawnTick >= GenDate.TicksPerDay)
         {
             Destroy();
             return;
@@ -37,6 +37,7 @@ public class USInsectKiller : Filth
             return;
         }
 
+        // ReSharper disable once ForCanBeConvertedToForeach
         for (var index = 0; index < Pawnlist.Count; index++)
         {
             var thing = Pawnlist[index];

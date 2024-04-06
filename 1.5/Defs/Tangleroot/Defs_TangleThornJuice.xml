@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ======================== Tanglethorn Juice  ==================================== -->
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>USTangleThornJuice</defName>
+    <label>Tanglethorn Juice</label>
+    <description>A rather strong and unpalatable tangleroot prevention tincture. Taken every 7 days.</description>
+    <graphicData>
+      <texPath>Things/Item/Drugs/USTangleThornJuice</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <thingCategories Inherit="false">
+      <li>MSDrugs</li>
+    </thingCategories>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>150</WorkToMake>
+      <MarketValue>16</MarketValue>
+      <Mass>0.09</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>70</baseIngestTicks>
+      <ingestSound>Ingest_Drink</ingestSound>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>USTangleThorn_High</hediffDef>
+          <severity>7</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>USTangleroot</researchPrerequisite>
+      <skillRequirements>
+        <Intellectual>7</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+      <USTanglerootThorns>10</USTanglerootThorns>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1883</listOrder>
+        <overdoseSeverityOffset>
+          <min>0.01</min>
+          <max>0.03</max>
+        </overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+  <HediffDef>
+    <defName>USTangleThorn_High</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Tanglethorn Juice</label>
+    <description>Tanglethorn Juice effect</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>7.0</maxSeverity>
+    <lethalSeverity>-1.0</lethalSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.95</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <lifeThreatening>false</lifeThreatening>
+        <makeImmuneTo>
+          <li>HED_USTangleRoot</li>
+        </makeImmuneTo>
+        <statOffsets>
+          <ToxicResistance>0.15</ToxicResistance>
+        </statOffsets>
+      </li>
+      <li>
+        <lifeThreatening>false</lifeThreatening>
+        <minSeverity>6.8</minSeverity>
+        <makeImmuneTo>
+          <li>HED_USTangleRoot</li>
+        </makeImmuneTo>
+        <statOffsets>
+          <ToxicResistance>0.20</ToxicResistance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <ThoughtDef>
+    <defName>USTangleThorn_Thought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>USTangleThorn_High</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>TangleThorn</label>
+        <description>Mild Soothing effect</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+        <label>Imbalmed TangleThorn</label>
+        <description>Aftertaste</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!-- ===== Bulk Recipe ========= -->
+  <RecipeDef>
+    <defName>MakeBulkTangleThorn</defName>
+    <label>Make Tanglethorn juice in bulk</label>
+    <description>Make 5 Tanglethorn juice.</description>
+    <jobString>Making Tanglethorn juice.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>750</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>USTanglerootThorns</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+        <li>USTanglerootThorns</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <USTangleThornJuice>5</USTangleThornJuice>
+    </products>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+    <researchPrerequisite>USTangleroot</researchPrerequisite>
+  </RecipeDef>
+</Defs>

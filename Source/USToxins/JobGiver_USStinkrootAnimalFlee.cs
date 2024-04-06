@@ -12,7 +12,7 @@ public class JobGiver_USStinkrootAnimalFlee : ThinkNode_JobGiver
 
     private const int DistToDangerToFlee = 5;
 
-    private static readonly List<Thing> tmpThings = new List<Thing>();
+    private static readonly List<Thing> tmpThings = [];
 
     protected override Job TryGiveJob(Pawn pawn)
     {
@@ -42,7 +42,7 @@ public class JobGiver_USStinkrootAnimalFlee : ThinkNode_JobGiver
         {
             var plantchk = thing as Plant;
             if (plantchk?.def.defName != "Plant_USStinkroot" ||
-                !((plantchk.Position - pawn.Position).LengthHorizontal <= 5f))
+                !((plantchk.Position - pawn.Position).LengthHorizontal <= DistToDangerToFlee))
             {
                 continue;
             }
@@ -68,7 +68,7 @@ public class JobGiver_USStinkrootAnimalFlee : ThinkNode_JobGiver
         {
             tmpThings.Clear();
             tmpThings.Add(danger);
-            intVec = CellFinderLoose.GetFleeDest(pawn, tmpThings, 24f);
+            intVec = CellFinderLoose.GetFleeDest(pawn, tmpThings, FleeDistance);
             tmpThings.Clear();
         }
 

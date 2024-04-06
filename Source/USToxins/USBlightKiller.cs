@@ -5,7 +5,7 @@ namespace USToxins;
 
 public class USBlightKiller : Filth
 {
-    public float toxicRatio = Settings.USToxLevels / 100f;
+    public readonly float toxicRatio = Settings.USToxLevels / 100f;
 
     private int USspawnTick;
 
@@ -18,7 +18,7 @@ public class USBlightKiller : Filth
     public override void Tick()
     {
         USspawnTick++;
-        if (USspawnTick >= 60000)
+        if (USspawnTick >= GenDate.TicksPerDay)
         {
             Destroy();
             return;
@@ -37,6 +37,7 @@ public class USBlightKiller : Filth
             return;
         }
 
+        // ReSharper disable once ForCanBeConvertedToForeach
         for (var index = 0; index < Blightlist.Count; index++)
         {
             var thing = Blightlist[index];

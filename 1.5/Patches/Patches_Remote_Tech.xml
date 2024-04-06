@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ====== Compatability Patch ==================== -->
+  <!-- Remote Tech patches -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Remote Tech</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="TrapIEDBase">
+              <defName>TrapIED_USBlightfoam</defName>
+              <label>IED Blight Killer trap</label>
+              <description>A pair of blight killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+              <graphicData>
+                <texPath>Things/Building/Security/IEDUSBlightfoam</texPath>
+              </graphicData>
+              <costList>
+                <Shell_USBlightFoam>2</Shell_USBlightFoam>
+              </costList>
+              <statBases>
+                <MarketValue>103</MarketValue>
+              </statBases>
+              <designationHotKey>Misc10</designationHotKey>
+              <comps>
+                <li Class="CompProperties_Explosive">
+                  <explosiveRadius>9.9</explosiveRadius>
+                  <explosiveDamageType>Dam_USBlightKill</explosiveDamageType>
+                  <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+                  <postExplosionSpawnThingDef>Filth_USBlightKillFoam</postExplosionSpawnThingDef>
+                  <postExplosionSpawnChance>1</postExplosionSpawnChance>
+                  <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+                  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                  <explosionEffect>ExtinguisherExplosion</explosionEffect>
+                  <wickTicks>
+                    <min>15</min>
+                    <max>15</max>
+                  </wickTicks>
+                </li>
+              </comps>
+              <specialDisplayRadius>9.9</specialDisplayRadius>
+              <researchPrerequisites Inherit="false">
+                <li>IEDs</li>
+                <li>USBlightKill</li>
+              </researchPrerequisites>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="TrapIEDBase">
+              <defName>TrapIED_USFilthfoam</defName>
+              <label>IED Filth Killer trap</label>
+              <description>A pair of detergant shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+              <graphicData>
+                <texPath>Things/Building/Security/IEDUSFilthfoam</texPath>
+              </graphicData>
+              <costList>
+                <Shell_USFilthFoam>2</Shell_USFilthFoam>
+              </costList>
+              <statBases>
+                <MarketValue>95</MarketValue>
+              </statBases>
+              <designationHotKey>Misc10</designationHotKey>
+              <comps>
+                <li Class="CompProperties_Explosive">
+                  <explosiveRadius>9.9</explosiveRadius>
+                  <explosiveDamageType>Dam_USFilthKill</explosiveDamageType>
+                  <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+                  <postExplosionSpawnThingDef>Filth_USFilthKillFoam</postExplosionSpawnThingDef>
+                  <postExplosionSpawnChance>1</postExplosionSpawnChance>
+                  <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+                  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                  <explosionEffect>ExtinguisherExplosion</explosionEffect>
+                  <wickTicks>
+                    <min>15</min>
+                    <max>15</max>
+                  </wickTicks>
+                </li>
+              </comps>
+              <specialDisplayRadius>9.9</specialDisplayRadius>
+              <researchPrerequisites Inherit="false">
+                <li>IEDs</li>
+                <li>USFilthKill</li>
+              </researchPrerequisites>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="TrapIEDBase">
+              <defName>TrapIED_USAntifreeze</defName>
+              <label>IED Antifreeze trap</label>
+              <description>A pair of antifreeze shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+              <graphicData>
+                <texPath>Things/Building/Security/IEDUSAntifreeze</texPath>
+              </graphicData>
+              <costList>
+                <Shell_USAntifreeze>2</Shell_USAntifreeze>
+              </costList>
+              <statBases>
+                <MarketValue>124</MarketValue>
+              </statBases>
+              <designationHotKey>Misc10</designationHotKey>
+              <comps>
+                <li Class="CompProperties_Explosive">
+                  <explosiveRadius>9.9</explosiveRadius>
+                  <explosiveDamageType>Dam_USAntifreeze</explosiveDamageType>
+                  <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+                  <postExplosionSpawnThingDef>Filth_USAntifreeze</postExplosionSpawnThingDef>
+                  <postExplosionSpawnChance>1</postExplosionSpawnChance>
+                  <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+                  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                  <explosionEffect>ExtinguisherExplosion</explosionEffect>
+                  <wickTicks>
+                    <min>15</min>
+                    <max>15</max>
+                  </wickTicks>
+                </li>
+              </comps>
+              <specialDisplayRadius>9.9</specialDisplayRadius>
+              <researchPrerequisites Inherit="false">
+                <li>IEDs</li>
+                <li>USAntifreeze</li>
+              </researchPrerequisites>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="TrapIEDBase">
+              <defName>TrapIED_USPlantfoam</defName>
+              <label>IED Plant Killer trap</label>
+              <description>A pair of plant killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+              <graphicData>
+                <texPath>Things/Building/Security/IEDUSPlantfoam</texPath>
+              </graphicData>
+              <costList>
+                <Shell_USPlantFoam>2</Shell_USPlantFoam>
+              </costList>
+              <statBases>
+                <MarketValue>91</MarketValue>
+              </statBases>
+              <designationHotKey>Misc10</designationHotKey>
+              <comps>
+                <li Class="CompProperties_Explosive">
+                  <explosiveRadius>9.9</explosiveRadius>
+                  <explosiveDamageType>Dam_USPlantKill</explosiveDamageType>
+                  <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+                  <postExplosionSpawnThingDef>Filth_USPlantKillFoam</postExplosionSpawnThingDef>
+                  <postExplosionSpawnChance>1</postExplosionSpawnChance>
+                  <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+                  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                  <explosionEffect>ExtinguisherExplosion</explosionEffect>
+                  <wickTicks>
+                    <min>15</min>
+                    <max>15</max>
+                  </wickTicks>
+                </li>
+              </comps>
+              <specialDisplayRadius>9.9</specialDisplayRadius>
+              <researchPrerequisites Inherit="false">
+                <li>IEDs</li>
+                <li>USPlantKill</li>
+              </researchPrerequisites>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="TrapIEDBase">
+              <defName>TrapIED_USTreefoam</defName>
+              <label>IED Plant Killer trap</label>
+              <description>A pair of tree killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+              <graphicData>
+                <texPath>Things/Building/Security/IEDUSTreefoam</texPath>
+              </graphicData>
+              <costList>
+                <Shell_USTreeFoam>2</Shell_USTreeFoam>
+              </costList>
+              <statBases>
+                <MarketValue>93.4</MarketValue>
+              </statBases>
+              <designationHotKey>Misc10</designationHotKey>
+              <comps>
+                <li Class="CompProperties_Explosive">
+                  <explosiveRadius>9.9</explosiveRadius>
+                  <explosiveDamageType>Dam_USTreeKill</explosiveDamageType>
+                  <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+                  <postExplosionSpawnThingDef>Filth_USTreeKillFoam</postExplosionSpawnThingDef>
+                  <postExplosionSpawnChance>1</postExplosionSpawnChance>
+                  <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+                  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                  <explosionEffect>ExtinguisherExplosion</explosionEffect>
+                  <wickTicks>
+                    <min>15</min>
+                    <max>15</max>
+                  </wickTicks>
+                </li>
+              </comps>
+              <specialDisplayRadius>9.9</specialDisplayRadius>
+              <researchPrerequisites Inherit="false">
+                <li>IEDs</li>
+                <li>USTreeKill</li>
+              </researchPrerequisites>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="TrapIEDBase">
+              <defName>TrapIED_USWeedfoam</defName>
+              <label>IED Weed Killer trap</label>
+              <description>A pair of weed killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+              <graphicData>
+                <texPath>Things/Building/Security/IEDUSWeedfoam</texPath>
+              </graphicData>
+              <costList>
+                <Shell_USWeedFoam>2</Shell_USWeedFoam>
+              </costList>
+              <statBases>
+                <MarketValue>94.6</MarketValue>
+              </statBases>
+              <designationHotKey>Misc10</designationHotKey>
+              <comps>
+                <li Class="CompProperties_Explosive">
+                  <explosiveRadius>9.9</explosiveRadius>
+                  <explosiveDamageType>Dam_USWeedKill</explosiveDamageType>
+                  <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+                  <postExplosionSpawnThingDef>Filth_USWeedKillFoam</postExplosionSpawnThingDef>
+                  <postExplosionSpawnChance>1</postExplosionSpawnChance>
+                  <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+                  <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                  <explosionEffect>ExtinguisherExplosion</explosionEffect>
+                  <wickTicks>
+                    <min>15</min>
+                    <max>15</max>
+                  </wickTicks>
+                </li>
+              </comps>
+              <specialDisplayRadius>9.9</specialDisplayRadius>
+              <researchPrerequisites Inherit="false">
+                <li>IEDs</li>
+                <li>USWeedKill</li>
+              </researchPrerequisites>
+            </ThingDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

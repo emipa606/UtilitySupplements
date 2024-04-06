@@ -4,12 +4,11 @@ using Verse;
 
 namespace USToxins;
 
-[HarmonyPatch(typeof(FilthMaker), "TerrainAcceptsFilth")]
+[HarmonyPatch(typeof(FilthMaker), nameof(FilthMaker.TerrainAcceptsFilth))]
 public class TerrainAcceptsFilthPatch
 {
     [HarmonyPostfix]
-    public static void Postfix(ref bool __result, TerrainDef terrainDef, ThingDef filthDef,
-        FilthSourceFlags additionalFlags = FilthSourceFlags.None)
+    public static void Postfix(ref bool __result, TerrainDef terrainDef, ThingDef filthDef)
     {
         if (!__result && terrainDef.AffectsFertility && Globals.IsUSFilth(filthDef))
         {

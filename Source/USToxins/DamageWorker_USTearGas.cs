@@ -7,7 +7,7 @@ namespace USToxins;
 
 public class DamageWorker_USTearGas : DamageWorker
 {
-    public float toxicRatio = Settings.USToxLevels / 100f;
+    public readonly float toxicRatio = Settings.USToxLevels / 100f;
 
     public override void ExplosionStart(Explosion explosion, List<IntVec3> cellsToAffect)
     {
@@ -36,7 +36,7 @@ public class DamageWorker_USTearGas : DamageWorker
         if (num > 0f)
         {
             var sensitivity = victim.GetStatValue(StatDefOf.ToxicEnvironmentResistance);
-            num = num * toxicRatio;
+            num *= toxicRatio;
             if (sensitivity != 0)
             {
                 num /= sensitivity;

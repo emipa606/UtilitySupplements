@@ -9,11 +9,11 @@ namespace USToxins;
 
 public class USAcidGas : Gas
 {
-    public static DamageDef USAcid = DefDatabase<DamageDef>.GetNamed("Dam_USAcidGas");
+    public static readonly DamageDef USAcid = DefDatabase<DamageDef>.GetNamed("Dam_USAcidGas");
+
+    public readonly float toxicRatio = Settings.USToxLevels / 100f;
 
     public int amountAcidDam = 1000;
-
-    public float toxicRatio = Settings.USToxLevels / 100f;
 
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
@@ -45,6 +45,7 @@ public class USAcidGas : Gas
         var Thinglist = TargetCell.GetThingList(TargetMap);
         if (Thinglist.Count > 0)
         {
+            // ReSharper disable once ForCanBeConvertedToForeach
             for (var index = 0; index < Thinglist.Count; index++)
             {
                 var thing = Thinglist[index];
@@ -53,7 +54,7 @@ public class USAcidGas : Gas
                     continue;
                 }
 
-                if (thing.def.useHitPoints && !(thing is Pawn) ||
+                if (thing.def.useHitPoints && thing is not Pawn ||
                     thing.def.useHitPoints && thing.def.IsCorpse)
                 {
                     DoUSAcidGasDegrade(this, thing, out var DMG);
@@ -87,6 +88,7 @@ public class USAcidGas : Gas
             return;
         }
 
+        // ReSharper disable once ForCanBeConvertedToForeach
         for (var index = 0; index < cells.Count; index++)
         {
             var cell = cells[index];
@@ -154,12 +156,7 @@ public class USAcidGas : Gas
             return 3f;
         }
 
-        if (targ.def.IsFilth)
-        {
-            return 4f;
-        }
-
-        return 3f;
+        return targ.def.IsFilth ? 4f : 3f;
     }
 
     public void DoUSAcidGasPawn(Thing Gas, Thing targ)

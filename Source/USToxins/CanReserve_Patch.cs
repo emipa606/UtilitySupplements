@@ -5,12 +5,11 @@ using Verse.AI;
 
 namespace USToxins;
 
-[HarmonyPatch(typeof(ReservationUtility), "CanReserve")]
+[HarmonyPatch(typeof(ReservationUtility), nameof(ReservationUtility.CanReserve))]
 public class CanReserve_Patch
 {
     [HarmonyPostfix]
-    public static void Postfix(ref bool __result, Pawn p, LocalTargetInfo target, int maxPawns = 1,
-        int stackCount = -1, ReservationLayerDef layer = null, bool ignoreOtherReservations = false)
+    public static void Postfix(ref bool __result, LocalTargetInfo target)
     {
         if (!__result)
         {
