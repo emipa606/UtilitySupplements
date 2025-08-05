@@ -21,7 +21,7 @@ public class Settings : ModSettings
 
     public static float USToxLevels = 100f;
 
-    public void DoWindowContents(Rect canvas)
+    public static void DoWindowContents(Rect canvas)
     {
         var gap = 8f;
         var listing_Standard = new Listing_Standard { ColumnWidth = canvas.width };

@@ -16,7 +16,7 @@ public class USGlowFoam : Filth
         Scribe_Values.Look(ref USGlowTick, "USGlowTick");
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         USspawnTick++;
         if (USspawnTick >= 20000)

@@ -5,7 +5,7 @@ namespace USToxins;
 
 public class USInsectKiller : Filth
 {
-    public readonly float toxRatio = Settings.USToxLevels / 100f;
+    private readonly float toxRatio = Settings.USToxLevels / 100f;
 
     private int USspawnTick;
 
@@ -15,7 +15,7 @@ public class USInsectKiller : Filth
         Scribe_Values.Look(ref USspawnTick, "USspawnTick");
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         USspawnTick++;
         if (USspawnTick >= GenDate.TicksPerDay)

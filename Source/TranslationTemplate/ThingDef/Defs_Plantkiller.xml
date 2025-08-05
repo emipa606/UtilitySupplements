@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Plant Killer Foam -->
+  <Bullet_USPlantKill_Foam.label>Plant Killer Foam</Bullet_USPlantKill_Foam.label>
+  <!-- EN: Plant Killer Foam -->
+  <Filth_USPlantKillFoam.label>Plant Killer Foam</Filth_USPlantKillFoam.label>
+  <!-- EN: Plant Killer Sprayer -->
+  <Gun_USSprayer_PlantKill.label>Plant Killer Sprayer</Gun_USSprayer_PlantKill.label>
+  <!-- EN: Sprayer that applies toxic chemicals. The toxin associated with this sprayer will kill all live plants. -->
+  <Gun_USSprayer_PlantKill.description>Sprayer that applies toxic chemicals. The toxin associated with this sprayer will kill all live plants.</Gun_USSprayer_PlantKill.description>
+  <!-- EN: stock -->
+  <Gun_USSprayer_PlantKill.tools.stock.label>stock</Gun_USSprayer_PlantKill.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_USSprayer_PlantKill.tools.barrel.label>barrel</Gun_USSprayer_PlantKill.tools.barrel.label>
+  <!-- EN: Plant Killer Sprayer -->
+  <Gun_USSprayer_PlantKill.verbs.Verb_Shoot.label>Plant Killer Sprayer</Gun_USSprayer_PlantKill.verbs.Verb_Shoot.label>
+  <!-- EN: Plant Killer Liquid -->
+  <USPlantKillLiquid.label>Plant Killer Liquid</USPlantKillLiquid.label>
+  <!-- EN: A toxic chemical. This particular liquid has properties that make it toxic to all live plants. -->
+  <USPlantKillLiquid.description>A toxic chemical. This particular liquid has properties that make it toxic to all live plants.</USPlantKillLiquid.description>
+</LanguageData>

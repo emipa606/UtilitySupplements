@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make Acid gas shells in bulk -->
+  <MakeBulkUSAcidGasShell.label>Make Acid gas shells in bulk</MakeBulkUSAcidGasShell.label>
+  <!-- EN: Make 4 acid gas shells -->
+  <MakeBulkUSAcidGasShell.description>Make 4 acid gas shells</MakeBulkUSAcidGasShell.description>
+  <!-- EN: Making acid gas shells. -->
+  <MakeBulkUSAcidGasShell.jobString>Making acid gas shells.</MakeBulkUSAcidGasShell.jobString>
+</LanguageData>

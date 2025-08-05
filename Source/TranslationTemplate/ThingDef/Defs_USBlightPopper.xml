@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Blight foam popper -->
+  <USBlightFoamPopper.label>Blight foam popper</USBlightFoamPopper.label>
+  <!-- EN: When it detects blight it sprays blight killer foam in a circular field around itself. Can also be triggered manually. -->
+  <USBlightFoamPopper.description>When it detects blight it sprays blight killer foam in a circular field around itself. Can also be triggered manually.</USBlightFoamPopper.description>
+  <!-- EN: Trigger {0_label} -->
+  <USBlightFoamPopper.comps.CompUsable.useLabel>Trigger {0_label}</USBlightFoamPopper.comps.CompUsable.useLabel>
+</LanguageData>

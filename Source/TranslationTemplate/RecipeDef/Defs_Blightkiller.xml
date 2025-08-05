@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make blight killer liquid -->
+  <MakeBulkUSBlightKillLiquid.label>Make blight killer liquid</MakeBulkUSBlightKillLiquid.label>
+  <!-- EN: Make 5 blight killer liquid -->
+  <MakeBulkUSBlightKillLiquid.description>Make 5 blight killer liquid</MakeBulkUSBlightKillLiquid.description>
+  <!-- EN: Making toxins. -->
+  <MakeBulkUSBlightKillLiquid.jobString>Making toxins.</MakeBulkUSBlightKillLiquid.jobString>
+</LanguageData>

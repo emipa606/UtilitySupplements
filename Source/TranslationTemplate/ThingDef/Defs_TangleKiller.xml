@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Tangle Killer Gas -->
+  <Gas_USTangleKill.label>Tangle Killer Gas</Gas_USTangleKill.label>
+  <!-- EN: Tangle Killer Liquid -->
+  <USTangleKillLiquid.label>Tangle Killer Liquid</USTangleKillLiquid.label>
+  <!-- EN: A concentrated chemical of the Tangleroot. This particular liquid will release toxic gas. -->
+  <USTangleKillLiquid.description>A concentrated chemical of the Tangleroot. This particular liquid will release toxic gas.</USTangleKillLiquid.description>
+</LanguageData>

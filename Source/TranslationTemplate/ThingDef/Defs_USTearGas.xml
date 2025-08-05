@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Tear Gas shell -->
+  <Bullet_Shell_USTearGas.label>Tear Gas shell</Bullet_Shell_USTearGas.label>
+  <!-- EN: Tear Gas -->
+  <Gas_USTearGas.label>Tear Gas</Gas_USTearGas.label>
+  <!-- EN: Tear Gas Grenade -->
+  <Grenade_USTearGas.label>Tear Gas Grenade</Grenade_USTearGas.label>
+  <!-- EN: Tear Gas shell -->
+  <Shell_USTearGas.label>Tear Gas shell</Shell_USTearGas.label>
+  <!-- EN: A pressurized shell filled with tear gas. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USTearGas.description>A pressurized shell filled with tear gas. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USTearGas.description>
+  <!-- EN: IED Tear Gas trap -->
+  <TrapIED_USTearGas.label>IED Tear Gas trap</TrapIED_USTearGas.label>
+  <!-- EN: A pair of tear gas shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->
+  <TrapIED_USTearGas.description>A pair of tear gas shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</TrapIED_USTearGas.description>
+  <!-- EN: Tear Gas Grenade -->
+  <Weapon_USGrenade_TearGas.label>Tear Gas Grenade</Weapon_USGrenade_TearGas.label>
+  <!-- EN: Grenade that applies tear gas. The chemicals associated with this grenade will cause severe irritation and pain. -->
+  <Weapon_USGrenade_TearGas.description>Grenade that applies tear gas. The chemicals associated with this grenade will cause severe irritation and pain.</Weapon_USGrenade_TearGas.description>
+  <!-- EN: throw tear gas grenade -->
+  <Weapon_USGrenade_TearGas.verbs.throw_tear_gas_grenade.label>throw tear gas grenade</Weapon_USGrenade_TearGas.verbs.throw_tear_gas_grenade.label>
+</LanguageData>

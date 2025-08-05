@@ -1,4 +1,4 @@
-# UtilitySupplements
+# [Utility Supplements (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2195065488)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -7,13 +7,11 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2012459600
 
 - Since I did not have the source-code there might be some issues, report if anything seems off.
 - Updated German translation, via Erdnussbrot
-- For detailed description, download the https://github.com/emipa606/UtilitySupplements/raw/main/Source/UtilitySupplementsNotes.pdf]PDF
+- For detailed description, download the [PDF](https://github.com/emipa606/UtilitySupplements/raw/main/Source/UtilitySupplementsNotes.pdf)
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
-
 
 Optional Expansion: Adds various utility items. (Note Medical Supplements mod is required).
 
@@ -27,7 +25,7 @@ This mod will be used to add various additional items of varying nature that can
 
 The following PDF describes what this mod offers:
 
-https://1drv.ms/b/s!Au3GsmKyQkDYiuVxeFes0XYuoZd37A?e=wSiEpc]Utility Supplements Notes
+[Utility Supplements Notes](https://1drv.ms/b/s!Au3GsmKyQkDYiuVxeFes0XYuoZd37A?e=wSiEpc)
 
 
 # Application
@@ -61,9 +59,9 @@ The relative toxicity setting allows you to tweak how effective the various toxi
 # Mod Compatibility
  *** Subject to Conversion ***
 
-https://steamcommunity.com/sharedfiles/filedetails/?id=2000244851]Apothecary - Allows the ability to make ammonia liquid fertiliser and plant sprayer applicator.
+[Apothecary](https://steamcommunity.com/sharedfiles/filedetails/?id=2000244851) - Allows the ability to make ammonia liquid fertiliser and plant sprayer applicator.
 Remote Tech - Some of the IDEs become available for use when this mod is loaded.
-https://steamcommunity.com/sharedfiles/filedetails/?id=2004190331]RimPlas - Sprayers will use RimPlas instead of Steel in their ingredients.
+[RimPlas](https://steamcommunity.com/sharedfiles/filedetails/?id=2004190331) - Sprayers will use RimPlas instead of Steel in their ingredients.
 Seeds Please - Adds patch support to generate seeds for plants used in this mod.
 
 Muliplayer support (beta).
@@ -100,13 +98,12 @@ Erdnussbrot - German translation.
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2195065488]![Image](https://img.shields.io/github/v/release/emipa606/UtilitySupplements?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
+[![Image](https://img.shields.io/github/v/release/emipa606/UtilitySupplements?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2195065488) | tags:  practical benefits

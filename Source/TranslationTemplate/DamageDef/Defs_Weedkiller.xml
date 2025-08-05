@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Weed Killer -->
+  <Dam_USWeedKill.label>Weed Killer</Dam_USWeedKill.label>
+  <!-- EN: {0} has been killed. -->
+  <Dam_USWeedKill.deathMessage>{0} has been killed.</Dam_USWeedKill.deathMessage>
+</LanguageData>

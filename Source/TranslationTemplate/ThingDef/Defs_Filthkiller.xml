@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Plant Killer Foam -->
+  <Bullet_USFilthKill_Foam.label>Plant Killer Foam</Bullet_USFilthKill_Foam.label>
+  <!-- EN: Filth Killer Foam -->
+  <Filth_USFilthKillFoam.label>Filth Killer Foam</Filth_USFilthKillFoam.label>
+  <!-- EN: Filth Killer Sprayer -->
+  <Gun_USSprayer_FilthKill.label>Filth Killer Sprayer</Gun_USSprayer_FilthKill.label>
+  <!-- EN: Sprayer that applies detergant. The cleaning agent associated with this sprayer will remove all forms of filth. -->
+  <Gun_USSprayer_FilthKill.description>Sprayer that applies detergant. The cleaning agent associated with this sprayer will remove all forms of filth.</Gun_USSprayer_FilthKill.description>
+  <!-- EN: stock -->
+  <Gun_USSprayer_FilthKill.tools.stock.label>stock</Gun_USSprayer_FilthKill.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_USSprayer_FilthKill.tools.barrel.label>barrel</Gun_USSprayer_FilthKill.tools.barrel.label>
+  <!-- EN: Filth Killer Sprayer -->
+  <Gun_USSprayer_FilthKill.verbs.Verb_Shoot.label>Filth Killer Sprayer</Gun_USSprayer_FilthKill.verbs.Verb_Shoot.label>
+  <!-- EN: Filth Killer Liquid -->
+  <USFilthKillLiquid.label>Filth Killer Liquid</USFilthKillLiquid.label>
+  <!-- EN: A powerfull active detergant. This particular liquid will help to degrade all forms of filth. -->
+  <USFilthKillLiquid.description>A powerfull active detergant. This particular liquid will help to degrade all forms of filth.</USFilthKillLiquid.description>
+</LanguageData>

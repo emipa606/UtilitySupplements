@@ -13,7 +13,7 @@ public class USAmmoniaFert : Filth
         Scribe_Values.Look(ref AYspawnTick, "AYspawnTick");
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         AYspawnTick++;
         var removeDelay = 300000;
@@ -47,7 +47,7 @@ public class USAmmoniaFert : Filth
         }
     }
 
-    private void DoAYPlantBenefit(Thing targ, int thick)
+    private static void DoAYPlantBenefit(Thing targ, int thick)
     {
         if (targ is not Plant { Growth: < 1f } plant)
         {
@@ -61,7 +61,7 @@ public class USAmmoniaFert : Filth
         }
     }
 
-    private float AYGrowthPerTick(Plant plant)
+    private static float AYGrowthPerTick(Plant plant)
     {
         if (plant.LifeStage != PlantLifeStage.Growing || GenLocalDate.DayPercent(plant) < 0.25f ||
             GenLocalDate.DayPercent(plant) > 0.8f)

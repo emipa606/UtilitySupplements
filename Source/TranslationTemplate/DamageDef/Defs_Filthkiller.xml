@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Filth Killer -->
+  <Dam_USFilthKill.label>Filth Killer</Dam_USFilthKill.label>
+  <!-- EN: {0} has been killed. -->
+  <Dam_USFilthKill.deathMessage>{0} has been killed.</Dam_USFilthKill.deathMessage>
+</LanguageData>

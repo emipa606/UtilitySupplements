@@ -5,9 +5,9 @@ namespace USToxins;
 
 public class USStinkrootGas : Gas
 {
-    public readonly float toxicRatio = Settings.USToxLevels / 100f;
+    private readonly float toxicRatio = Settings.USToxLevels / 100f;
 
-    public override void Tick()
+    protected override void Tick()
     {
         if (destroyTick <= Find.TickManager.TicksGame)
         {
@@ -34,7 +34,7 @@ public class USStinkrootGas : Gas
             var thing = Thinglist[index];
             if (thing is Pawn && thing.Position == TargetCell)
             {
-                DoUSStinkRootGasToxic(this, thing);
+                DoUSStinkRootGasToxic(thing);
             }
 
             if (thing is Plant plant && plant.def.plant.purpose != PlantPurpose.Health &&
@@ -45,7 +45,7 @@ public class USStinkrootGas : Gas
         }
     }
 
-    public void DoUSStinkRootGasToxic(Thing Gas, Thing targ)
+    private void DoUSStinkRootGasToxic(Thing targ)
     {
         if (targ is not Pawn victim || !victim.health.capacities.CapableOf(PawnCapacityDefOf.Breathing))
         {
@@ -109,7 +109,7 @@ public class USStinkrootGas : Gas
         plant.TakeDamage(new DamageInfo(Globals.USPlantToxin, Dmg, 0f, -1f, this));
     }
 
-    public void DoUSToxicMental(Pawn victim, Hediff hediff)
+    private static void DoUSToxicMental(Pawn victim, Hediff hediff)
     {
         if (victim.RaceProps.IsMechanoid || victim.RaceProps.FleshType.defName == "Insectoid" ||
             !(hediff.def.maxSeverity > 0f) ||

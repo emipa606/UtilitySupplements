@@ -2,5 +2,14 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "2",
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.6",
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 93554,
+  "LinesOfXML": 274638,
+  "CodeBaseSize": 88,
+  "LastXmlCleaning": "2025-08-05T17:27:51.6721706+02:00",
+  "SocialImageSet": true,
+  "SearchTags": " practical benefits"
 }

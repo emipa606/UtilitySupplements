@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: TangleThorn -->
+  <USTangleThorn_Thought.stages.TangleThorn.label>TangleThorn</USTangleThorn_Thought.stages.TangleThorn.label>
+  <!-- EN: Mild Soothing effect -->
+  <USTangleThorn_Thought.stages.TangleThorn.description>Mild Soothing effect</USTangleThorn_Thought.stages.TangleThorn.description>
+  <!-- EN: Imbalmed TangleThorn -->
+  <USTangleThorn_Thought.stages.Imbalmed_TangleThorn.label>Imbalmed TangleThorn</USTangleThorn_Thought.stages.Imbalmed_TangleThorn.label>
+  <!-- EN: Aftertaste -->
+  <USTangleThorn_Thought.stages.Imbalmed_TangleThorn.description>Aftertaste</USTangleThorn_Thought.stages.Imbalmed_TangleThorn.description>
+</LanguageData>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Insect Killer Foam -->
+  <Bullet_USInsectKill_Foam.label>Insect Killer Foam</Bullet_USInsectKill_Foam.label>
+  <!-- EN: Insect Killer Foam -->
+  <Filth_USInsectKillFoam.label>Insect Killer Foam</Filth_USInsectKillFoam.label>
+  <!-- EN: Insect Killer Sprayer -->
+  <Gun_USSprayer_InsectKill.label>Insect Killer Sprayer</Gun_USSprayer_InsectKill.label>
+  <!-- EN: Sprayer that applies a caustic neurotoxin as a foam. The chemicals associated with this sprayer will break down and combust with exposed insectoid flesh and fluids. -->
+  <Gun_USSprayer_InsectKill.description>Sprayer that applies a caustic neurotoxin as a foam. The chemicals associated with this sprayer will break down and combust with exposed insectoid flesh and fluids.</Gun_USSprayer_InsectKill.description>
+  <!-- EN: stock -->
+  <Gun_USSprayer_InsectKill.tools.stock.label>stock</Gun_USSprayer_InsectKill.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_USSprayer_InsectKill.tools.barrel.label>barrel</Gun_USSprayer_InsectKill.tools.barrel.label>
+  <!-- EN: Insect Killer Sprayer -->
+  <Gun_USSprayer_InsectKill.verbs.Verb_Shoot.label>Insect Killer Sprayer</Gun_USSprayer_InsectKill.verbs.Verb_Shoot.label>
+  <!-- EN: Insect Killer Liquid -->
+  <USInsectKillLiquid.label>Insect Killer Liquid</USInsectKillLiquid.label>
+  <!-- EN: A powerfull caustic neurotoxin applied as a foam. This particular liquid is particulatly caustic to insect flesh and fluids which it will also combust with. -->
+  <USInsectKillLiquid.description>A powerfull caustic neurotoxin applied as a foam. This particular liquid is particulatly caustic to insect flesh and fluids which it will also combust with.</USInsectKillLiquid.description>
+</LanguageData>

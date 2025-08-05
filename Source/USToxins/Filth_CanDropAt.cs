@@ -4,10 +4,9 @@ using Verse;
 
 namespace USToxins;
 
-[HarmonyPatch(typeof(Filth), "CanDropAt")]
+[HarmonyPatch(typeof(Filth), nameof(Filth.CanDropAt))]
 public class Filth_CanDropAt
 {
-    [HarmonyPostfix]
     public static void Postfix(ref Filth __instance, ref bool __result, ref IntVec3 c, ref Map map)
     {
         if (__result)

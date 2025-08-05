@@ -5,7 +5,7 @@ namespace USToxins;
 
 public class USBlightKiller : Filth
 {
-    public readonly float toxicRatio = Settings.USToxLevels / 100f;
+    private readonly float toxicRatio = Settings.USToxLevels / 100f;
 
     private int USspawnTick;
 
@@ -15,7 +15,7 @@ public class USBlightKiller : Filth
         Scribe_Values.Look(ref USspawnTick, "USspawnTick");
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         USspawnTick++;
         if (USspawnTick >= GenDate.TicksPerDay)

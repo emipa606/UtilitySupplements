@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Acid Gas -->
+  <USAcidGas.label>Acid Gas</USAcidGas.label>
+  <!-- EN: Grants the ability to make acid gas. -->
+  <USAcidGas.description>Grants the ability to make acid gas.</USAcidGas.description>
+  <!-- EN: Antifreeze -->
+  <USAntifreeze.label>Antifreeze</USAntifreeze.label>
+  <!-- EN: Grants the ability to make antifreeze. -->
+  <USAntifreeze.description>Grants the ability to make antifreeze.</USAntifreeze.description>
+  <!-- EN: Blight Killer Toxins -->
+  <USBlightKill.label>Blight Killer Toxins</USBlightKill.label>
+  <!-- EN: Grants the ability to make blight killing toxins. -->
+  <USBlightKill.description>Grants the ability to make blight killing toxins.</USBlightKill.description>
+  <!-- EN: Detergant -->
+  <USFilthKill.label>Detergant</USFilthKill.label>
+  <!-- EN: Grants the ability to make active detergant. -->
+  <USFilthKill.description>Grants the ability to make active detergant.</USFilthKill.description>
+  <!-- EN: Glowers -->
+  <USGlowers.label>Glowers</USGlowers.label>
+  <!-- EN: Grants the ability to make luminescent items. -->
+  <USGlowers.description>Grants the ability to make luminescent items.</USGlowers.description>
+  <!-- EN: Insect Killer Toxins -->
+  <USInsectKill.label>Insect Killer Toxins</USInsectKill.label>
+  <!-- EN: Grants the ability to make insect killing toxins. -->
+  <USInsectKill.description>Grants the ability to make insect killing toxins.</USInsectKill.description>
+  <!-- EN: Mind Killer Toxins -->
+  <USMindKill.label>Mind Killer Toxins</USMindKill.label>
+  <!-- EN: Grants the ability to make mind effecting toxins. -->
+  <USMindKill.description>Grants the ability to make mind effecting toxins.</USMindKill.description>
+  <!-- EN: Plant Killer Toxins -->
+  <USPlantKill.label>Plant Killer Toxins</USPlantKill.label>
+  <!-- EN: Grants the ability to make plant killing toxins. -->
+  <USPlantKill.description>Grants the ability to make plant killing toxins.</USPlantKill.description>
+  <!-- EN: Stinkroot -->
+  <USStinkroot.label>Stinkroot</USStinkroot.label>
+  <!-- EN: Grants the ability to plant the stinkroot flower. -->
+  <USStinkroot.description>Grants the ability to plant the stinkroot flower.</USStinkroot.description>
+  <!-- EN: Tangle Killer Toxins -->
+  <USTangleKill.label>Tangle Killer Toxins</USTangleKill.label>
+  <!-- EN: Grants the ability to make tangleroot toxins. -->
+  <USTangleKill.description>Grants the ability to make tangleroot toxins.</USTangleKill.description>
+  <!-- EN: Tangleroot -->
+  <USTangleroot.label>Tangleroot</USTangleroot.label>
+  <!-- EN: Grants the ability to plant the tangleroot vine. -->
+  <USTangleroot.description>Grants the ability to plant the tangleroot vine.</USTangleroot.description>
+  <!-- EN: Tree Killer Toxins -->
+  <USTreeKill.label>Tree Killer Toxins</USTreeKill.label>
+  <!-- EN: Grants the ability to make tree killing toxins. -->
+  <USTreeKill.description>Grants the ability to make tree killing toxins.</USTreeKill.description>
+  <!-- EN: Weed Killer Toxins -->
+  <USWeedKill.label>Weed Killer Toxins</USWeedKill.label>
+  <!-- EN: Grants the ability to make weed killing toxins. -->
+  <USWeedKill.description>Grants the ability to make weed killing toxins.</USWeedKill.description>
+</LanguageData>

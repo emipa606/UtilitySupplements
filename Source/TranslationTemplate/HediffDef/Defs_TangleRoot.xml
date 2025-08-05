@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: TangleRoot effect -->
+  <HED_USTangleRoot.label>TangleRoot effect</HED_USTangleRoot.label>
+  <!-- EN: Tangleroot effect -->
+  <HED_USTangleRoot.description>Tangleroot effect</HED_USTangleRoot.description>
+  <!-- EN: minor -->
+  <HED_USTangleRoot.stages.minor.label>minor</HED_USTangleRoot.stages.minor.label>
+  <!-- EN: moderate -->
+  <HED_USTangleRoot.stages.moderate.label>moderate</HED_USTangleRoot.stages.moderate.label>
+  <!-- EN: major -->
+  <HED_USTangleRoot.stages.major.label>major</HED_USTangleRoot.stages.major.label>
+  <!-- EN: severe -->
+  <HED_USTangleRoot.stages.severe.label>severe</HED_USTangleRoot.stages.severe.label>
+</LanguageData>

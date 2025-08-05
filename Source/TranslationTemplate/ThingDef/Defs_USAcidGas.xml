@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Acid Gas shell -->
+  <Bullet_Shell_USAcidGas.label>Acid Gas shell</Bullet_Shell_USAcidGas.label>
+  <!-- EN: Acid Gas -->
+  <Gas_USAcidGas.label>Acid Gas</Gas_USAcidGas.label>
+  <!-- EN: Acid Gas Grenade -->
+  <Grenade_USAcidGas.label>Acid Gas Grenade</Grenade_USAcidGas.label>
+  <!-- EN: Acid Gas shell -->
+  <Shell_USAcidGas.label>Acid Gas shell</Shell_USAcidGas.label>
+  <!-- EN: A pressurized shell filled with acid gas. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USAcidGas.description>A pressurized shell filled with acid gas. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USAcidGas.description>
+  <!-- EN: IED Acid Gas trap -->
+  <TrapIED_USAcidGas.label>IED Acid Gas trap</TrapIED_USAcidGas.label>
+  <!-- EN: A pair of acid gas shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->
+  <TrapIED_USAcidGas.description>A pair of acid gas shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</TrapIED_USAcidGas.description>
+  <!-- EN: Acid Gas Grenade -->
+  <Weapon_USGrenade_AcidGas.label>Acid Gas Grenade</Weapon_USGrenade_AcidGas.label>
+  <!-- EN: Grenade that applies Acid gas. The chemicals associated with this grenade will cause irritation and pain, chemical acid burns and significantly effect breathing. -->
+  <Weapon_USGrenade_AcidGas.description>Grenade that applies Acid gas. The chemicals associated with this grenade will cause irritation and pain, chemical acid burns and significantly effect breathing.</Weapon_USGrenade_AcidGas.description>
+  <!-- EN: throw acid gas grenade -->
+  <Weapon_USGrenade_AcidGas.verbs.throw_acid_gas_grenade.label>throw acid gas grenade</Weapon_USGrenade_AcidGas.verbs.throw_acid_gas_grenade.label>
+</LanguageData>

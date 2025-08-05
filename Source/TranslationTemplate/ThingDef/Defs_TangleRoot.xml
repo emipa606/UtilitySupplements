@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Tangleroot Gas -->
+  <Gas_USTangleroot.label>Tangleroot Gas</Gas_USTangleroot.label>
+  <!-- EN: Tangleroot -->
+  <Plant_USTangleroot.label>Tangleroot</Plant_USTangleroot.label>
+  <!-- EN: A genetically modified shrub with razor sharp thorns. -->
+  <Plant_USTangleroot.description>A genetically modified shrub with razor sharp thorns.</Plant_USTangleroot.description>
+  <!-- EN: Tangleroot Thorns -->
+  <USTanglerootThorns.label>Tangleroot Thorns</USTanglerootThorns.label>
+  <!-- EN: Harvested thorns of the tangleroot. These thorns are extremely sharp and contain various potent chemical alkaloids. -->
+  <USTanglerootThorns.description>Harvested thorns of the tangleroot. These thorns are extremely sharp and contain various potent chemical alkaloids.</USTanglerootThorns.description>
+</LanguageData>

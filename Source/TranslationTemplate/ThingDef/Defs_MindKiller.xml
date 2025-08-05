@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Mind Killer Gas -->
+  <Gas_USMindKill.label>Mind Killer Gas</Gas_USMindKill.label>
+  <!-- EN: Mind Killer Liquid -->
+  <USMindKillLiquid.label>Mind Killer Liquid</USMindKillLiquid.label>
+  <!-- EN: A concentrated chemical of the Stinkroot. This particular liquid will release a toxic gas cloud on release. -->
+  <USMindKillLiquid.description>A concentrated chemical of the Stinkroot. This particular liquid will release a toxic gas cloud on release.</USMindKillLiquid.description>
+</LanguageData>

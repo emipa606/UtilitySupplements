@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Stinkroot Gas -->
+  <Gas_USStinkroot.label>Stinkroot Gas</Gas_USStinkroot.label>
+  <!-- EN: Stinkroot -->
+  <Plant_USStinkroot.label>Stinkroot</Plant_USStinkroot.label>
+  <!-- EN: A genetically modified flower that gives off an awful smell. This flower uses a toxic gas defence mechanism in an attempt to defend it's territory. -->
+  <Plant_USStinkroot.description>A genetically modified flower that gives off an awful smell. This flower uses a toxic gas defence mechanism in an attempt to defend it's territory.</Plant_USStinkroot.description>
+  <!-- EN: Stinkroot leaves -->
+  <USStinkrootLeaves.label>Stinkroot leaves</USStinkrootLeaves.label>
+  <!-- EN: Harvested leaves of the stinkroot flower. These leaves are extremely toxic. -->
+  <USStinkrootLeaves.description>Harvested leaves of the stinkroot flower. These leaves are extremely toxic.</USStinkrootLeaves.description>
+</LanguageData>

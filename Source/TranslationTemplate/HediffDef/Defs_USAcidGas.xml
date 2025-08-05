@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Acid Gas effect -->
+  <HED_USAcidGas.label>Acid Gas effect</HED_USAcidGas.label>
+  <!-- EN: Acid Gas effect -->
+  <HED_USAcidGas.description>Acid Gas effect</HED_USAcidGas.description>
+  <!-- EN: minor -->
+  <HED_USAcidGas.stages.minor.label>minor</HED_USAcidGas.stages.minor.label>
+  <!-- EN: major -->
+  <HED_USAcidGas.stages.major.label>major</HED_USAcidGas.stages.major.label>
+  <!-- EN: severe -->
+  <HED_USAcidGas.stages.severe-0.label>severe</HED_USAcidGas.stages.severe-0.label>
+  <!-- EN: severe -->
+  <HED_USAcidGas.stages.severe-1.label>severe</HED_USAcidGas.stages.severe-1.label>
+  <!-- EN: acid burn -->
+  <USAcidBurn.label>acid burn</USAcidBurn.label>
+  <!-- EN: An acid burn. -->
+  <USAcidBurn.description>An acid burn.</USAcidBurn.description>
+  <!-- EN: acid burn scar -->
+  <USAcidBurn.comps.HediffComp_GetsPermanent.permanentLabel>acid burn scar</USAcidBurn.comps.HediffComp_GetsPermanent.permanentLabel>
+  <!-- EN: Burned off (acid) -->
+  <USAcidBurn.injuryProps.destroyedLabel>Burned off (acid)</USAcidBurn.injuryProps.destroyedLabel>
+  <!-- EN: Burned out (acid) -->
+  <USAcidBurn.injuryProps.destroyedOutLabel>Burned out (acid)</USAcidBurn.injuryProps.destroyedOutLabel>
+  <!-- EN: an acid burn -->
+  <USAcidBurn.labelNoun>an acid burn</USAcidBurn.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <USAcidBurn.labelNounPretty>{0} in the {1}</USAcidBurn.labelNounPretty>
+</LanguageData>

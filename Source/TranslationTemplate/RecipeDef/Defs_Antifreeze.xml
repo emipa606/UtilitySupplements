@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make antifreeze -->
+  <MakeBulkUSAntifreeze.label>Make antifreeze</MakeBulkUSAntifreeze.label>
+  <!-- EN: Make 5 antifreeze -->
+  <MakeBulkUSAntifreeze.description>Make 5 antifreeze</MakeBulkUSAntifreeze.description>
+  <!-- EN: Making antifreeze. -->
+  <MakeBulkUSAntifreeze.jobString>Making antifreeze.</MakeBulkUSAntifreeze.jobString>
+</LanguageData>

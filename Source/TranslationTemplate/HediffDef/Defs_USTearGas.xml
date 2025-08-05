@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Tear Gas effect -->
+  <HED_USTearGas.label>Tear Gas effect</HED_USTearGas.label>
+  <!-- EN: Tear Gas effect -->
+  <HED_USTearGas.description>Tear Gas effect</HED_USTearGas.description>
+  <!-- EN: minor -->
+  <HED_USTearGas.stages.minor.label>minor</HED_USTearGas.stages.minor.label>
+  <!-- EN: major -->
+  <HED_USTearGas.stages.major.label>major</HED_USTearGas.stages.major.label>
+  <!-- EN: severe -->
+  <HED_USTearGas.stages.severe-0.label>severe</HED_USTearGas.stages.severe-0.label>
+  <!-- EN: severe -->
+  <HED_USTearGas.stages.severe-1.label>severe</HED_USTearGas.stages.severe-1.label>
+</LanguageData>

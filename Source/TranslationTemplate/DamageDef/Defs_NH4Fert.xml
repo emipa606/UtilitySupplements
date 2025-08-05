@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Ammonia Fertiliser -->
+  <Dam_USAmmoniaFert.label>Ammonia Fertiliser</Dam_USAmmoniaFert.label>
+  <!-- EN: {0} has been killed. -->
+  <Dam_USAmmoniaFert.deathMessage>{0} has been killed.</Dam_USAmmoniaFert.deathMessage>
+</LanguageData>

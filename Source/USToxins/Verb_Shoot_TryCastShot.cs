@@ -4,7 +4,7 @@ using Verse;
 namespace USToxins;
 
 [HarmonyPatch(typeof(Verb_Shoot), "TryCastShot")]
-public class TryCastShot
+public class Verb_Shoot_TryCastShot
 {
     [HarmonyPostfix]
     public static void Postfix(ref bool __result, ref Verb_Shoot __instance)
@@ -14,12 +14,7 @@ public class TryCastShot
             return;
         }
 
-        if (__instance is null or null)
-        {
-            return;
-        }
-
-        var ChkSprayer = __instance.EquipmentSource;
+        var ChkSprayer = __instance?.EquipmentSource;
         if (ChkSprayer == null || !ChkSprayer.def.HasComp(typeof(CompUSToxUses)))
         {
             return;

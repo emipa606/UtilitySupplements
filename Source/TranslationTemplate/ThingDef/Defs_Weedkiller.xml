@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Weed Killer Foam -->
+  <Bullet_USWeedKill_Foam.label>Weed Killer Foam</Bullet_USWeedKill_Foam.label>
+  <!-- EN: Weed Killer Foam -->
+  <Filth_USWeedKillFoam.label>Weed Killer Foam</Filth_USWeedKillFoam.label>
+  <!-- EN: Weed Killer Sprayer -->
+  <Gun_USSprayer_WeedKill.label>Weed Killer Sprayer</Gun_USSprayer_WeedKill.label>
+  <!-- EN: Sprayer that applies toxic chemicals. The toxin associated with this sprayer will kill all live weeds. -->
+  <Gun_USSprayer_WeedKill.description>Sprayer that applies toxic chemicals. The toxin associated with this sprayer will kill all live weeds.</Gun_USSprayer_WeedKill.description>
+  <!-- EN: stock -->
+  <Gun_USSprayer_WeedKill.tools.stock.label>stock</Gun_USSprayer_WeedKill.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_USSprayer_WeedKill.tools.barrel.label>barrel</Gun_USSprayer_WeedKill.tools.barrel.label>
+  <!-- EN: Weed Killer Sprayer -->
+  <Gun_USSprayer_WeedKill.verbs.Verb_Shoot.label>Weed Killer Sprayer</Gun_USSprayer_WeedKill.verbs.Verb_Shoot.label>
+  <!-- EN: Weed Killer Liquid -->
+  <USWeedKillLiquid.label>Weed Killer Liquid</USWeedKillLiquid.label>
+  <!-- EN: A toxic chemical. This particular liquid has properties that make it toxic to all live weeds. -->
+  <USWeedKillLiquid.description>A toxic chemical. This particular liquid has properties that make it toxic to all live weeds.</USWeedKillLiquid.description>
+</LanguageData>

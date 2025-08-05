@@ -6,9 +6,8 @@ using Verse.AI;
 namespace USToxins;
 
 [HarmonyPatch(typeof(ReservationUtility), nameof(ReservationUtility.CanReserve))]
-public class CanReserve_Patch
+public class ReservationUtility_CanReserve
 {
-    [HarmonyPostfix]
     public static void Postfix(ref bool __result, LocalTargetInfo target)
     {
         if (!__result)

@@ -12,7 +12,7 @@ internal static class USOptions_Initializer
         LongEventHandler.QueueLongEvent(Setup, "LibraryStartup", false, null);
     }
 
-    public static void Setup()
+    private static void Setup()
     {
         var allDefs = DefDatabase<ResearchProjectDef>.AllDefsListForReading;
         if (allDefs.Count <= 0)
@@ -34,7 +34,7 @@ internal static class USOptions_Initializer
         }
     }
 
-    public static List<string> USResearchList()
+    private static List<string> USResearchList()
     {
         var list = new List<string>();
         list.AddDistinct("USStinkroot");

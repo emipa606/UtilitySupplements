@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make Insect killer liquid -->
+  <MakeBulkUSInsectKillLiquid.label>Make Insect killer liquid</MakeBulkUSInsectKillLiquid.label>
+  <!-- EN: Make 5 Insect killer liquid -->
+  <MakeBulkUSInsectKillLiquid.description>Make 5 Insect killer liquid</MakeBulkUSInsectKillLiquid.description>
+  <!-- EN: Making toxins. -->
+  <MakeBulkUSInsectKillLiquid.jobString>Making toxins.</MakeBulkUSInsectKillLiquid.jobString>
+</LanguageData>

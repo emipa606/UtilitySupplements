@@ -5,7 +5,7 @@ namespace USToxins;
 
 public class USTanglerootGas : Gas
 {
-    public readonly float toxicRatio = Settings.USToxLevels / 100f;
+    private readonly float toxicRatio = Settings.USToxLevels / 100f;
 
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
@@ -19,7 +19,7 @@ public class USTanglerootGas : Gas
         Scribe_Values.Look(ref destroyTick, "destroyTick");
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         if (destroyTick <= Find.TickManager.TicksGame)
         {
@@ -48,12 +48,12 @@ public class USTanglerootGas : Gas
                 pawn.RaceProps.FleshType.defName != "Insectoid" &&
                 pawn.Position == TargetCell)
             {
-                DoUSTangleKillGasToxic(this, pawn);
+                DoUSTangleKillGasToxic(pawn);
             }
         }
     }
 
-    public void DoUSTangleKillGasToxic(Thing Gas, Thing targ)
+    private void DoUSTangleKillGasToxic(Thing targ)
     {
         if (targ is not Pawn victim || !victim.health.capacities.CapableOf(PawnCapacityDefOf.Breathing))
         {

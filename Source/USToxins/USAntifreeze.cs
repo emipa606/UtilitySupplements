@@ -14,7 +14,7 @@ public class USAntifreeze : Filth
         Scribe_Values.Look(ref USspawnTick, "USspawnTick");
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         USspawnTick++;
         var removeDelay = 120000;
@@ -41,7 +41,7 @@ public class USAntifreeze : Filth
         TargetMap.snowGrid.SetDepth(TargetCell, SnowDepth);
     }
 
-    public float GetRndMelt()
+    private static float GetRndMelt()
     {
         return Rand.Range(0.1f, 0.2f);
     }

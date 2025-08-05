@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make Glow liquid -->
+  <MakeBulkUSGlowLiquid.label>Make Glow liquid</MakeBulkUSGlowLiquid.label>
+  <!-- EN: Make 5 Glow liquid -->
+  <MakeBulkUSGlowLiquid.description>Make 5 Glow liquid</MakeBulkUSGlowLiquid.description>
+  <!-- EN: Making Glow liquid. -->
+  <MakeBulkUSGlowLiquid.jobString>Making Glow liquid.</MakeBulkUSGlowLiquid.jobString>
+</LanguageData>

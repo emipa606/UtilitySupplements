@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make filth killer liquid -->
+  <MakeBulkUSFilthKillLiquid.label>Make filth killer liquid</MakeBulkUSFilthKillLiquid.label>
+  <!-- EN: Make 5 filth killer liquid -->
+  <MakeBulkUSFilthKillLiquid.description>Make 5 filth killer liquid</MakeBulkUSFilthKillLiquid.description>
+  <!-- EN: Making detergant. -->
+  <MakeBulkUSFilthKillLiquid.jobString>Making detergant.</MakeBulkUSFilthKillLiquid.jobString>
+</LanguageData>

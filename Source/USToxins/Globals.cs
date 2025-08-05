@@ -72,7 +72,7 @@ internal class Globals
 
     internal static readonly HediffDef USAcidGasEffect = DefDatabase<HediffDef>.GetNamed("HED_USAcidGas");
 
-    internal static uint ComputeStringHash(string s)
+    private static uint ComputeStringHash(string s)
     {
         uint num = 0;
         if (s == null)

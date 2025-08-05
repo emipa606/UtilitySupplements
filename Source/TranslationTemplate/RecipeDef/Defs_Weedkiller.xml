@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make weed killer liquid -->
+  <MakeBulkUSWeedKillLiquid.label>Make weed killer liquid</MakeBulkUSWeedKillLiquid.label>
+  <!-- EN: Make 5 weed killer liquid -->
+  <MakeBulkUSWeedKillLiquid.description>Make 5 weed killer liquid</MakeBulkUSWeedKillLiquid.description>
+  <!-- EN: Making toxins. -->
+  <MakeBulkUSWeedKillLiquid.jobString>Making toxins.</MakeBulkUSWeedKillLiquid.jobString>
+</LanguageData>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Glow Stick -->
+  <Grenade_USGlowStick.label>Glow Stick</Grenade_USGlowStick.label>
+  <!-- EN: Insect Killer Grenade -->
+  <Grenade_USInsectKill.label>Insect Killer Grenade</Grenade_USInsectKill.label>
+  <!-- EN: Mind Killer Grenade -->
+  <Grenade_USMindKill.label>Mind Killer Grenade</Grenade_USMindKill.label>
+  <!-- EN: Tangle Killer Grenade -->
+  <Grenade_USTangleKill.label>Tangle Killer Grenade</Grenade_USTangleKill.label>
+  <!-- EN: Glow Sticks -->
+  <Weapon_USGrenade_GlowStick.label>Glow Sticks</Weapon_USGrenade_GlowStick.label>
+  <!-- EN: Glow Sticks, contained within the transparent container is luminescent liquid. -->
+  <Weapon_USGrenade_GlowStick.description>Glow Sticks, contained within the transparent container is luminescent liquid.</Weapon_USGrenade_GlowStick.description>
+  <!-- EN: throw glow stick -->
+  <Weapon_USGrenade_GlowStick.verbs.throw_glow_stick.label>throw glow stick</Weapon_USGrenade_GlowStick.verbs.throw_glow_stick.label>
+  <!-- EN: Insect Killer Grenade -->
+  <Weapon_USGrenade_InsectKill.label>Insect Killer Grenade</Weapon_USGrenade_InsectKill.label>
+  <!-- EN: Grenade that applies a caustic neurotoxin as a foam. The chemicals associated with this grenade will break down and combust with exposed insectoid flesh and fluids. -->
+  <Weapon_USGrenade_InsectKill.description>Grenade that applies a caustic neurotoxin as a foam. The chemicals associated with this grenade will break down and combust with exposed insectoid flesh and fluids.</Weapon_USGrenade_InsectKill.description>
+  <!-- EN: throw insect killer grenade -->
+  <Weapon_USGrenade_InsectKill.verbs.throw_insect_killer_grenade.label>throw insect killer grenade</Weapon_USGrenade_InsectKill.verbs.throw_insect_killer_grenade.label>
+  <!-- EN: Mind Killer Grenade -->
+  <Weapon_USGrenade_MindKill.label>Mind Killer Grenade</Weapon_USGrenade_MindKill.label>
+  <!-- EN: Grenade that applies mind killer gas. The chemicals associated with this grenade will detrimentally effect the mind. -->
+  <Weapon_USGrenade_MindKill.description>Grenade that applies mind killer gas. The chemicals associated with this grenade will detrimentally effect the mind.</Weapon_USGrenade_MindKill.description>
+  <!-- EN: throw mind killer grenade -->
+  <Weapon_USGrenade_MindKill.verbs.throw_mind_killer_grenade.label>throw mind killer grenade</Weapon_USGrenade_MindKill.verbs.throw_mind_killer_grenade.label>
+  <!-- EN: Tangle Killer Grenade -->
+  <Weapon_USGrenade_TangleKill.label>Tangle Killer Grenade</Weapon_USGrenade_TangleKill.label>
+  <!-- EN: Grenade that applies tangle kill gas. -->
+  <Weapon_USGrenade_TangleKill.description>Grenade that applies tangle kill gas.</Weapon_USGrenade_TangleKill.description>
+  <!-- EN: throw tangle killer grenade -->
+  <Weapon_USGrenade_TangleKill.verbs.throw_tangle_killer_grenade.label>throw tangle killer grenade</Weapon_USGrenade_TangleKill.verbs.throw_tangle_killer_grenade.label>
+</LanguageData>

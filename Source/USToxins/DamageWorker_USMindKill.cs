@@ -7,7 +7,7 @@ namespace USToxins;
 
 public class DamageWorker_USMindKill : DamageWorker
 {
-    public readonly float toxicRatio = Settings.USToxLevels / 100f;
+    private readonly float toxicRatio = Settings.USToxLevels / 100f;
 
     public override void ExplosionStart(Explosion explosion, List<IntVec3> cellsToAffect)
     {

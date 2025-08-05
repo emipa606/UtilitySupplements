@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Tanglethorn Juice -->
+  <USTangleThornJuice.label>Tanglethorn Juice</USTangleThornJuice.label>
+  <!-- EN: A rather strong and unpalatable tangleroot prevention tincture. Taken every 7 days. -->
+  <USTangleThornJuice.description>A rather strong and unpalatable tangleroot prevention tincture. Taken every 7 days.</USTangleThornJuice.description>
+  <!-- EN: Drink {0} -->
+  <USTangleThornJuice.ingestible.ingestCommandString>Drink {0}</USTangleThornJuice.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <USTangleThornJuice.ingestible.ingestReportString>Drinking {0}.</USTangleThornJuice.ingestible.ingestReportString>
+</LanguageData>

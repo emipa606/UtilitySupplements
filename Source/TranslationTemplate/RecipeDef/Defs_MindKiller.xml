@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make Mind killer liquid -->
+  <MakeBulkUSMindKillLiquid.label>Make Mind killer liquid</MakeBulkUSMindKillLiquid.label>
+  <!-- EN: Make 5 Mind killer liquid -->
+  <MakeBulkUSMindKillLiquid.description>Make 5 Mind killer liquid</MakeBulkUSMindKillLiquid.description>
+  <!-- EN: Making toxins. -->
+  <MakeBulkUSMindKillLiquid.jobString>Making toxins.</MakeBulkUSMindKillLiquid.jobString>
+</LanguageData>

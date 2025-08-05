@@ -6,7 +6,7 @@ namespace USToxins;
 
 public class Controller : Mod
 {
-    public static Settings Settings;
+    private static Settings Settings;
     public static string currentVersion;
 
     public Controller(ModContentPack content) : base(content)

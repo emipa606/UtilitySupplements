@@ -8,7 +8,7 @@ namespace USToxins;
 [StaticConstructorOnStartup]
 internal static class MultiplayerSupport
 {
-    private static readonly Harmony harmony = new Harmony("rimworld.pelador.utilitysupplements.multiplayersupport");
+    private static readonly Harmony harmony = new("rimworld.pelador.utilitysupplements.multiplayersupport");
 
     static MultiplayerSupport()
     {

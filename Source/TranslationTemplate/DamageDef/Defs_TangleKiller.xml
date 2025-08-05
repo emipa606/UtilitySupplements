@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Tangle Killer -->
+  <Dam_USTangleKill.label>Tangle Killer</Dam_USTangleKill.label>
+  <!-- EN: {0} has been killed. -->
+  <Dam_USTangleKill.deathMessage>{0} has been killed.</Dam_USTangleKill.deathMessage>
+</LanguageData>

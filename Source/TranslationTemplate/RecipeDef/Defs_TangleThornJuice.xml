@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make Tanglethorn juice in bulk -->
+  <MakeBulkTangleThorn.label>Make Tanglethorn juice in bulk</MakeBulkTangleThorn.label>
+  <!-- EN: Make 5 Tanglethorn juice. -->
+  <MakeBulkTangleThorn.description>Make 5 Tanglethorn juice.</MakeBulkTangleThorn.description>
+  <!-- EN: Making Tanglethorn juice. -->
+  <MakeBulkTangleThorn.jobString>Making Tanglethorn juice.</MakeBulkTangleThorn.jobString>
+</LanguageData>

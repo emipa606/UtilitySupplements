@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Blight Killer Foam -->
+  <Bullet_USBlightKill_Foam.label>Blight Killer Foam</Bullet_USBlightKill_Foam.label>
+  <!-- EN: Blight Killer Foam -->
+  <Filth_USBlightKillFoam.label>Blight Killer Foam</Filth_USBlightKillFoam.label>
+  <!-- EN: Blight Killer Sprayer -->
+  <Gun_USSprayer_BlightKill.label>Blight Killer Sprayer</Gun_USSprayer_BlightKill.label>
+  <!-- EN: Sprayer that applies toxic chemicals. The toxin associated with this sprayer will kill blight. -->
+  <Gun_USSprayer_BlightKill.description>Sprayer that applies toxic chemicals. The toxin associated with this sprayer will kill blight.</Gun_USSprayer_BlightKill.description>
+  <!-- EN: stock -->
+  <Gun_USSprayer_BlightKill.tools.stock.label>stock</Gun_USSprayer_BlightKill.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_USSprayer_BlightKill.tools.barrel.label>barrel</Gun_USSprayer_BlightKill.tools.barrel.label>
+  <!-- EN: Blight Killer Sprayer -->
+  <Gun_USSprayer_BlightKill.verbs.Verb_Shoot.label>Blight Killer Sprayer</Gun_USSprayer_BlightKill.verbs.Verb_Shoot.label>
+  <!-- EN: Blight Killer Liquid -->
+  <USBlightKillLiquid.label>Blight Killer Liquid</USBlightKillLiquid.label>
+  <!-- EN: A toxic chemical. This particular liquid has properties that make it toxic to blight. -->
+  <USBlightKillLiquid.description>A toxic chemical. This particular liquid has properties that make it toxic to blight.</USBlightKillLiquid.description>
+</LanguageData>

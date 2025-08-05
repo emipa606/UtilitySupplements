@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Insect Killer -->
+  <Dam_USInsectKill.label>Insect Killer</Dam_USInsectKill.label>
+  <!-- EN: {0} has been killed. -->
+  <Dam_USInsectKill.deathMessage>{0} has been killed.</Dam_USInsectKill.deathMessage>
+</LanguageData>

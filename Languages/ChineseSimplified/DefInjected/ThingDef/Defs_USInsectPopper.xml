@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <USInsectFoamPopper.label>杀虫泡沫仓</USInsectFoamPopper.label>
   <USInsectFoamPopper.description>当它内部的探测器检测到虫巢时，它会在一定半径内喷出杀虫泡沫. 也能手动触发.</USInsectFoamPopper.description>

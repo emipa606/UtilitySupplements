@@ -5,7 +5,7 @@ using Verse;
 namespace USToxins;
 
 [HarmonyPatch(typeof(FilthMaker), nameof(FilthMaker.TerrainAcceptsFilth))]
-public class TerrainAcceptsFilthPatch
+public class FilthMaker_TerrainAcceptsFilth
 {
     [HarmonyPostfix]
     public static void Postfix(ref bool __result, TerrainDef terrainDef, ThingDef filthDef)

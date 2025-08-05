@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Antifreeze -->
+  <Bullet_USAntifreeze.label>Antifreeze</Bullet_USAntifreeze.label>
+  <!-- EN: Filth Antifreeze -->
+  <Filth_USAntifreeze.label>Filth Antifreeze</Filth_USAntifreeze.label>
+  <!-- EN: Antifreeze Sprayer -->
+  <Gun_USSprayer_Antifreeze.label>Antifreeze Sprayer</Gun_USSprayer_Antifreeze.label>
+  <!-- EN: Sprayer that applies antifreeze. The liquid in the sprayer can be used to clear snow. -->
+  <Gun_USSprayer_Antifreeze.description>Sprayer that applies antifreeze. The liquid in the sprayer can be used to clear snow.</Gun_USSprayer_Antifreeze.description>
+  <!-- EN: stock -->
+  <Gun_USSprayer_Antifreeze.tools.stock.label>stock</Gun_USSprayer_Antifreeze.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_USSprayer_Antifreeze.tools.barrel.label>barrel</Gun_USSprayer_Antifreeze.tools.barrel.label>
+  <!-- EN: Antifreeze Sprayer -->
+  <Gun_USSprayer_Antifreeze.verbs.Verb_Shoot.label>Antifreeze Sprayer</Gun_USSprayer_Antifreeze.verbs.Verb_Shoot.label>
+  <!-- EN: Antifreeze -->
+  <USAntifreeze.label>Antifreeze</USAntifreeze.label>
+  <!-- EN: This liquid can be used to melt snow. -->
+  <USAntifreeze.description>This liquid can be used to melt snow.</USAntifreeze.description>
+</LanguageData>

@@ -5,7 +5,7 @@ namespace USToxins;
 
 public class USTearGas : Gas
 {
-    public readonly float toxicRatio = Settings.USToxLevels / 100f;
+    private readonly float toxicRatio = Settings.USToxLevels / 100f;
 
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
@@ -19,7 +19,7 @@ public class USTearGas : Gas
         Scribe_Values.Look(ref destroyTick, "destroyTick");
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         if (destroyTick <= Find.TickManager.TicksGame)
         {
@@ -46,12 +46,12 @@ public class USTearGas : Gas
             var thing = Thinglist[index];
             if (thing is Pawn && thing.Position == TargetCell)
             {
-                DoUSTearGasToxic(this, thing);
+                DoUSTearGasToxic(thing);
             }
         }
     }
 
-    public void DoUSTearGasToxic(Thing Gas, Thing targ)
+    private void DoUSTearGasToxic(Thing targ)
     {
         if (targ is not Pawn victim || !victim.health.capacities.CapableOf(PawnCapacityDefOf.Breathing))
         {

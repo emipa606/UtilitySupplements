@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Tree Killer Foam -->
+  <Bullet_USTreeKill_Foam.label>Tree Killer Foam</Bullet_USTreeKill_Foam.label>
+  <!-- EN: Tree Killer Foam -->
+  <Filth_USTreeKillFoam.label>Tree Killer Foam</Filth_USTreeKillFoam.label>
+  <!-- EN: Tree Killer Sprayer -->
+  <Gun_USSprayer_TreeKill.label>Tree Killer Sprayer</Gun_USSprayer_TreeKill.label>
+  <!-- EN: Sprayer that applies toxic chemicals. The toxin associated with this sprayer will kill all live trees. -->
+  <Gun_USSprayer_TreeKill.description>Sprayer that applies toxic chemicals. The toxin associated with this sprayer will kill all live trees.</Gun_USSprayer_TreeKill.description>
+  <!-- EN: stock -->
+  <Gun_USSprayer_TreeKill.tools.stock.label>stock</Gun_USSprayer_TreeKill.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_USSprayer_TreeKill.tools.barrel.label>barrel</Gun_USSprayer_TreeKill.tools.barrel.label>
+  <!-- EN: Tree Killer Sprayer -->
+  <Gun_USSprayer_TreeKill.verbs.Verb_Shoot.label>Tree Killer Sprayer</Gun_USSprayer_TreeKill.verbs.Verb_Shoot.label>
+  <!-- EN: Tree Killer Liquid -->
+  <USTreeKillLiquid.label>Tree Killer Liquid</USTreeKillLiquid.label>
+  <!-- EN: A toxic chemical. This particular liquid has properties that make it toxic to all live trees. -->
+  <USTreeKillLiquid.description>A toxic chemical. This particular liquid has properties that make it toxic to all live trees.</USTreeKillLiquid.description>
+</LanguageData>

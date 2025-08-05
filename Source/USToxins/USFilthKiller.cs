@@ -13,7 +13,7 @@ public class USFilthKiller : Filth
         Scribe_Values.Look(ref USspawnTick, "USspawnTick");
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         USspawnTick++;
         if (USspawnTick >= GenDate.TicksPerDay)
@@ -58,7 +58,7 @@ public class USFilthKiller : Filth
         }
     }
 
-    private void DoUSToxicDamage(Thing targ)
+    private static void DoUSToxicDamage(Thing targ)
     {
         if (targ is Filth filth)
         {

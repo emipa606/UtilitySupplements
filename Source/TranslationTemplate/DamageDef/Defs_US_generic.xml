@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Plant Toxin -->
+  <Dam_USPlantToxin.label>Plant Toxin</Dam_USPlantToxin.label>
+  <!-- EN: {0} has been killed. -->
+  <Dam_USPlantToxin.deathMessage>{0} has been killed.</Dam_USPlantToxin.deathMessage>
+</LanguageData>

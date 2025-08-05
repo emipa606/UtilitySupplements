@@ -57,7 +57,7 @@ public class JobGiver_USStinkrootAnimalFlee : ThinkNode_JobGiver
         return null;
     }
 
-    private Job FleeJob(Pawn pawn, Thing danger)
+    private static Job FleeJob(Pawn pawn, Thing danger)
     {
         IntVec3 intVec;
         if (pawn.CurJob != null && pawn.CurJob.def == JobDefOf.Flee)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Glow Foam -->
+  <Filth_USGlowFoam.label>Glow Foam</Filth_USGlowFoam.label>
+  <!-- EN: Glow Stick -->
+  <Filth_USGlowStick.label>Glow Stick</Filth_USGlowStick.label>
+  <!-- EN: Glower Liquid -->
+  <USGlowLiquid.label>Glower Liquid</USGlowLiquid.label>
+  <!-- EN: An unstable liquid that when exposed to air will give off some luminescence for a period of time. -->
+  <USGlowLiquid.description>An unstable liquid that when exposed to air will give off some luminescence for a period of time.</USGlowLiquid.description>
+</LanguageData>

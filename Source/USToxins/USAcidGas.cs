@@ -9,11 +9,11 @@ namespace USToxins;
 
 public class USAcidGas : Gas
 {
-    public static readonly DamageDef USAcid = DefDatabase<DamageDef>.GetNamed("Dam_USAcidGas");
+    private static readonly DamageDef USAcid = DefDatabase<DamageDef>.GetNamed("Dam_USAcidGas");
 
-    public readonly float toxicRatio = Settings.USToxLevels / 100f;
+    private readonly float toxicRatio = Settings.USToxLevels / 100f;
 
-    public int amountAcidDam = 1000;
+    private int amountAcidDam = 1000;
 
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
@@ -27,7 +27,7 @@ public class USAcidGas : Gas
         Scribe_Values.Look(ref destroyTick, "destroyTick");
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         if (destroyTick <= Find.TickManager.TicksGame || amountAcidDam <= 0)
         {
@@ -57,7 +57,7 @@ public class USAcidGas : Gas
                 if (thing.def.useHitPoints && thing is not Pawn ||
                     thing.def.useHitPoints && thing.def.IsCorpse)
                 {
-                    DoUSAcidGasDegrade(this, thing, out var DMG);
+                    DoUSAcidGasDegrade(thing, out var DMG);
                     amountAcidDam -= DMG;
                     continue;
                 }
@@ -67,12 +67,12 @@ public class USAcidGas : Gas
                     continue;
                 }
 
-                DoUSAcidGasPawn(this, pawn);
+                DoUSAcidGasPawn(pawn);
                 if (PawnIsAlive(pawn) &&
                     !pawn.RaceProps.IsMechanoid &&
                     pawn.health.capacities.CapableOf(PawnCapacityDefOf.Breathing))
                 {
-                    DoUSAcidGasToxic(this, pawn);
+                    DoUSAcidGasToxic(pawn);
                 }
             }
         }
@@ -103,17 +103,17 @@ public class USAcidGas : Gas
                 continue;
             }
 
-            DoUSAcidGasDegrade(this, edifice, out var DMG2);
+            DoUSAcidGasDegrade(edifice, out var DMG2);
             amountAcidDam -= DMG2;
         }
     }
 
-    public static bool PawnIsAlive(Pawn pawn)
+    private static bool PawnIsAlive(Pawn pawn)
     {
         return pawn is { Spawned: true, Dead: false } && !pawn.def.IsCorpse;
     }
 
-    public void DoUSAcidGasDegrade(Thing Gas, Thing targ, out int DMG)
+    private static void DoUSAcidGasDegrade(Thing targ, out int DMG)
     {
         var baseDMG = Math.Max(1f, Math.Min(10f, GetBaseDMG(targ)));
         DMG = (int)baseDMG;
@@ -124,7 +124,7 @@ public class USAcidGas : Gas
         }
     }
 
-    public float GetBaseDMG(Thing targ)
+    private static float GetBaseDMG(Thing targ)
     {
         if (targ is Building || targ.def.IsMetal || targ.def.IsShell)
         {
@@ -159,7 +159,7 @@ public class USAcidGas : Gas
         return targ.def.IsFilth ? 4f : 3f;
     }
 
-    public void DoUSAcidGasPawn(Thing Gas, Thing targ)
+    private static void DoUSAcidGasPawn(Thing targ)
     {
         if (PawnIsAlive(targ as Pawn))
         {
@@ -167,14 +167,14 @@ public class USAcidGas : Gas
         }
     }
 
-    public static void DoAcidDamPawn(Pawn pawn)
+    private static void DoAcidDamPawn(Pawn pawn)
     {
         if (pawn?.Map == null)
         {
             return;
         }
 
-        SetUpBDVars(pawn, pawn, out var candidate, out var DamDef, out var dmg);
+        SetUpBDVars(pawn, out var candidate, out var DamDef, out var dmg);
         if (candidate == null)
         {
             return;
@@ -185,7 +185,7 @@ public class USAcidGas : Gas
         DoAcidMiniEffectMech(pawn);
     }
 
-    public static void DoAcidMiniEffectMech(Pawn pawn)
+    private static void DoAcidMiniEffectMech(Pawn pawn)
     {
         if (!PawnIsAlive(pawn) || !pawn.RaceProps.IsMechanoid)
         {
@@ -196,12 +196,12 @@ public class USAcidGas : Gas
         FleckMaker.ThrowMicroSparks(pawn.Position.ToVector3(), pawn.Map);
     }
 
-    public static int Rnd100()
+    private static int Rnd100()
     {
         return Random.Range(1, 100);
     }
 
-    public static void SetUpBDVars(Pawn Victim, Thing instigator, out BodyPartRecord candidate,
+    private static void SetUpBDVars(Pawn Victim, out BodyPartRecord candidate,
         out DamageDef DamDef, out float dmg)
     {
         DamDef = USAcid;
@@ -276,7 +276,7 @@ public class USAcidGas : Gas
         }
     }
 
-    public static BodyPartRecord GetCandidate(List<BodyPartRecord> potentials, Pawn Victim)
+    private static BodyPartRecord GetCandidate(List<BodyPartRecord> potentials, Pawn Victim)
     {
         var candidates = new List<BodyPartRecord>();
         foreach (var BPR in potentials)
@@ -313,7 +313,7 @@ public class USAcidGas : Gas
         return candidate;
     }
 
-    public void DoUSAcidGasToxic(Thing Gas, Thing targ)
+    private void DoUSAcidGasToxic(Thing targ)
     {
         if (targ is not Pawn victim || !victim.health.capacities.CapableOf(PawnCapacityDefOf.Breathing))
         {

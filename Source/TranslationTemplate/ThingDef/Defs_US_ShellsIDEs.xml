@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Atifreeze shell -->
+  <Bullet_Shell_USAntifreeze.label>Atifreeze shell</Bullet_Shell_USAntifreeze.label>
+  <!-- EN: Blight killer shell -->
+  <Bullet_Shell_USBlightFoam.label>Blight killer shell</Bullet_Shell_USBlightFoam.label>
+  <!-- EN: Filth killer shell -->
+  <Bullet_Shell_USFilthFoam.label>Filth killer shell</Bullet_Shell_USFilthFoam.label>
+  <!-- EN: Glow foam shell -->
+  <Bullet_Shell_USGlowFoam.label>Glow foam shell</Bullet_Shell_USGlowFoam.label>
+  <!-- EN: Insect killer shell -->
+  <Bullet_Shell_USInsectFoam.label>Insect killer shell</Bullet_Shell_USInsectFoam.label>
+  <!-- EN: Mind killer shell -->
+  <Bullet_Shell_USMindGas.label>Mind killer shell</Bullet_Shell_USMindGas.label>
+  <!-- EN: Plant killer shell -->
+  <Bullet_Shell_USPlantFoam.label>Plant killer shell</Bullet_Shell_USPlantFoam.label>
+  <!-- EN: Tangle killer shell -->
+  <Bullet_Shell_USTangleGas.label>Tangle killer shell</Bullet_Shell_USTangleGas.label>
+  <!-- EN: Tree killer shell -->
+  <Bullet_Shell_USTreeFoam.label>Tree killer shell</Bullet_Shell_USTreeFoam.label>
+  <!-- EN: Weed killer shell -->
+  <Bullet_Shell_USWeedFoam.label>Weed killer shell</Bullet_Shell_USWeedFoam.label>
+  <!-- EN: Antifreeze shell -->
+  <Shell_USAntifreeze.label>Antifreeze shell</Shell_USAntifreeze.label>
+  <!-- EN: A pressurized shell filled with antifreeze. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USAntifreeze.description>A pressurized shell filled with antifreeze. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USAntifreeze.description>
+  <!-- EN: Blight killer shell -->
+  <Shell_USBlightFoam.label>Blight killer shell</Shell_USBlightFoam.label>
+  <!-- EN: A pressurized shell filled with blight killer liquid. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USBlightFoam.description>A pressurized shell filled with blight killer liquid. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USBlightFoam.description>
+  <!-- EN: Filth detergant shell -->
+  <Shell_USFilthFoam.label>Filth detergant shell</Shell_USFilthFoam.label>
+  <!-- EN: A pressurized shell filled with active detergant. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USFilthFoam.description>A pressurized shell filled with active detergant. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USFilthFoam.description>
+  <!-- EN: Glow Foam shell -->
+  <Shell_USGlowFoam.label>Glow Foam shell</Shell_USGlowFoam.label>
+  <!-- EN: A pressurized shell filled with glow liquid. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USGlowFoam.description>A pressurized shell filled with glow liquid. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USGlowFoam.description>
+  <!-- EN: Insect killer shell -->
+  <Shell_USInsectFoam.label>Insect killer shell</Shell_USInsectFoam.label>
+  <!-- EN: A pressurized shell filled with insect killer foam. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USInsectFoam.description>A pressurized shell filled with insect killer foam. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USInsectFoam.description>
+  <!-- EN: Mind Killer shell -->
+  <Shell_USMindGas.label>Mind Killer shell</Shell_USMindGas.label>
+  <!-- EN: A pressurized shell filled with mind killer liquid. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USMindGas.description>A pressurized shell filled with mind killer liquid. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USMindGas.description>
+  <!-- EN: Plant killer shell -->
+  <Shell_USPlantFoam.label>Plant killer shell</Shell_USPlantFoam.label>
+  <!-- EN: A pressurized shell filled with plant killer foam. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USPlantFoam.description>A pressurized shell filled with plant killer foam. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USPlantFoam.description>
+  <!-- EN: Tangle Killer shell -->
+  <Shell_USTangleGas.label>Tangle Killer shell</Shell_USTangleGas.label>
+  <!-- EN: A pressurized shell filled with tangle killer liquid. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USTangleGas.description>A pressurized shell filled with tangle killer liquid. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USTangleGas.description>
+  <!-- EN: Tree killer shell -->
+  <Shell_USTreeFoam.label>Tree killer shell</Shell_USTreeFoam.label>
+  <!-- EN: A pressurized shell filled with tree killer foam. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USTreeFoam.description>A pressurized shell filled with tree killer foam. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USTreeFoam.description>
+  <!-- EN: Weed killer shell -->
+  <Shell_USWeedFoam.label>Weed killer shell</Shell_USWeedFoam.label>
+  <!-- EN: A pressurized shell filled with weed killer foam. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USWeedFoam.description>A pressurized shell filled with weed killer foam. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USWeedFoam.description>
+  <!-- EN: IED Glow foam trap -->
+  <TrapIED_USGlowFoam.label>IED Glow foam trap</TrapIED_USGlowFoam.label>
+  <!-- EN: A pair of glow foam shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->
+  <TrapIED_USGlowFoam.description>A pair of glow foam shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</TrapIED_USGlowFoam.description>
+  <!-- EN: IED Insect Killer trap -->
+  <TrapIED_USInsectfoam.label>IED Insect Killer trap</TrapIED_USInsectfoam.label>
+  <!-- EN: A pair of insect killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->
+  <TrapIED_USInsectfoam.description>A pair of insect killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</TrapIED_USInsectfoam.description>
+  <!-- EN: IED Mind Killer trap -->
+  <TrapIED_USMindGas.label>IED Mind Killer trap</TrapIED_USMindGas.label>
+  <!-- EN: A pair of mind killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->
+  <TrapIED_USMindGas.description>A pair of mind killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</TrapIED_USMindGas.description>
+  <!-- EN: IED Tangle Killer trap -->
+  <TrapIED_USTangleGas.label>IED Tangle Killer trap</TrapIED_USTangleGas.label>
+  <!-- EN: A pair of tangle killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->
+  <TrapIED_USTangleGas.description>A pair of tangle killer shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</TrapIED_USTangleGas.description>
+</LanguageData>
