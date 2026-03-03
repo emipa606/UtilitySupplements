@@ -28,10 +28,10 @@
   <Shell_USBlightFoam.label>Blight killer shell</Shell_USBlightFoam.label>
   <!-- EN: A pressurized shell filled with blight killer liquid. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
   <Shell_USBlightFoam.description>A pressurized shell filled with blight killer liquid. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USBlightFoam.description>
-  <!-- EN: Filth detergant shell -->
-  <Shell_USFilthFoam.label>Filth detergant shell</Shell_USFilthFoam.label>
-  <!-- EN: A pressurized shell filled with active detergant. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
-  <Shell_USFilthFoam.description>A pressurized shell filled with active detergant. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USFilthFoam.description>
+  <!-- EN: Filth detergent shell -->
+  <Shell_USFilthFoam.label>Filth detergent shell</Shell_USFilthFoam.label>
+  <!-- EN: A pressurized shell filled with active detergent. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
+  <Shell_USFilthFoam.description>A pressurized shell filled with active detergent. Can be fired from mortars or installed as a trap. Explodes when damaged.</Shell_USFilthFoam.description>
   <!-- EN: Glow Foam shell -->
   <Shell_USGlowFoam.label>Glow Foam shell</Shell_USGlowFoam.label>
   <!-- EN: A pressurized shell filled with glow liquid. Can be fired from mortars or installed as a trap. Explodes when damaged. -->

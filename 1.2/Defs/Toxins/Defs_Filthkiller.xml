@@ -40,7 +40,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>USFilthKillLiquid</defName>
     <label>Filth Killer Liquid</label>
-    <description>A powerfull active detergant. This particular liquid will help to degrade all forms of filth.</description>
+    <description>A powerfull active detergent. This particular liquid will help to degrade all forms of filth.</description>
     <graphicData>
       <texPath>Things/Item/Resource/USFilthKillLiquid</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -67,7 +67,7 @@
     <defName>MakeBulkUSFilthKillLiquid</defName>
     <label>Make filth killer liquid</label>
     <description>Make 5 filth killer liquid</description>
-    <jobString>Making detergant.</jobString>
+    <jobString>Making detergent.</jobString>
     <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
@@ -127,7 +127,7 @@
   <ThingDef ParentName="BaseMakeableUSSprayer">
     <defName>Gun_USSprayer_FilthKill</defName>
     <label>Filth Killer Sprayer</label>
-    <description>Sprayer that applies detergant. The cleaning agent associated with this sprayer will remove all forms of filth.</description>
+    <description>Sprayer that applies detergent. The cleaning agent associated with this sprayer will remove all forms of filth.</description>
     <graphicData>
       <texPath>Things/Item/Gun_USSprayer_FilthKill</texPath>
       <graphicClass>Graphic_Single</graphicClass>

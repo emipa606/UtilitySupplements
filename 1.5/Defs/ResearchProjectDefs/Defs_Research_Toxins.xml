@@ -45,8 +45,8 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>USFilthKill</defName>
-    <label>Detergant</label>
-    <description>Grants the ability to make active detergant.</description>
+    <label>Detergent</label>
+    <description>Grants the ability to make active detergent.</description>
     <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>

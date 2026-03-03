@@ -156,8 +156,8 @@
   <!-- Filth Killer -->
   <ThingDef ParentName="MakeableShellBase">
     <defName>Shell_USFilthFoam</defName>
-    <label>Filth detergant shell</label>
-    <description>A pressurized shell filled with active detergant. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <label>Filth detergent shell</label>
+    <description>A pressurized shell filled with active detergent. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Shell/Shell_USFilthFoam</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -223,9 +223,9 @@
   </ThingDef>
   <RecipeDef>
     <defName>MakeBulkUSFilthKillShell</defName>
-    <label>Make filth detergant shells in bulk</label>
-    <description>Make 4 filth detergant shells</description>
-    <jobString>Making filth detergant shells.</jobString>
+    <label>Make filth detergent shells in bulk</label>
+    <description>Make 4 filth detergent shells</description>
+    <jobString>Making filth detergent shells.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -272,7 +272,7 @@
     <ThingDef ParentName="TrapIEDBase">
     		<defName>TrapIED_USFilthfoam</defName>
     		<label>IED Filth Killer trap</label>
-    		<description>A pair of detergant shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    		<description>A pair of detergent shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
     		<graphicData>
       		<texPath>Things/Building/Security/IEDUSFilthfoam</texPath>
     		</graphicData>

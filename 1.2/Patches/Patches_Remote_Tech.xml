@@ -55,7 +55,7 @@
             <ThingDef ParentName="TrapIEDBase">
               <defName>TrapIED_USFilthfoam</defName>
               <label>IED Filth Killer trap</label>
-              <description>A pair of detergant shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+              <description>A pair of detergent shells connected to a touch-activated trigger. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
               <graphicData>
                 <texPath>Things/Building/Security/IEDUSFilthfoam</texPath>
               </graphicData>
